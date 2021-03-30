@@ -1,32 +1,193 @@
-<!doctype html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="../static/style.css">
-<title>About this Website — yshiuanc</title>
-<body>
-  <header>
-    <h1>yshiuanc</h1>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li><a href="../">Welcome</a></li>
-        
-          <li><a href="../blog/">Blog</a></li>
-        
-          <li><a href="../projects/">Projects</a></li>
-        
-          <li class="active"><a href="../about/">About</a></li>
-        
-      </ul>
-    </nav>
-  </header>
-  <div class="page">
+<!DOCTYPE html>
+
+<html>
+<meta charset="urf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/style.css">
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+<!-- icon -->
+
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     
-  <h2>About this Website</h2>
-  <p>This is a website that was made with the Lektor quickstart.</p>
-<p>And it does not contain a lot of information.</p>
+    <!--This is title of website /tab/ -->
+    <title>YShiuan_C</title>
+    <!-- Logo on the Tab  -->
+    <link rel="icon" type="image/png" href="/YShiuan_C_16x16.png">
+
+</head>
 
 
-  </div>
-  <footer>
-    &copy; Copyright 2020 by Ying-Shiuan Chen.
-  </footer>
+
+<!--Website Content -->
+<body>
+
+    <!-- header cover, Logo, language -->
+    <header>
+        <div class="headerContainer">
+            
+            <div class = "logo"> </div>
+            
+            
+            <div class ="homepage"><a href = "/">YShiuan_C</a>
+                <span class="tooltip">Homepage</span>
+            </div>
+
+
+        </div>
+        
+        
+
+    </header>
+
+
+    <!--nav-->
+    <!--nav-->
+    <nav>
+        <ul id="navbar">
+          <li class="logo"><a href="#">YShiuan_C</a></li>
+          <li class="item"><a href="#">About me</a></li>
+          <li class="item"><a href="#">Resume</a></li>
+          <li class="item"><a href="#">Portfolio</a></li>
+          <!-- 
+          <li class="item"><a style="display:none" href="/blog">Blog</a></li>
+                  -->
+          <li class="item"><a href="#">Contact</a></li>
+          <li class="navbarToggle"><a href="#"><i class="material-icons">menu</i></a></li>   
+        </ul>
+    </nav>
+
+
+    <!--main key content here-->
+    <main>
+
+        <!-- cover picture -->
+
+
+        <!--Greeting-->
+
+        <div class="greeting">
+            <h2><br
+            >Hi there!<br>
+            I'm<br>
+            Ying-Shiuan Chen.</h2>
+        </div>
+
+
+
+        <div class="name">
+            <h1>Ying-Shiuan Chen</h1>
+        </div>
+        
+        <h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            hi
+        </h1>
+
+
+
+    </main>
+
+    <!--article-->
+    <article>
+        <section>
+
+        </section>
+    </article>
+
+    <!--aside -->
+    <aside>
+
+    </aside>
+
+
+
+    <!--footer  summary, email, copyright, term of use-->
+    <footer>
+        <div class="footer_container">
+            <div class="footer_main">
+                <div class="topic"><h2>Ying-Shiuan Chen
+                    <a href="#"><i class="material-icons">email</i></a>
+                </h2></div>
+                
+            </div>
+            
+            <div class="navbar_footer">
+                <ul>
+                    <li class="logo"><a href="#">YShiuan_C</a></li>
+                    <li class="item"><a href="#">About me</a></li>
+                    <li class="item"><a href="#">Resume</a></li>
+                    <li class="item"><a href="#">Portfolio</a></li>
+                    <!-- 
+                    <li class="item"><a style="display:none" href="/blog">Blog</a></li>
+                    -->
+                    <li class="item"><a href="#">Contact</a></li>
+                    <li class="navbarToggle"><a href="#"><i class="material-icons">menu</i></a></li>
+                </ul>
+            </div>
+            
+            <div class="media">
+                <div class="topic"><h2>Follow me</h2></div>
+                <div class="media_icon">
+                    <a href="#"><i class="fa fa-github"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-vimeo"></i></a>
+                    <a href="#"><i class="fa fa-medium"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="resouce">
+                <ul class="sitemap">
+                    <li><a href="">sitemap</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer_copyright">
+                <p>&copy 2020 <a href="#">Ying-Shiuan Chen</a> All rights reserved</p>
+            </div>
+
+        </div>          
+    </footer>
+
+
+    <!--script java-->
+    <script>
+        
+        /* Click Hide mennu */
+        $(document).ready(function(){
+  	        $('.navbarToggle').click(function(){
+    	        $('.item').toggleClass("show");
+   			    $('ul li').toggleClass("hide");
+        			
+             });
+         });
+
+    
+
+
+    </script>
+
+
 </body>
+
+</html>
