@@ -1,0 +1,17 @@
+[project]
+name = yshiuanc
+url_style = absolute
+locale = en_US
+url = https://yingshiuan.github.io/
+
+
+
+[servers.ghpages]
+name = ghpages
+target = ghpages+https://yingshiuan.github.io/yshiuanc/
+
+
+[alternatives.en]
+name = English
+primary = yes
+locale = en_US
