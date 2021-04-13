@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
+<link rel="stylesheet" href="/static/style.css">
 <!-- Font -->
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
 
@@ -17,12 +17,12 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   
   <!--This is title of website /tab/ -->
-  <title>{% block title %}homepage{% endblock %} | YShiuan_C</title>
+  <title>Hello Website | YShiuan_C</title>
   <!-- Logo on the Tab  -->
-  <link rel="icon" sizes="16x16" type="image/png" href="{{'/static/logo/YShiuan_C_16x16.png'|url }}">
+  <link rel="icon" sizes="16x16" type="image/png" href="/static/logo/YShiuan_C_16x16.png">
 
-  {% block head%}
-  {%endblock%}
+  
+  
 </head>
 
 
@@ -53,11 +53,23 @@
 <nav>
     <ul id="navbar">
       <li class="logo"><a href="#">YShiuan_C</a></li>
-      {% for href, title in [ ['/about-me', 'About me'], ['/resume', 'Resume'], ['/portfolio', 'Portfolio'], ['/contact', 'Contact'] ] %}
+      
         <li class="item">
-            <a href="{{ href|url }}">{{ title }}</a>
+            <a href="/about-me/">About me</a>
         </li>
-      {% endfor %}
+      
+        <li class="item">
+            <a href="/resume/">Resume</a>
+        </li>
+      
+        <li class="item">
+            <a href="/portfolio/">Portfolio</a>
+        </li>
+      
+        <li class="item">
+            <a href="/contact/">Contact</a>
+        </li>
+      
       <!-- , ['/blog', 'Blog']
       <li class="item"><a href="aboutme.html">About me</a></li>
       <li class="item"><a href="template/resume.html">Resume</a></li>
@@ -80,8 +92,24 @@
 
 
 <main class="main_container">
-  {% block body %}
-  {% endblock %}
+  
+  
+  <div class="blog-post">
+  
+    <h2>Hello Website</h2>
+  
+  <p class="meta">
+    written by
+    
+      Ying-Shiuan Chen
+    
+    on 2020-04-29
+  </p>
+  <p>This is an example blog post.  Not much here but that's not the point :)</p>
+
+  </div>
+
+
 
 
 
@@ -123,11 +151,23 @@
             <ul>
                 <li class="logo"><a href="">YShiuan_C</a></li>
 
-                {% for href, title in [ ['/about-me', 'About me'], ['/resume', 'Resume'], ['/portfolio', 'Portfolio'], ['/contact', 'Contact'] ] %}
+                
                   <li class="item">
-                      <a href="{{ href|url }}">{{ title }}</a>
+                      <a href="/about-me/">About me</a>
                   </li>
-                {% endfor %}
+                
+                  <li class="item">
+                      <a href="/resume/">Resume</a>
+                  </li>
+                
+                  <li class="item">
+                      <a href="/portfolio/">Portfolio</a>
+                  </li>
+                
+                  <li class="item">
+                      <a href="/contact/">Contact</a>
+                  </li>
+                
                 <!-- 
                 <li class="item"><a href="template/aboutme.html">About me</a></li>
                 <li class="item"><a href="template/resume.html">Resume</a></li>
