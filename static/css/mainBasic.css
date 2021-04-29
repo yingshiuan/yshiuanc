@@ -1,3 +1,6 @@
+:root{
+    --text-color: #707070;
+}
 
 
 
@@ -16,13 +19,19 @@ html{
     text-decoration: none;
 }
 
+/* selection  */
+::first-line {
+    /* style */
+}
+
+::selection {
+    background-color:  #007AFF;
+    color: white;
+}
 
 
 
-/* paddimg margin backgroudn */
-
-
-
+/* paddimg margin backgroudnd */
 main{
     margin-left: auto;
     margin-right: auto;
@@ -178,7 +187,7 @@ nav ul li.logo{
 
 /* nav hover */
 nav ul li a{
-    color: #707070;
+    color: var(--text-color);
     text-decoration: none;
     transition: 0.4s;
 }
@@ -189,7 +198,7 @@ nav ul li a{
 }
 
 nav ul li:active a{
-    color: #707070;
+    color: var(--text-color);
     text-decoration: underline;
 }
 
@@ -261,8 +270,12 @@ nav ul li.navbarToggle.hide i::before{
         color: white;
         text-decoration: underline;
     }
+
+    nav ul li{
+        padding: 0.5rem 0rem 0.5rem 0rem;
+    }   
     
-      
+    
     nav ul li.item{
         width: 100%;
         display: none;
@@ -329,17 +342,21 @@ nav ul li.navbarToggle.hide i::before{
 
 
 
-/* Greeting */
+/*
+************* 
+Greeting
+*************
+*/
 .greeting{
     max-width: 64.875rem;
-    color: #707070;
+    color: var(--text-color);
     padding-right: 2.5rem;
     padding-left: 2.5rem;
     margin: 4rem auto 4rem auto;
 }
 
 .greeting p{
-    color: #707070;
+    color: var(--text-color);
 }
 
 
@@ -354,7 +371,7 @@ resume
 
 .resume{
     max-width: 64.875rem;
-    color: #707070;
+    color: var(--text-color);
     padding-right: 2.5rem;
     padding-left: 2.5rem;
     margin: 4rem auto 4rem auto;
@@ -396,13 +413,13 @@ resume
 
 /* resume */
 .resume ul li{
-    color: #707070;
+    color: var(--text-color);
     margin: 2rem 0 2rem 0;
     display: flex;
 }
 
 .resume li ol{
-    color: #707070;
+    color: var(--text-color);
     margin: 0rem auto 2rem auto;
 }
 
@@ -416,7 +433,7 @@ hr{
 
 .resume_item{
     position: relative;
-    color: #707070;
+    color: var(--text-color);
     overflow: hidden; 
 }
 
@@ -445,7 +462,7 @@ hr{
 
 .resume_item_end{
     position: relative;
-    color: #707070;
+    color: var(--text-color);
     overflow: hidden;   
     display: block;
     text-align: end;
@@ -457,7 +474,7 @@ hr{
 
 /* resume intro */
 .name{
-    color: #707070;
+    color: var(--text-color);
 }
 
 
@@ -473,18 +490,22 @@ hr{
 
 
 
-/* main */
 
 
+/* 
+*************
+main-send me
+*************
+ */
 
 .sendme{
-    color: #707070;
+    color: var(--text-color);
     text-align: center;
     margin: 10rem auto 10rem auto;
 }
 
 .sendme p a{
-    color: #707070;
+    color: var(--text-color);
     text-decoration: underline;
 }
 
@@ -511,11 +532,11 @@ hr{
         /*border-bottom: 1px solid #C2C2C2;
         */
     }
-
-
-
-    
 }
+
+
+
+
 
 @media only screen and (min-width: 64em) {
     .resume_item_end{
@@ -539,6 +560,10 @@ hr{
 
 
 
+
+
+
+
 /*
 *************
 contactme
@@ -549,7 +574,7 @@ contactme
     max-width: 64.875rem;
     margin: 4rem auto 4rem auto;
     padding: 1rem 2.5rem 1rem 2.5rem;
-    color: #707070;
+    color: var(--text-color);
 }
 
 
@@ -573,7 +598,7 @@ contactme
 
 
 .media_icon a{
-    color: #707070;
+    color: var(--text-color);
     font-size: 2rem;
     display: inline-block;
     text-align: center;
@@ -587,7 +612,7 @@ contactme
 .media_icon a:hover{
     color: black;
     font-size: 2rem;
-    text-shadow: 0.1rem 0.1rem #707070;
+    text-shadow: 0.1rem 0.1rem var(--text-color);
 }
 
 @media all and (max-width: 900px){
@@ -608,7 +633,7 @@ contactme
 
 /*
 *************
-Work
+Work-portfolio
 *************
 */
 
@@ -620,10 +645,11 @@ main div.work{
 
 .work_item{
     position: relative;
-    border-radius: 8px;
-    border: 3px solid white;
-    background: #707070;
-    opacity: 0.3;
+    border-radius: 6px;
+    border: 1px solid white;
+    /*
+    border: 5px solid var(--text-color) ;
+    */
     overflow: hidden;
     /*height: calc((0.1604166667) * 97vw * 0.8376623377);*/
     height: 40vw;
@@ -644,21 +670,26 @@ main div.work{
     text-align: center;
 }
 
-.work_item img{
-
-}
 
 
-.work_item_container_description{
+.work_item .work_item_container_description {
     pointer-events: none;
-    color: black;
+    background-image: linear-gradient(rgba(229, 229, 234, 0) ,rgba(229, 229, 234, .4),rgba(229, 229, 234, 0) );
+    /* background: rgba(229, 229, 234, .4);*/
+    color: #2C2C2E;
     z-index: 10;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
+    opacity: 0; 
+}
+
+
+.work_item:hover .work_item_container_description {
     opacity: 1;
 }
+
 
 .work_item_container_content{
     height: 100%;
@@ -671,6 +702,8 @@ main div.work{
     width: 100%;
 }
 
+
+
 /* Height */
 .work__item--tall {
     height: 72vw;
@@ -681,6 +714,8 @@ main div.work{
 /*    =height: calc((3*0.1604166667) * 97vw * 0.8376623377);
 */    margin-bottom: 0;
 }
+
+
 
 
 
@@ -714,6 +749,92 @@ main div.work{
 
 
 
+/*project */
+
+.work_item_m{
+    height: 18vw;
+}
+
+.work_item_tall{
+    height: 36vw;
+}
+
+.col-m-pullup-1{
+    margin-top: calc(-18vw);
+}
+
+
+/* project layout */
+.work_item_tall_3{
+    height: 36vw;
+}
+
+/* project layout_3 */
+.work_item_tall_4{
+    height: 52vw;
+}
+
+
+
+
+/* 
+work_describe
+*/
+
+.work_describe{
+    max-width: 64.875rem;
+    color: var(--text-color);
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    margin: 4rem auto 4rem auto;
+}
+
+.work_word{
+    margin: 4rem auto 4rem auto;
+    position: relative;
+    color: var(--text-color);
+    overflow: hidden;
+    /*height: calc((0.1604166667) * 97vw * 0.8376623377);*/
+    display: flex;
+}
+
+.diagram{
+    height: 52vw;
+}
+
+@media all and (max-width: 900px){
+    .work_describe{
+        padding: 0rem;
+        margin: 4rem auto 4rem auto;
+    }
+}
+
+
+/* video */
+iframe {
+    
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    /*
+    background: rgba(229, 229, 234, .4);
+    aspect-ratio: 16/9;
+    */
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
 
 
 
@@ -721,7 +842,7 @@ main div.work{
 
 /* 
 *************
-Table 
+Table-work
 *************
 */
 
@@ -731,6 +852,30 @@ Table
     .work__item--tall {
         height: 72vw;
     }
+
+    /*project */
+    .work_item_m{
+        height: 18vw;
+    }
+
+    .work_item_tall{
+        height: 36vw;
+    }
+
+    .col-m-pullup-1{
+        margin-top: calc(-18vw);
+    }
+
+
+    /* project layout_3 */
+    .work_item_tall_4{
+        height: 52vw;
+    }
+
+    .diagram{
+        height: 52vw;
+    }
+    
 
     /* hide */
     .col-xs-hide { display: block; }
@@ -749,6 +894,16 @@ Table
 
     .work__item--tall {
         height: calc((3 * 0.1604166667) * 97vw * 0.8376623377);
+        margin-bottom: 0;
+    }
+    
+    /* project layout_3 */
+    .work_item_tall_4{
+        height: calc(4* 0.1604166667 * 97vw * 0.8376623377);
+    }
+
+    .diagram{
+        height: calc((3.5 * 0.1604166667) * 97vw * 0.8376623377);
         margin-bottom: 0;
     }
     
@@ -803,6 +958,11 @@ Table
         margin-bottom: calc(-0.1604166667 * 97vw * 0.8376623377);
     }
     
+    
+    .diagram{
+        height: calc(3.5 * 0.1604166667 * 97vw * 0.8376623377);
+    }
+
 
     /* pull */
     .col-md-pull-left-1, .col-md-pull-left-2, .col-md-pull-left-3, .col-md-push-right-1, .col-md-push-right-2, .col-md-push-right-3{
@@ -818,13 +978,118 @@ Table
         display: block;
     }
 
-    .col-lg-hide {
-        display: none;
-    }
 
     /* hide */
-    .col-lg-hide { display: none; }
+    .col-lg-hide { display: none;  }
 
+    /* project layout2 */
+    .work_item_tall_3{
+        height: calc(3 * 0.1604166667 * 97vw * 0.8376623377);
+    }
+
+    .col-md-pullup-3{
+        margin-top: calc( -0.1604166667 * 97vw * 0.8376623377);
+    }
+
+
+    /* project layout_3 */
+    .work_item_tall_4{
+        height: calc(3.5* 0.1604166667 * 97vw * 0.8376623377);
+    }
+
+   
+}
+
+
+
+
+
+/*
+*************
+blog
+*************
+*/
+
+
+.blog{
+    max-width: 64.875rem;
+    color: var(--text-color);
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    margin: 4rem auto 4rem auto;
+}
+
+
+.blog_content{
+    position: relative;
+    color: var(--text-color);
+    overflow: hidden; 
+    
+}
+
+
+.blog_content ol{
+    margin: 0.5rem auto 0.5rem auto;
+
+}
+
+
+.blog_content_container{
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+/* date */
+.blog_date{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*Read more button */
+.blog_button{
+    background: none;
+    border: 2px solid #2C2C2E;
+    border-radius: 4px;
+    padding: 0.5rem;
+    text-align: center;
+    transition-duration: 0.4s;
+}
+
+
+.blog_button:hover{
+    background: #2C2C2E;
+    color: white;
+}
+
+
+.blog_button:active{
+    background: none;
+    color: black;
+}
+
+
+/* --- */
+.blog .row hr{
+    margin: 1rem auto 1rem auto;
+    color: #C2C2C2;
+    background-color: #C2C2C2;
+    height: 1px;
+}
+
+
+
+/* table */
+@media all and (max-width: 900px){
+    .blog{
+        padding: 0rem;
+        margin: 2rem auto 2rem auto;
+    }
 }
 
 
@@ -861,7 +1126,11 @@ aside{
 
 
 
-/* footer */
+/* 
+*********
+footer 
+*********
+*/
 footer{
     display: block;
     width: 100%;
@@ -915,12 +1184,12 @@ footer .footer_main .material-icons{
 }
   
 footer .footer_main a{
-    color:#707070;
+    color:var(--text-color);
 }
   
 footer .footer_main a:hover{
     color: white;
-    text-shadow: 0.1rem 0.1rem #707070;
+    text-shadow: 0.1rem 0.1rem var(--text-color);
 }
   
 
@@ -1010,7 +1279,7 @@ footer .navbar_footer ul li.navbarToggle.hide i::before{
 /* media icon */
  
 footer .media_icon a{
-    color: #707070;
+    color: var(--text-color);
     font-size: 2rem;
     display: inline-block;
     text-align: center;
@@ -1024,7 +1293,7 @@ footer .media_icon a{
 footer .media_icon a:hover{
     color: white;
     font-size: 2rem;
-    text-shadow: 0.1rem 0.1rem #707070;
+    text-shadow: 0.1rem 0.1rem var(--text-color);
 }
   
 footer a:hover{
