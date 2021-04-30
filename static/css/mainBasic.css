@@ -12,6 +12,8 @@ html{
 }
 
 
+
+
 *{
     margin: 0;
     padding: 0;
@@ -501,7 +503,7 @@ main-send me
 .sendme{
     color: var(--text-color);
     text-align: center;
-    margin: 10rem auto 10rem auto;
+    margin: 15rem auto 15rem auto;
 }
 
 .sendme p a{
@@ -655,8 +657,8 @@ main div.work{
     height: 40vw;
     align-items: center;
     display: flex;
-    
 }
+
 
 .work_item_container, .work_item_container_description, .work_item a{
     position: absolute;
@@ -700,6 +702,11 @@ main div.work{
 
 .work_item_container_content img{
     width: 100%;
+}
+
+
+.work_credit{
+    color: #C2C2C2;
 }
 
 
@@ -793,7 +800,6 @@ work_describe
     margin: 4rem auto 4rem auto;
     position: relative;
     color: var(--text-color);
-    overflow: hidden;
     /*height: calc((0.1604166667) * 97vw * 0.8376623377);*/
     display: flex;
 }
