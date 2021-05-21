@@ -1,7 +1,10 @@
 :root{
     --text-color: #707070;
+    --text-hover: black;
+    --text-descript:#C2C2C2;
+    --text-message:#e6e6e6;
+    --boder-color:white;
 }
-
 
 
 /* font color */
@@ -10,6 +13,13 @@ html{
     font-size:16px;
     
 }
+
+
+/* 
+*************
+Theme
+*************
+*/
 
 
 
@@ -128,6 +138,27 @@ header{
 }
 
 
+/* 
+*************
+currently
+*************
+*/
+
+.currently{
+    display: block;
+    border: 1px solid #e6e6e6;
+    background: #e6e6e6;
+    margin: 1rem auto 1rem auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.info{
+    padding: 0.2rem;
+}
+
+
+
 
 
 /* 
@@ -195,7 +226,7 @@ nav ul li a{
 }
 
 .currentpage, nav ul li:hover a{
-    color: black;
+    color: var(--text-hover);
     text-decoration: underline;
     
 }
@@ -356,6 +387,18 @@ Greeting
     color: var(--text-color);
 }
 
+.greeting_item{
+    margin: 1rem auto 1rem auto;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -378,7 +421,7 @@ resume
 /* profile */
 .profile{
     list-style: none;
-    display: block;
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -388,7 +431,7 @@ resume
 }
 
 .profilePic{
-    display: block;
+    display: flex;
     text-align: center;
     justify-content: center;
     margin: 1rem auto 1rem auto;
@@ -446,13 +489,13 @@ hr{
 
 
 .resume_item p{
-    color: #C2C2C2;
+    color: var(--text-descript);
     
 }
 
 
 .resume ul div ol a{
-    color: #C2C2C2;
+    color: var(--text-descript);
     text-decoration: underline;
 }
 
@@ -493,7 +536,7 @@ hr{
 *************
 main-send me
 *************
- */
+*/
 
 .sendme{
     color: var(--text-color);
@@ -505,6 +548,8 @@ main-send me
     color: var(--text-color);
     text-decoration: underline;
 }
+
+
 
 
 
@@ -556,6 +601,12 @@ main-send me
     }
 }
 
+@media only screen and (min-width: 75em){
+    .greeting{
+        height: 36vw;
+    }
+}
+
 
 
 
@@ -584,7 +635,7 @@ contactme
 .contactme_item{
     display: inline-block;
     justify-content: center;
-    margin: 2rem auto 2rem auto;
+    margin: 4rem auto 4rem auto;
     
 }
 
@@ -721,7 +772,7 @@ contactme
   
   
 .media_icon a:hover{
-    color: black;
+    color: var(--text-hover);
     font-size: 2rem;
     text-shadow: 0.1rem 0.1rem var(--text-color);
 }
@@ -758,7 +809,6 @@ contactme
 
 
 
-
 /*
 *************
 Work-portfolio
@@ -774,7 +824,7 @@ main div.work{
 .work_item{
     position: relative;
     border-radius: 6px;
-    border: 1px solid white;
+    border: 1px solid var(--boder-color);
     /*
     border: 5px solid var(--text-color) ;
     */
@@ -784,6 +834,48 @@ main div.work{
     align-items: center;
     display: flex;
 }
+
+
+.work_main{
+    max-width: 64.875rem;
+    color: var(--text-color);
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    margin: 4rem auto 4rem auto;
+}
+
+/* work title */
+.work_title{
+    margin: 1rem auto 1rem auto;
+    display: inline-block;
+}
+
+
+.work_title p{
+    color: var(--text-color);
+    text-align: left;
+    margin: 0rem auto 0rem auto;
+    display: inline-block;
+}
+
+.work_tag {
+    font-size:0.8rem;
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.tags{
+    background: #e6e6e6;
+    border-radius: 6px;
+    padding: 0.2rem;
+}
+
+
+
+
+
+
+
 
 
 .work_item_container, .work_item_container_description, .work_item a{
@@ -830,8 +922,37 @@ main div.work{
     width: 100%;
 }
 
+.work_cover{
+    border-radius: 12px;
+    border: 5px solid var(--boder-color);
+}
+
+
+
+
+
+/* portfolio cover */
+.work_cover .work_item_container_content .img_show{
+    opacity: 0;
+}
+
+/*hover img */
+.work_cover:hover .work_item_container_content img{
+    display: none;
+}
+
+
+.work_cover:hover .work_item_container_content .img_show{
+    opacity: 1;
+    display: block;
+    position: absolute;
+}
+
+
+
 
 .work_credit{
+    margin: 8rem auto 0rem auto;
     color: #C2C2C2;
 }
 
@@ -944,6 +1065,11 @@ work_describe
     .work_describe{
         padding: 0rem;
         margin: 4rem auto 4rem auto;
+    }
+
+    .work_cover{
+        border-radius: 6px;
+        border: 3px solid var(--boder-color);  
     }
 }
 
@@ -1254,6 +1380,51 @@ aside{
 
 }
 
+/* 
+*********
+pagination 
+*********
+*/
+.pagination{
+    max-width: 64.875rem;
+    margin: 2rem auto 2rem auto;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.pagination_item {
+}
+
+.pagination_item i{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+
+
+.pagination_back {
+    text-align: left;
+}
+
+.pagination_forward {
+    text-align: right;
+}
+
+
+.pagination_description {
+    pointer-events: none;
+    /* 
+    background-image: linear-gradient(rgba(229, 229, 234, 0) ,rgba(229, 229, 234, .5),rgba(229, 229, 234, 0) );
+    background: rgba(229, 229, 234, .4);*/
+    color: var(--text-color);
+    z-index: 10;
+    opacity: 1; 
+}
+
+
+.pagination_item:hover .pagination_description{
+    color: var(--text-hover);
+    text-decoration: underline;
+}
 
 
 
@@ -1322,12 +1493,12 @@ footer .footer_main .material-icons{
 }
   
 footer .footer_main a{
-    color:var(--text-color);
+    color:#707070;
 }
   
 footer .footer_main a:hover{
     color: white;
-    text-shadow: 0.1rem 0.1rem var(--text-color);
+    text-shadow: 0.1rem 0.1rem #707070;
 }
   
 
@@ -1417,7 +1588,7 @@ footer .navbar_footer ul li.navbarToggle.hide i::before{
 /* media icon */
  
 footer .media_icon a{
-    color: var(--text-color);
+    color: #707070;
     font-size: 2rem;
     display: inline-block;
     text-align: center;
@@ -1431,7 +1602,7 @@ footer .media_icon a{
 footer .media_icon a:hover{
     color: white;
     font-size: 2rem;
-    text-shadow: 0.1rem 0.1rem var(--text-color);
+    text-shadow: 0.1rem 0.1rem #707070;
 }
   
 footer a:hover{
@@ -1463,6 +1634,9 @@ footer .footer_copyright p{
     padding: 0.5rem 0rem 0rem 0rem;
     color: white;
 }
+
+
+
 
 
 
