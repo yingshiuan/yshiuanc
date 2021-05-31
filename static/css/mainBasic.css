@@ -4,6 +4,7 @@
     --text-descript:#C2C2C2;
     --text-message:#e6e6e6;
     --boder-color:white;
+    --work-backgorund: rgba(242, 242, 242, .2);
 }
 
 
@@ -20,6 +21,69 @@ html{
 Theme
 *************
 */
+/* theme */
+body {
+    background-color: white;
+    --text-color: #707070;
+    --text-hover: black;
+    --boder-color:white;
+}
+  
+
+/* system color */
+body.dark-theme {
+    background-color: black;
+    --text-color: #C2C2C2;
+    --text-descript:#707070;
+    --text-hover: #707070;
+    --text-message:#3a3a3c;
+    --boder-color:black;
+    --work-backgorund: rgba(242, 242, 242, .1);
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body { 
+        background-color: black;
+        --text-color: #C2C2C2;
+        --text-descript:#707070;
+        --text-hover: #707070;
+        --boder-color:black;
+        --text-message:#3a3a3c;
+        --work-backgorund: rgba(242, 242, 242, .1);
+    }
+
+    body.light-theme {
+        background-color: white;
+        --text-color: #707070;
+        --text-descript:#C2C2C2;
+        --text-hover: black;
+        --text-message:#e6e6e6;
+        --boder-color:white;
+    }
+}
+
+
+
+
+/* Error */
+.error_img{
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    max-height: 150px;
+    max-width: 750px;
+    width: 100%;
+    height: auto;
+}
+
+
+.error_img img{
+    max-width: 100%;
+    height: auto; 
+}
+
 
 
 
@@ -138,6 +202,37 @@ header{
 }
 
 
+/* MODE */
+
+.mode{
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    position: sticky;
+    z-index: 1;
+    top: 4rem;
+}
+
+.mode-button{
+    padding: 0.2rem;
+    color: var(--text-color);
+    border-radius: 6px;
+    border: 1px solid var(--boder-color);
+    background: var(--text-message); 
+}
+
+.mode-button:hover{
+    color: var(--boder-color);
+    background: var(--text-hover);
+    box-shadow: 0.1rem 0.1rem var(--text-color);
+}
+
+
+
+
+
 /* 
 *************
 currently
@@ -146,8 +241,8 @@ currently
 
 .currently{
     display: block;
-    border: 1px solid #e6e6e6;
-    background: #e6e6e6;
+    border: 1px solid var(--text-message);
+    background: var(--text-message);
     margin: 1rem auto 1rem auto;
     text-align: center;
     justify-content: center;
@@ -268,9 +363,24 @@ nav ul li.navbarToggle.hide i::before{
         display: none;
     }
 
+    .currently{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: 0rem auto 0rem auto;
+    }
+
+    .mode{
+        margin: 5rem auto 0rem auto;
+        padding: 0rem 2.5rem 0.2rem 2.5rem;   
+        top: 6rem;     
+    }
+
+
     nav{
         background: #2C2C2E;
-        margin: 0rem auto 2rem  auto;
+        margin: 1.5rem auto 2rem  auto;
         padding: 0rem 2.5rem 0.2rem 2.5rem;
         position: fixed;
         top: 0;
@@ -343,6 +453,9 @@ nav ul li.navbarToggle.hide i::before{
     footer .navbar_footer ul li{
         padding: 0rem 2rem 0rem 0.5rem; 
     }
+
+
+
 
 
 }
@@ -444,7 +557,7 @@ resume
 .profilePic img{
     border-radius: 50%;
     width: 100%;
-    height: auto;
+    height: 300px;
     
 }
 
@@ -622,8 +735,8 @@ contactme
 
 .contactme{
     max-width: 64.875rem;
-    margin: 4rem auto 4rem auto;
-    padding: 1rem 2.5rem 1rem 2.5rem;
+    margin: 0rem auto 4rem auto;
+    padding: 0rem 2.5rem 1rem 2.5rem;
     color: var(--text-color);
 }
 
@@ -635,14 +748,14 @@ contactme
 .contactme_item{
     display: inline-block;
     justify-content: center;
-    margin: 4rem auto 4rem auto;
+    margin: 1rem auto 4rem auto;
     
 }
 
 .contactme_item p{
     text-align: left;
     padding-top: 1rem;
-    margin: 6rem auto 2rem auto;
+    margin: 4rem auto 2rem auto;
     display: inline-block;
     vertical-align: middle;
 }
@@ -657,11 +770,11 @@ contactme
     text-align: center;
     justify-content: center;
     border-radius: 50%;
-    border: 1px solid white;
+    border: 1px solid var(--boder-color);
     overflow: hidden;
-    max-width:300px;
+    max-width:200px;
     width: 100%;
-    height: 300px;
+    height: 200px;
     display: flex;
     margin: 1rem auto 1rem auto;
 }
@@ -690,16 +803,18 @@ contactme
     justify-content: center;
     text-align: center;
     align-items: center;
-    opacity: 0; 
+    text-shadow: 0.2rem 0.2rem var(--text-color);
+    opacity: 1; 
 }
-
 
 
 
 .contact_item:hover .contact_item_description{
-    opacity: 1;
+    opacity: 0;
     text-shadow: 0.2rem 0.2rem var(--text-color);
 }
+
+
 
 .contactme_item p a{
     color: var(--text-color);
@@ -707,10 +822,10 @@ contactme
 }
 
 
-
 .contact_icon i{
     font-size: 5rem;
 }
+
 
 
 .contact_item_content{
@@ -741,6 +856,7 @@ contactme
     display: block;
     position: absolute;
 }
+
 
 
 
@@ -794,9 +910,9 @@ contactme
     }
 
     .contact_item{
-        max-width: 300px;
+        max-width: 200px;
         width: 100%;
-        height: 300px;
+        height: 200px;
     }
 
     
@@ -824,7 +940,8 @@ main div.work{
 .work_item{
     position: relative;
     border-radius: 6px;
-    border: 1px solid var(--boder-color);
+    border: 2px solid var(--boder-color);
+    
     /*
     border: 5px solid var(--text-color) ;
     */
@@ -865,12 +982,28 @@ main div.work{
 }
 
 .tags{
-    background: #e6e6e6;
+    background: var(--text-message);
     border-radius: 6px;
     padding: 0.2rem;
 }
 
+/* portfolio tags a */
 
+.tags a{
+    font-size: 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.tags:hover {   
+    color: var(--boder-color);
+    background: var(--text-hover);
+    box-shadow: 0.1rem 0.1rem var(--text-color);
+}
+
+.tags:hover a{
+    color: var(--boder-color);
+}
 
 
 
@@ -925,6 +1058,11 @@ main div.work{
 .work_cover{
     border-radius: 12px;
     border: 5px solid var(--boder-color);
+}
+
+
+.homepage_cover{
+    background-color: var(--work-backgorund);
 }
 
 
@@ -1050,7 +1188,7 @@ work_describe
 }
 
 .work_word{
-    margin: 4rem auto 4rem auto;
+    margin: 6rem auto 3rem auto;
     position: relative;
     color: var(--text-color);
     /*height: calc((0.1604166667) * 97vw * 0.8376623377);*/
@@ -1167,7 +1305,7 @@ Table-work
     }
 
     .diagram{
-        height: calc((3.5 * 0.1604166667) * 97vw * 0.8376623377);
+        height: calc((3.2 * 0.1604166667) * 97vw * 0.8376623377);
         margin-bottom: 0;
     }
     
@@ -1224,7 +1362,7 @@ Table-work
     
     
     .diagram{
-        height: calc(3.5 * 0.1604166667 * 97vw * 0.8376623377);
+        height: calc(3.2 * 0.1604166667 * 97vw * 0.8376623377);
     }
 
 
