@@ -8,6 +8,7 @@
   <meta name="copyright" content="Ying-Shiuan Chen" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ying-Shiuan Chen contact">
+  <meta name="keywords" content="">
   <link rel="stylesheet" href="/yshiuanc/static/style.css">
   <link rel="canonical" href="https://yingshiuan.github.io/yshiuanc/contact/" />
   <!--This is title of website /tab/ -->
@@ -15,8 +16,9 @@
   <!-- Logo on the Tab  -->
   <link rel="icon" sizes="16x16" type="image/png" href="/yshiuanc/static/logo/YShiuan_C_16x16.png">
   <!-- icon -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://kit.fontawesome.com/03192cca0c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
@@ -25,10 +27,6 @@
   <meta property='og:image' content="https://yingshiuan.github.io/yshiuanc/contact/"/>
   <meta property='og:description' content="Ying-Shiuan Chen contact"/>
   <meta property='og:url' content="https://yingshiuan.github.io/yshiuanc/contact/" />
-
-  
-  
-
 </head>
 
 
@@ -44,6 +42,20 @@
         </div>
     </header>
 
+    <!-- currently -->
+        <div class="currently">
+            <div class="info">
+                <p></p>
+            </div>
+        </div>
+
+        <!-- -->
+        <div class="mode">
+            <button id="mode-button" class="mode-button" onclick="mode()">Light Mode</button>
+        </div>
+        
+
+        
     <!--nav-->
     <nav>
         <ul id="navbar">
@@ -64,213 +76,201 @@
             <li class="item">
                 <a href="/yshiuanc/contact/">Contact</a>
             </li>
-            
-            <!-- , ['/blog', 'Blog']
-            <li class="item"><a href="aboutme.html">About me</a></li>
-            <li class="item"><a href="template/resume.html">Resume</a></li>
-            <li class="item"><a href="template/portfolio.html">Portfolio</a></li>
-            -->
-            <!-- 
-            <li class="item"><a style="display:none" href="template/blog.html">Blog</a></li>
-            -->
-            <!--
-            <li class="item"><a href="template/contact.html">Contact</a></li>
-            -->
-            <li class="navbarToggle"><a href="#!"><i class="material-icons">menu</i></a></li>   
+
+            <li class="navbarToggle"><a href="#!"><i class="material-icons">menu</i></a></li> 
         </ul>
     </nav>
 
-
   
-<main class="main_container">
-    <div class="contactme">
-        <ul class="row">
-            <li class ="contactme_item col-lg-7 col-md-7 col-sm-7 col-xs-12">
-                <h1><br>
-                    Hi there!<br>
-                    I'm<br>
-                    Ying-Shiuan Chen.
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </h1>
-            </li>
 
-            <li class ="contactme_item col-lg-5 col-md-5 col-sm-5 col-xs-12">
-                <div class="profilePic"><img src="YShiuan_C_Logo.png" alt="YShiuan_C" width="300px" height="300px"></div>
-            </li>
+
+    
+
+  <main class="main_container">
   
-        
-            
-            <!--contact social media-->
-            <li class="contactme_item col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                <div class="contact_item">
-                    <a href="https://github.com/yingshiuan">
-                        <div class="contact_item_container">
-                            <div class="contact_item_description">
-                                <div class="contact_icon">
-                                    <i class="fa fa-github"></i>
-                                </div>
-                            </div>
-                            <div class="contact_item_content">
-                                <img src="develop.gif" alt="devloper" >
-                                <img class = "img_show" src="develop.jpg" alt="github" >
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </li>
 
-            <li class="contactme_item col-xs-12 col-sm-12 col-md-7 col-lg-7">
-                <p>
-                    Recently, I work on Web Development and Digital Prototyping. 
-                </p>
-            </li>
+<div class="contactme">
+    <ul class="row">
+        <li class ="contactme_item col-lg-7 col-md-7 col-sm-7 col-xs-12">
+            <h1>
+                Hi there!<br>
+                I'm<br>
+                Ying-Shiuan Chen.
+                <br>
+                <br>
+            </h1>
+        </li>
 
-         
+        <li class ="contactme_item col-lg-5 col-md-5 col-sm-5 col-xs-12">
+            <div class="profilePic"><img src="YShiuan_C_Logo.png" alt="YShiuan_C" width="300px" height="300px"></div>
+        </li>
 
-            <!--Instagram
-            <li class="contactme_item col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                <div class="contact_item">
-                    <a href="#">
-                        <div class="contact_item_container">
-                            <div class="contact_item_description">
-                                <div class="contact_icon">
-                                    <i class="fa fa-instagram"></i>
-                                </div>
-                            </div>
-                            <div class="contact_item_content">
-                                <img src="" alt="" >
-                                <img class = "img_show" src="" alt="" >
+    
+         <!--contact social media-->
+        <li class="contactme_item col-xs-12 col-sm-12 col-md-5 col-lg-5">
+            <div class="contact_item">
+                <a href="https://github.com/yingshiuan">
+                    <div class="contact_item_container">
+                        <div class="contact_item_description">
+                            <div class="contact_icon">
+                                <i class="fab fa-github"></i>
                             </div>
                         </div>
-                    </a>
-                </div>
-            </li>
-
-            <li class="contactme_item col-xs-12 col-sm-12 col-md-7 col-lg-7">
-                <p>
-                    
-                </p>
-            </li>
-            -->
-
-
-            
-            <!--Vimeo-->
-            <li class="contactme_item col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                <div class="contact_item">
-                    <a href="https://vimeo.com/yshiuanc">
-                        <div class="contact_item_container">
-                            <div class="contact_item_description">
-                                <div class="contact_icon">
-                                    <i class="fa fa-vimeo"></i>
-                                </div>
-                            </div>
-                            <div class="contact_item_content">
-                                <img src="prototyping.gif" alt="prototyping" >
-                                <img class = "img_show" src="prototyping.jpg" alt="vimeo" >
-                            </div>
+                        <div class="contact_item_content">
+                            <img class = "img_show" src="develop.gif" alt="github" >
                         </div>
-                    </a>
-                </div>
-            </li>
+                    </div>
+                </a>
+            </div>
+        </li>
 
-            <li class="contactme_item col-xs-12 col-sm-12 col-md-7 col-lg-7">
-                <p>
-                    I provide geometric strategies which integrates computational design, advanced fabrication methods and materials research. 
-                    Welcome to watch video on <a href="https://vimeo.com/yshiuanc">Vimeo</a>.
-                </p>
-            </li>
-
-            
-
-            <!--medium-->
-            <li class="contactme_item col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                <div class="contact_item">
-                    <a href="https://yshiuan-c.medium.com/">
-                        <div class="contact_item_container">
-                            <div class="contact_item_description">
-                                <div class="contact_icon">
-                                    <i class="fa fa-medium"></i>
-                                </div>
-                            </div>
-                            <div class="contact_item_content">
-                                <img src="medium.gif" alt="article" >
-                                <img class = "img_show" src="medium.jpg" alt="medium" >
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </li>
-
-            <li class="contactme_item col-xs-12 col-sm-12 col-md-7 col-lg-7">
-                <p>
-                    Also I share my tips of motion graphics and thoughts of design strategy on <a href="https://yshiuan-c.medium.com/">Medium</a>.
-                </p>
-            </li>
+        <li class="contactme_item col-xs-12 col-sm-12 col-md-7 col-lg-7">
+            <p>
+                Recently, I work on Web Development and Digital Prototyping. 
+            </p>
+        </li>
 
 
         
-            <!--Youtube-->
-            <li class="contactme_item col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                <div class="contact_item">
-                    <a href="https://www.youtube.com/channel/UCFpat39kIqYmYTbbfdoBNfA">
-                        <div class="contact_item_container">
-                            <div class="contact_item_description">
-                                <div class="contact_icon">
-                                    <i class="fa fa-youtube-play"></i>
-                                </div>
-                            </div>
-                            <div class="contact_item_content">
-                                <img src="youtube.gif" alt="filming" >
-                                <img class = "img_show" src="youtube.jpg" alt="youtube" >
+
+        <!--Instagram
+        <li class="contactme_item col-xs-12 col-sm-12 col-md-5 col-lg-5">
+            <div class="contact_item">
+                <a href="#">
+                    <div class="contact_item_container">
+                        <div class="contact_item_description">
+                            <div class="contact_icon">
+                                <i class="fab fa-instagram"></i>
                             </div>
                         </div>
-                    </a>
-                </div>
-            </li>
+                        <div class="contact_item_content">
+                            <img src="instagram.gif" alt="" >
+                            <img class = "img_show" src="instagram.jpg" alt="" >
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
 
-            <li class="contactme_item col-xs-12 col-sm-12 col-md-7 col-lg-7">
-                <p>
-                    Never forgot to Being curious to explore the world and enjoy life. 
-                    Through filming different shots and angles, I could see the world in multiple perspectives. 
-                    Here is my <a href="https://www.youtube.com/channel/UCFpat39kIqYmYTbbfdoBNfA">Youtube</a> channel.
-                </p>
-            </li>
+        <li class="contactme_item col-xs-12 col-sm-12 col-md-7 col-lg-7">
+            <p>
+                
+            </p>
+        </li>
+        -->
 
+        <!-- <i class="fab fa-twitter"></i> -->
 
-
-
-            <!--Linkedin-->
-            <li class="contactme_item col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                <div class="contact_item">
-                    <a href="https://www.linkedin.com/in/chenyingshiuan/">
-                        <div class="contact_item_container">
-                            <div class="contact_item_description">
-                                <div class="contact_icon">
-                                    <i class="fa fa-linkedin"></i>
-                                </div>
-                            </div>
-                            <div class="contact_item_content">
-                                <img src="lindedin.gif" alt="chat" >
-                                <img class = "img_show" src="lindedin.jpg" alt="linkedin" >
+        
+        <!--Vimeo-->
+        <li class="contactme_item col-xs-12 col-sm-12 col-md-5 col-lg-5">
+            <div class="contact_item">
+                <a href="https://vimeo.com/yshiuanc">
+                    <div class="contact_item_container">
+                        <div class="contact_item_description">
+                            <div class="contact_icon">
+                                <i class="fab fa-vimeo-v"></i>
                             </div>
                         </div>
-                    </a>
-                </div>
-            </li>
+                        <div class="contact_item_content">
+                            <img class = "img_show" src="prototyping.gif" alt="vimeo" >
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
 
-            <li class="contactme_item col-xs-12 col-sm-12 col-md-7 col-lg-7">
-                <p>
-                    Let's have a conversation and <a href="https://www.linkedin.com/in/chenyingshiuan/">connect</a>! 
-                </p>
-            </li>
+        <li class="contactme_item col-xs-12 col-sm-12 col-md-7 col-lg-7">
+            <p>
+                I provide geometric strategies which integrates computational design, advanced fabrication methods and materials research. 
+                Welcome to watch video on <a href="https://vimeo.com/yshiuanc">Vimeo</a>.
+            </p>
+        </li>
 
-        </ul>
-    </div>
-</main>
+        
+
+        <!--medium-->
+        <li class="contactme_item col-xs-12 col-sm-12 col-md-5 col-lg-5">
+            <div class="contact_item">
+                <a href="https://yshiuan-c.medium.com/">
+                    <div class="contact_item_container">
+                        <div class="contact_item_description">
+                            <div class="contact_icon">
+                                <i class="fab fa-medium-m"></i>
+                            </div>
+                        </div>
+                        <div class="contact_item_content">
+                            <img class = "img_show" src="medium.gif" alt="medium" >
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+
+        <li class="contactme_item col-xs-12 col-sm-12 col-md-7 col-lg-7">
+            <p>
+                Also I share my tips of motion graphics and thoughts of design strategy on <a href="https://yshiuan-c.medium.com/">Medium</a>.
+            </p>
+        </li>
+
+
+    
+        <!--Youtube-->
+        <li class="contactme_item col-xs-12 col-sm-12 col-md-5 col-lg-5">
+            <div class="contact_item">
+                <a href="https://www.youtube.com/channel/UCFpat39kIqYmYTbbfdoBNfA">
+                    <div class="contact_item_container">
+                        <div class="contact_item_description">
+                            <div class="contact_icon">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                        <div class="contact_item_content">
+                            <img class = "img_show" src="youtube.gif" alt="youtube" >
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+
+        <li class="contactme_item col-xs-12 col-sm-12 col-md-7 col-lg-7">
+            <p>
+                Never forgot to Being curious to explore the world and enjoy life. 
+                Through filming different shots and angles, I could see the world in multiple perspectives. 
+                Here is my <a href="https://www.youtube.com/channel/UCFpat39kIqYmYTbbfdoBNfA">Youtube</a> channel.
+            </p>
+        </li>
+
+
+
+
+        <!--Linkedin-->
+        <li class="contactme_item col-xs-12 col-sm-12 col-md-5 col-lg-5">
+            <div class="contact_item">
+                <a href="https://www.linkedin.com/in/chenyingshiuan/">
+                    <div class="contact_item_container">
+                        <div class="contact_item_description">
+                            <div class="contact_icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                        <div class="contact_item_content">
+                            <img class = "img_show" src="lindedin.gif" alt="linkedin" >
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+
+        <li class="contactme_item col-xs-12 col-sm-12 col-md-7 col-lg-7">
+            <p>
+                Let's have a conversation and <a href="https://www.linkedin.com/in/chenyingshiuan/">connect</a>! 
+            </p>
+        </li>
+
+    </ul>
+</div>
+
 
 
 
@@ -278,7 +278,8 @@
 
   
 
-      
+  
+  </main>
   
       <main class="main_container">
         <div class="sendme">
@@ -288,7 +289,7 @@
                     <br>
                     <br>
                 <div class="media_icon">
-                    <a href="mailto:ohis.yingshiuan@gmail.com"><i class="fa fa-paper-plane"></i></a>
+                    <a href="mailto:ohis.yingshiuan@gmail.com"><i class="fas fa-paper-plane"></i></a>
                 </div>
             </p>
         </div>
@@ -333,13 +334,13 @@
                 <div class="topic"><h2> </h2></div>
                 <div class="media_icon">
                     <!--   
-                    <a href="https://github.com/yingshiuan" target="_blank"><i class="fa fa-github"></i></a>
-                    <a href="https://instagram.com/yshiuan_c?igshid=ejehd1tl8ce" target="_blank"><i class="fa fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/channel/UCFpat39kIqYmYTbbfdoBNfA" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href="https://github.com/yingshiuan" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/yshiuan_c?igshid=ejehd1tl8ce" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCFpat39kIqYmYTbbfdoBNfA" target="_blank"><i class="fab fa-youtube"></i></a>
                     -->
-                    <a href="https://vimeo.com/yshiuanc" target="_blank"><i class="fa fa-vimeo"></i></a>
-                    <a href="https://yshiuan-c.medium.com" target="_blank"><i class="fa fa-medium"></i></a>
-                    <a href="https://www.linkedin.com/in/chenyingshiuan/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://vimeo.com/yshiuanc" target="_blank"><i class="fab fa-vimeo-v"></i></a>
+                    <a href="https://yshiuan-c.medium.com" target="_blank"><i class="fab fa-medium-m"></i></a>
+                    <a href="https://www.linkedin.com/in/chenyingshiuan/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
             
@@ -365,8 +366,41 @@
             $('.navbarToggle').click(function(){
             $('.item').toggleClass("show");
             $('ul li').toggleClass("hide");          
-            });s
+            });
         });
+
+        
+        /* dark-mode*/
+        const btn = document.querySelector(".mode-button");
+        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+        btn.addEventListener("click", function () {
+            if (prefersDarkScheme.matches) {
+                document.body.classList.toggle("light-theme");
+            } else {
+                document.body.classList.toggle("dark-theme"); 
+            }
+        });
+
+        /* switch button */
+        function mode() {
+        if (document.getElementById("mode-button").innerHTML === "Dark Mode") {
+            document.getElementById("mode-button").innerHTML = "Light Mode";
+        } else {
+            document.getElementById("mode-button").innerHTML = "Dark Mode";
+        }
+        }
+        
+
+        
+        
+       
+        
+       
+        
+
+
+
     </script>
 </body>
 
