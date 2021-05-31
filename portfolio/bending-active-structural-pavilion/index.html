@@ -8,6 +8,7 @@
   <meta name="copyright" content="Ying-Shiuan Chen" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="The goal of my research is to achieve a double-curved prototype in building-scale which is easily assembled and uses material efficiently. The thesis provides a geometric strategy which integrates computational design, advanced fabrication methods and materials research.">
+  <meta name="keywords" content="">
   <link rel="stylesheet" href="/yshiuanc/static/style.css">
   <link rel="canonical" href="https://yingshiuan.github.io/yshiuanc/portfolio/bending-active-structural-pavilion/" />
   <!--This is title of website /tab/ -->
@@ -15,8 +16,9 @@
   <!-- Logo on the Tab  -->
   <link rel="icon" sizes="16x16" type="image/png" href="/yshiuanc/static/logo/YShiuan_C_16x16.png">
   <!-- icon -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://kit.fontawesome.com/03192cca0c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
@@ -25,10 +27,6 @@
   <meta property='og:image' content="https://yingshiuan.github.io/yshiuanc/portfolio/bending-active-structural-pavilion/bending-active-structural-pavilion.jpg"/>
   <meta property='og:description' content="The goal of my research is to achieve a double-curved prototype in building-scale which is easily assembled and uses material efficiently. The thesis provides a geometric strategy which integrates computational design, advanced fabrication methods and materials research."/>
   <meta property='og:url' content="https://yingshiuan.github.io/yshiuanc/portfolio/bending-active-structural-pavilion/" />
-
-  
-  
-
 </head>
 
 
@@ -38,16 +36,30 @@
     <header>
         <div class="headerContainer">
             <div class = "logo"> </div>
-            <div class ="homepage"><a href = "/yshiuanc">YShiuan_C</a>
+            <div class ="homepage"><a href = "/yshiuanc/">YShiuan_C</a>
                 <span class="tooltip">Homepage</span>
             </div>
         </div>
     </header>
 
+    <!-- currently -->
+        <div class="currently">
+            <div class="info">
+                <p></p>
+            </div>
+        </div>
+
+        <!-- -->
+        <div class="mode">
+            <button id="mode-button" class="mode-button" onclick="mode()">Light Mode</button>
+        </div>
+        
+
+        
     <!--nav-->
     <nav>
         <ul id="navbar">
-            <li class="logo"><a href="/yshiuanc">YShiuan_C</a></li>
+            <li class="logo"><a href="/yshiuanc/">YShiuan_C</a></li>
             
             <li class="item">
                 <a href="/yshiuanc/about-me/">About me</a>
@@ -65,30 +77,24 @@
                 <a href="/yshiuanc/contact/">Contact</a>
             </li>
             
-            <!-- , ['/blog', 'Blog']
-            <li class="item"><a href="aboutme.html">About me</a></li>
-            <li class="item"><a href="template/resume.html">Resume</a></li>
-            <li class="item"><a href="template/portfolio.html">Portfolio</a></li>
-            -->
-            <!-- 
-            <li class="item"><a style="display:none" href="template/blog.html">Blog</a></li>
-            -->
-            <!--
-            <li class="item"><a href="template/contact.html">Contact</a></li>
-            -->
-            <li class="navbarToggle"><a href="#!"><i class="material-icons">menu</i></a></li>   
+            <li class="navbarToggle"><a href="#!"><i class="material-icons">menu</i></a></li> 
         </ul>
     </nav>
 
+  
 
+
+    
+
+  <main class="main_container">
   
 
     <!-- Bending-Active Structural Pavilion  -->
 
-    <div class="greeting">
+    <div class="work_main">
         <ul class="row">
-            <li class ="contactme_item col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h1><br>
+            <li class ="work_title col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1>
                     <p>Bending-Active<br>
 Structural<br>
 Pavilion</p>
@@ -102,14 +108,41 @@ Pavilion</p>
             </li>
         
 
-            <li class ="contactme_item col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <li class ="work_title col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <p><p>The goal of my research is to achieve a double-curved prototype in building-scale which is easily assembled and uses material efficiently. The thesis provides a geometric strategy which integrates computational design, advanced fabrication methods and materials research.</p>
 
                     <br>
                 </p>
             </li>
+
+            <li class ="work_title work_tag col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                
+                    
+                        <p class="tags"> 
+                           Computational Design
+                        </p>
+                    
+                        <p class="tags"> 
+                           Digital Fabrication
+                        </p>
+                    
+                        <p class="tags"> 
+                           Physical Prototyping
+                        </p>
+                    
+                        <p class="tags"> 
+                           Rhinoceros 3D / Grasshopper
+                        </p>
+                    
+                
+            </li>
+
+            <li class ="work_title work_tag col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                
+            </li>
         </ul>
     </div>
+    
 
 
 
@@ -283,8 +316,7 @@ Pavilion</p>
                                 <div class="work_item_container_content">
                                     <iframe class="responsive-iframe" title="vimeo-player" src="https://player.vimeo.com/video/226186996" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
                                     </iframe>
-                                </video>
-                            </div>
+                                </div>
                         </div>
                     </a>
                 </li>
@@ -315,16 +347,40 @@ Pavilion</p>
     </div>
 
 
-
   
 
-      
+  
+  <div class="pagination">
+    <ul class="row">
+        <li class = "pagination_item pagination_back col-xs-9 col-sm-9 col-md-9 col-lg-9"></li>  
+        
+        <li class = "pagination_item pagination_back col-xs-1 col-sm-1 col-md-1 col-lg-1"></li>
+
+        <li class = "pagination_item pagination_forward col-xs-2 col-sm-2 col-md-2 col-lg-2">
+            <a href="/yshiuanc/portfolio/" target="_self">
+                <div class="pagination_container">
+                    <div class="pagination_description">Check more works</div>
+                        <div class="pagination_content">
+                            <i class="material-icons">arrow_forward_ios</i>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+  
+  </main>
   
       <main class="main_container">
         <div class="sendme">
             <p>Interested in what you see?
                 <br>
-                <br>Shoot me an email <a href="mailto:ohis.yingshiuan@gmail.com">ohis.yingshiuan@gmail.com</a>
+                    <br>Shoot me an email <a href="mailto:ohis.yingshiuan@gmail.com">ohis.yingshiuan@gmail.com</a>
+                    <br>
+                    <br>
+                <div class="media_icon">
+                    <a href="mailto:ohis.yingshiuan@gmail.com"><i class="fas fa-paper-plane"></i></a>
+                </div>
             </p>
         </div>
     </main>  
@@ -342,7 +398,7 @@ Pavilion</p>
             
             <div class="navbar_footer">
                 <ul>
-                    <li class="logo"><a href="/">YShiuan_C</a></li>
+                    <li class="logo"><a href="/yshiuanc/">YShiuan_C</a></li>
                     
                     <li class="item">
                         <a href="/yshiuanc/about-me/">About me</a>
@@ -368,13 +424,13 @@ Pavilion</p>
                 <div class="topic"><h2> </h2></div>
                 <div class="media_icon">
                     <!--   
-                    <a href="https://github.com/yingshiuan" target="_blank"><i class="fa fa-github"></i></a>
-                    <a href="https://instagram.com/yshiuan_c?igshid=ejehd1tl8ce" target="_blank"><i class="fa fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/channel/UCFpat39kIqYmYTbbfdoBNfA" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href="https://github.com/yingshiuan" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://instagram.com/yshiuan_c?igshid=ejehd1tl8ce" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCFpat39kIqYmYTbbfdoBNfA" target="_blank"><i class="fab fa-youtube"></i></a>
                     -->
-                    <a href="https://vimeo.com/yshiuanc" target="_blank"><i class="fa fa-vimeo"></i></a>
-                    <a href="https://yshiuan-c.medium.com" target="_blank"><i class="fa fa-medium"></i></a>
-                    <a href="https://www.linkedin.com/in/chenyingshiuan/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://vimeo.com/yshiuanc" target="_blank"><i class="fab fa-vimeo-v"></i></a>
+                    <a href="https://yshiuan-c.medium.com" target="_blank"><i class="fab fa-medium-m"></i></a>
+                    <a href="https://www.linkedin.com/in/chenyingshiuan/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
             
@@ -386,7 +442,7 @@ Pavilion</p>
             
             <div class="footer_copyright">
                 <li>
-                    <p>&copy 2020 <a href="/yshiuanc">Ying-Shiuan Chen</a> All rights reserved</p>
+                    <p>&copy 2020 <a href="/yshiuanc/">Ying-Shiuan Chen</a> All rights reserved</p>
                 </li>
             </div>
         </div>          
@@ -400,8 +456,41 @@ Pavilion</p>
             $('.navbarToggle').click(function(){
             $('.item').toggleClass("show");
             $('ul li').toggleClass("hide");          
-            });s
+            });
         });
+
+        
+        /* dark-mode*/
+        const btn = document.querySelector(".mode-button");
+        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+        btn.addEventListener("click", function () {
+            if (prefersDarkScheme.matches) {
+                document.body.classList.toggle("light-theme");
+            } else {
+                document.body.classList.toggle("dark-theme"); 
+            }
+        });
+
+        /* switch button */
+        function mode() {
+        if (document.getElementById("mode-button").innerHTML === "Dark Mode") {
+            document.getElementById("mode-button").innerHTML = "Light Mode";
+        } else {
+            document.getElementById("mode-button").innerHTML = "Dark Mode";
+        }
+        }
+        
+
+        
+        
+       
+        
+       
+        
+
+
+
     </script>
 </body>
 
