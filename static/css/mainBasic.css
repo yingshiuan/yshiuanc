@@ -799,6 +799,7 @@ contactme
     background-image: linear-gradient(rgba(229, 229, 234, 0) ,rgba(229, 229, 234, .5),rgba(229, 229, 234, 0) );
     /* background: rgba(229, 229, 234, .4);*/
     color: #2C2C2E;
+    border-radius: 50%; 
     z-index: 10;
     display: flex;
     justify-content: center;
