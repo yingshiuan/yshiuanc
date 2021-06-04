@@ -110,6 +110,7 @@ body.dark-theme {
 
 /* paddimg margin backgroudnd */
 main{
+    max-width: 120rem;
     margin-left: auto;
     margin-right: auto;
     padding-right: 2.5rem;
