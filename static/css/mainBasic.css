@@ -60,6 +60,7 @@ body.dark-theme {
         --text-hover: black;
         --text-message:#e6e6e6;
         --boder-color:white;
+        --work-backgorund: rgba(242, 242, 242, .2);
     }
 }
 
