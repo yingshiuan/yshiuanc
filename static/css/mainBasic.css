@@ -263,6 +263,9 @@ currently
     padding: 0.2rem;
 }
 
+.info p{
+    color:var(--caption-color);
+}
 
 
 
