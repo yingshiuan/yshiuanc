@@ -7,8 +7,6 @@ url = https://yingshiuan.github.io/
 [servers.ghpages]
 target = ghpages+https://yingshiuan/yshiuanc
 
-[servers.production]
-
 
 [alternatives.en]
 name = English
