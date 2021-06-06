@@ -3,11 +3,6 @@ name = yshiuanc
 url_style = absolute
 url = https://yingshiuan.github.io/
 
-
-[servers.ghpages]
-target = ghpages+https://yingshiuan/yshiuanc
-
-
 [alternatives.en]
 name = English
 primary = yes
@@ -15,3 +10,10 @@ locale = en_US
 
 [packages]
 lektor-tags = 0.3
+
+[servers.ghpages]
+name = Github Pages
+target = ghpages+https://yingshiuan/yshiuanc
+
+
+
