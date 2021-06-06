@@ -737,6 +737,11 @@ main-send me
         /*border-bottom: 1px solid #C2C2C2;
         */
     }
+
+    .site{
+        padding: 0rem;
+        margin: 8rem auto 4rem auto;
+    }
 }
 
 
