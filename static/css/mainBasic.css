@@ -477,6 +477,40 @@ nav ul li.navbarToggle.hide i::before{
 
 
 
+/*
+************* 
+sitemap
+*************
+*/
+
+.site{
+    max-width: 64.875rem;
+    color: var(--text-color);
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    margin: 4rem auto 4rem auto;
+}
+
+
+.site_map ul li{
+    list-style-type: square;
+    list-style-position: inside;
+    margin: 1rem 0;
+    padding: 0 0 0 2rem;
+}
+
+
+
+
+.site_map a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.site_map a:hover{
+    text-decoration: underline;
+}
+
 
 
 
@@ -1387,11 +1421,6 @@ Table-work
 
 
 @media only screen and (min-width: 75em) {
-    .work_describe{
-       max-width: 50%;
-    }
-
-
     .work_item{
         height: calc((.1604166667) * 97vw * .8376623377);
     }
@@ -1442,6 +1471,12 @@ Table-work
 
    
 }
+
+
+@media only screen and (min-width: 120em) {
+    .work_describe{
+       max-width: 50%;
+    }
 
 
 
