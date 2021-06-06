@@ -4,7 +4,7 @@ cache:
   directories:
     - $HOME/.cache/pip
     - $HOME/.cache/lektor/builds
-install: "pip install -r requirements.txt"
+install: "pip install Lektor"
 script: "lektor build"
 deploy:
   provider: script
