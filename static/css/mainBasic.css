@@ -851,7 +851,7 @@ contactme
     pointer-events: none;
     background-image: linear-gradient(to bottom right, rgba(142, 142, 155, 0) ,rgba(229, 229, 234, .5),rgba(229, 229, 234, 0) );
     /* background: rgba(229, 229, 234, .4);*/
-    color: var(--caption-color);
+    color: #2C2C2E;;
     border-radius: 50%; 
     z-index: 10;
     display: flex;
