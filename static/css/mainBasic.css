@@ -849,7 +849,7 @@ contactme
 
 .contact_item .contact_item_description {
     pointer-events: none;
-    background-image: linear-gradient(rgba(229, 229, 234, 0) ,rgba(229, 229, 234, .5),rgba(229, 229, 234, 0) );
+    background-image: linear-gradient(to bottom right, rgba(142, 142, 155, 0) ,rgba(229, 229, 234, .5),rgba(229, 229, 234, 0) );
     /* background: rgba(229, 229, 234, .4);*/
     color: var(--caption-color);
     border-radius: 50%; 
@@ -1085,9 +1085,9 @@ main div.work{
 
 .work_item .work_item_container_description {
     pointer-events: none;
-    background-image: linear-gradient(rgba(229, 229, 234, 0) ,rgba(229, 229, 234, .4),rgba(229, 229, 234, 0) );
+    background-image: linear-gradient(to bottom right, rgba(229, 229, 234, 0) ,rgba(229, 229, 234, .4),rgba(229, 229, 234, 0) );
     /* background: rgba(229, 229, 234, .4);*/
-    color: var(--caption-color);
+    color: #2C2C2E;
     z-index: 10;
     display: flex;
     justify-content: center;
@@ -1125,6 +1125,10 @@ main div.work{
 
 .homepage_cover{
     background-color: var(--work-backgorund);
+}
+
+.homepage_cover .work_item_container_description{
+    color: var(--caption-color);
 }
 
 
