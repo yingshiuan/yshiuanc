@@ -1265,6 +1265,10 @@ work_describe
     text-align: center;
 }
 
+.ux_diagram{
+    margin: 4rem -1.5rem 4rem -1.5rem;
+    padding: 1rem 0.2rem 1rem 0.2rem;
+}
 
 
 
