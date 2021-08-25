@@ -257,10 +257,11 @@ currently
     margin: 1rem auto 1rem auto;
     text-align: center;
     justify-content: center;
+    z-index: 9999;
 }
 
 .info{
-    padding: 0.2rem;
+    padding: 2.5rem 0.2rem 2.5rem auto;
 }
 
 .info p{
@@ -380,9 +381,7 @@ nav ul li.navbarToggle.hide i::before{
     .currently{
         position: fixed;
         top: 0;
-        right: 0;
-        left: 0;
-        margin: 0rem auto 0rem auto;
+        margin: 2.4rem auto 0rem auto;
     }
 
     .mode{
@@ -394,7 +393,7 @@ nav ul li.navbarToggle.hide i::before{
 
     nav{
         background: #2C2C2E;
-        margin: 1.5rem auto 2rem  auto;
+        margin: 0rem auto 2rem  auto;
         padding: 0rem 2.5rem 0.2rem 2.5rem;
         position: fixed;
         top: 0;
