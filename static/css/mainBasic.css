@@ -260,6 +260,15 @@ currently
     z-index: 9999;
 }
 
+
+#scroll {
+    transition: top 0.3s;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+
 .info{
     padding: 2.5rem 0.2rem 2.5rem auto;
 }
