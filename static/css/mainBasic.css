@@ -379,6 +379,7 @@ nav ul li.navbarToggle.hide i::before{
     }
 
     .currently{
+        position: fixed;
         margin: 2.4rem auto 0rem auto;
     }
 
