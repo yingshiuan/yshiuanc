@@ -688,10 +688,13 @@ hr{
 
 .intro{
     text-align: center;
+    align-self: center;
+    flex: auto;
 }
 
 .intro p{
     text-align: center;
+    align-self: center;
     margin: 1rem auto 1rem auto;
 }
 
