@@ -698,9 +698,17 @@ hr{
     margin: 1rem auto 1rem auto;
 }
 
+.intro a{
+    color: var(--text-color);
+    font-size: 1rem;
+    text-decoration: underline;
+}
 
-
-
+.resume_downlaod{
+    flex: auto;
+    text-align: end;
+    align-self: flex-end;
+}
 
 
 /* 
@@ -937,6 +945,27 @@ contactme
     border-radius: 5px;
     border: 2px hidden #222222;
     transition: all 0.3s ease;
+
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
 }
 
 
