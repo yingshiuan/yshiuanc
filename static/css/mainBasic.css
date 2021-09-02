@@ -1286,7 +1286,7 @@ work_describe
 }
 
 .work_word{
-    margin: 6rem auto 3rem auto;
+    margin: 6rem auto 1rem auto;
     position: relative;
     color: var(--text-color);
     /*height: calc((0.1604166667) * 97vw * 0.8376623377);*/
@@ -1297,6 +1297,7 @@ work_describe
     height: 52vw;
 }
 
+
 .ux_word{
     margin: 1rem auto 1rem auto;
     position: relative;
@@ -1304,7 +1305,18 @@ work_describe
     text-align: center;
 }
 
+.ux_caption{
+    margin: 1rem auto 1rem auto;
+    position: relative;
+    color: var(--text-color);
+    /*height: calc((0.1604166667) * 97vw * 0.8376623377);*/
+    display: flex;
+}
 
+.ux_describe{
+    margin: 4rem auto 4rem auto;
+    padding: 2rem 0.2rem 1rem 2rem;
+}
 
 
 
