@@ -1298,12 +1298,19 @@ work_describe
 }
 
 
+
+/*
+UX CASE STUDY
+*/
+
+
 .ux_word{
     margin: 1rem auto 1rem auto;
     position: relative;
     color: var(--text-color);
     text-align: center;
 }
+
 
 .ux_caption{
     margin: 1rem auto 1rem auto;
@@ -1313,13 +1320,13 @@ work_describe
     display: flex;
 }
 
-.ux_describe{
-    margin: 4rem auto 4rem auto;
-    padding: 2rem 0.2rem 1rem 2rem;
+
+/* for circle img*/
+.storyboard{
+    margin: 1rem auto 1rem auto;
+    height: 300px;
+    width: 100%;
 }
-
-
-
 
 
 
@@ -1416,6 +1423,11 @@ Table-work
         height: 52vw;
     }
     
+    .storyboard{
+        margin: 1rem auto 1rem auto;
+        height: 300px;
+        width: 100%;
+    }
 
     /* hide */
     .col-xs-hide { display: block; }
@@ -1447,6 +1459,12 @@ Table-work
         margin-bottom: 0;
     }
     
+    .storyboard{
+        margin: 1rem auto 1rem auto;
+        height: 300px;
+        width: 100%;
+    }
+   
     
     /* pull */
     .col-md-pullup-1 {
@@ -1503,6 +1521,13 @@ Table-work
     
     .diagram{
         height: calc(3.2 * 0.1604166667 * 97vw * 0.8376623377);
+    }
+
+
+    .storyboard{
+        margin: 1rem auto 1rem auto;
+        height: 300px;
+        width: 100%;
     }
 
 
