@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ying-Shiuan Chen Resume">
   <meta name="keywords" content="">
+  <meta name="color-scheme" content="light dark"/>
   <link rel="stylesheet" href="/yshiuanc/static/style.css">
   <link rel="canonical" href="https://yingshiuan.github.io/yshiuanc/resume/" />
   <!--This is title of website /tab/ -->
@@ -20,21 +21,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script type="text/javascript" src="/yshiuanc/static/js/mode-theme.js"></script>
   <!-- Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
   <!--SEO-->
   <meta property='og:title' content="Resume | Ying-Shiuan Chen"/>
   <meta property='og:image' content="https://yingshiuan.github.io/yshiuanc/resume/YShiuan_C_Logo.png"/>
   <meta property='og:description' content="Ying-Shiuan Chen Resume"/>
   <meta property='og:url' content="https://yingshiuan.github.io/yshiuanc/resume/" />
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-18RYESZYQ5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-18RYESZYQ5');
   </script>
   
@@ -47,8 +48,17 @@
     <header>
         <div class="headerContainer">
             <div class = "logo"> </div>
-            <div class ="homepage"><a href = "/yshiuanc/">YShiuan_C</a>
-                <span class="tooltip">Homepage</span>
+            <div class="top">
+                <div class ="homepage"><a href = "/yshiuanc/">YShiuan_C</a>
+                    <span class="tooltip">Homepage</span>
+                </div>
+
+                <div class="mode">
+                    <button id="mode-button" class="mode-button">
+                        <span class="material-icons">tonality</span>
+                        <span id="mode">system</span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -59,18 +69,11 @@
                 <p>Currently, I am looking for a position in Interaction Design or UX Researcher.</p>
             </div>
         </div>
-
-        <!-- -->
-        <div class="mode">
-            <button id="mode-button" class="mode-button" onclick="mode()">Light Mode</button>
-        </div>
-        
-
         
     <!--nav-->
     <nav>
         <ul id="navbar">
-            <li class="logo"><a href="/yshiuanc/">YShiuan_C</a></li>
+            <li class="logo"><a href="/yshiuanc/"> </a></li>
             
             <li class="item">
                 <a href="/yshiuanc/about-me/">About me</a>
@@ -109,7 +112,7 @@
             <li class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                     <ol class="intro">
                         <h2>Hi! I'm Ying-Shiuan.</h2>
-                        <p>Currently a motion graphics designer and a strategic design consultant</p>
+                        <p>Currently an <b>Interaction Designer</b>, coding for my side project<br></br>Recently completed the Google UX Design Certificate</p>
                     </ol>
                     <ol class="intro resume_downlaod">
                         <a href="Ying-Shiuan Chen-UX-Product-Designer_2021.pdf">Resume</a>
@@ -148,10 +151,9 @@
                         <p>yun.official</p>
                     </ol>
                     <ol class="resume_item_end col-lg-4 col-md-6 col-sm-12 col-xs-12">
-                        <p>March 2021 - Present</p>
+                        <p>March - August 2021</p>
                     </ol>
-                  
-                    
+
                     <ol class="resume_item col-lg-8 col-md-6 col-sm-12 col-xs-12" >
                         <h3>Motion Graphics Designer</h3>
                         <p>Freelance</p>
@@ -159,7 +161,6 @@
                     <ol class="resume_item_end col-lg-4 col-md-6 col-sm-12 col-xs-12">
                         <p>October 2019 - Present</p>
                     </ol>
-
 
                     <ol class="resume_item col-lg-8 col-md-6 col-sm-12 col-xs-12" >
                         <h3>Research and Teaching Assistant</h3>
@@ -224,7 +225,6 @@
                         <p>June - Aug 2021</p>
                     </ol> 
 
-
                     <ol class="resume_item col-lg-9 col-md-12 col-sm-12 col-xs-12" >
                         <h3>Master of Advanced Studies</h3>
                         <h4>ETH Zürich, Switerland</h4>
@@ -287,7 +287,7 @@
 
                     <ol class="resume_item col-lg-11 col-md-12 col-sm-12 col-xs-12" >
                         <h3>Programming</h3>
-                        <p>Python, HTML, CSS, JavaScript
+                        <p>Python, Java, HTML, CSS, JavaScript
                         </p>
                     </ol>
                     

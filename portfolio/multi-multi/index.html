@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="keywords" content="">
+  <meta name="color-scheme" content="light dark"/>
   <link rel="stylesheet" href="/yshiuanc/static/style.css">
   <link rel="canonical" href="https://yingshiuan.github.io/yshiuanc/portfolio/multi-multi/" />
   <!--This is title of website /tab/ -->
@@ -20,21 +21,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script type="text/javascript" src="/yshiuanc/static/js/mode-theme.js"></script>
   <!-- Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
   <!--SEO-->
   <meta property='og:title' content="Multi-Multi | Ying-Shiuan Chen"/>
   <meta property='og:image' content="https://yingshiuan.github.io/yshiuanc/portfolio/multi-multi/multi-multi.png"/>
   <meta property='og:description' content="Multi-Multi is an immersive app which assists users with learning languages through attractions around the world."/>
   <meta property='og:url' content="https://yingshiuan.github.io/yshiuanc/portfolio/multi-multi/" />
-  
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-18RYESZYQ5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-18RYESZYQ5');
   </script>
 
@@ -47,8 +48,17 @@
     <header>
         <div class="headerContainer">
             <div class = "logo"> </div>
-            <div class ="homepage"><a href = "/yshiuanc/">YShiuan_C</a>
-                <span class="tooltip">Homepage</span>
+            <div class="top">
+                <div class ="homepage"><a href = "/yshiuanc/">YShiuan_C</a>
+                    <span class="tooltip">Homepage</span>
+                </div>
+
+                <div class="mode">
+                    <button id="mode-button" class="mode-button">
+                        <span class="material-icons">tonality</span>
+                        <span id="mode">system</span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -60,17 +70,11 @@
             </div>
         </div>
 
-        <!-- -->
-        <div class="mode">
-            <button id="mode-button" class="mode-button" onclick="mode()">Light Mode</button>
-        </div>
-        
-
         
     <!--nav-->
     <nav>
         <ul id="navbar">
-            <li class="logo"><a href="/yshiuanc/">YShiuan_C</a></li>
+            <li class="logo"><a href="/yshiuanc/"> </a></li>
             
             <li class="item">
                 <a href="/yshiuanc/about-me/">About me</a>
@@ -100,7 +104,7 @@
   <main class="main_container">
   
 
-    <!-- Bending-Active Structural Pavilion  -->
+    <!-- Multi Multi -->
 
     <div class="work_main">
         <ul class="row">
@@ -118,8 +122,9 @@
         
 
             <li class ="work_title col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <p>Multi-Multi is an immersive app which assists users with learning languages through attractions around the world.
-                    Multi-Multis’ primary target users include children and adults who wants to practice languages and explore the world. Through understanding different cultures and then reduce the language barrier with human.  
+                <p>Multi-Multi is an immersive app which assists users with learning languages through attractions around the world. 
+                    Multi-Multis’ primary target users include children and adults who want to practice languages and explore the world. 
+                    Through understanding different cultures and reduce the language barrier with human. 
                     <br>
                 </p>
             </li>
@@ -156,8 +161,6 @@
     </div>
     
 
-
-
     <!-- work gallery-->
     <div class="work">
         <ul class="row">
@@ -191,7 +194,7 @@
                     
                     <ol class="ux_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <p>
-                           How to engage with the individual learning pattern and help learners to practice the languages? 
+                            How to engage with the individual learning pattern and help learners to practice the languages?
                         </p>
                     </ol>
 
@@ -205,12 +208,12 @@
                     <ol class="ux_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <p>
                             Design an app that will improve learning quality and help people practice the languages though 
-                          the understanding of different cultures and exploration of attractions around the world.
+                            the understanding of different cultures and exploration of attractions around the world.
                         </p>
                     </ol>
                 </div>
             </li>
-          
+
             <!--TEXT HERE-->
             <li class = "work_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="resume_item_container">
@@ -256,11 +259,10 @@
               </div>
             </li>
 
-
+            
 
             <!--Block-->
             <li class = "work_word col-xs-12 col-sm-12 col-md-12 col-lg-12"></li>
-
 
 
             <!--TEXT HERE-->
@@ -269,9 +271,6 @@
                     Research
                 </h1>
             </li>
-
-
-            
             <!--TEXT HERE-->
             <li class = "work_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="resume_item_container">
@@ -283,12 +282,11 @@
                     
                     <ol class="ux_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <p>
-                            Learning the languages should be fun and immerse in the environment to keep motivation high. 
-                          Make learner immerse in the environment and practice the languages in intriguing way.
+                            Fun and immersive learning environment keeps the motivation high.
                         </p>
                     </ol>
 
-                    <ol class="work_item diagram col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <ol class="work_item col-xs-12 col-sm-4 col-md-4 col-lg-4">
                         <a href="#"></a>
                         <div class="work_item_container">
                             <div class="work_item_container_description"></div>
@@ -306,12 +304,12 @@
                             </p>    
                     </ol>
 
-                    <ol class="work_item diagram col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <ol class="work_item col-xs-12 col-sm-4 col-md-4 col-lg-4">
                         <a href="#"></a>
                         <div class="work_item_container">
                             <div class="work_item_container_description"></div>
                             <div class="work_item_container_content">
-                                <img src="travel_explore.jpg" alt="travel_explore">
+                                <img src="travel_explore.jpg" alt="ctravel_explore">
                             </div>
                         </div>
                     </ol>
@@ -325,12 +323,12 @@
                             </p>                    
                     </ol>
 
-                    <ol class="work_item diagram col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <ol class="work_item col-xs-12 col-sm-4 col-md-4 col-lg-4">
                         <a href="#"></a>
                         <div class="work_item_container">
                             <div class="work_item_container_description"></div>
                             <div class="work_item_container_content">
-                                <img src="languages_cultures.jpg" alt="languages_cultures" >
+                                <img src="languages_cultures.jpg" alt="languages_cultures">
                             </div>
                         </div>
                     </ol>
@@ -340,7 +338,7 @@
                                 Languages and Cultures 
                             </h3><br>
                             <p>
-                                Through languages to understand more local cultures.
+                                Through Languages to understand more local cultures.
                             </p>
                    </ol>
                   
@@ -367,14 +365,12 @@
                                 Languages and Cultures
                             </h3><br>
                             <p>
-                                Through languages to understand more local cultures. 
+                                Through Languages to understand more local cultures. 
                             </p>
                    </ol>
                 </div>
             </li>
-       
                 
-
 
             <!--TEXT HERE-->
             <li class = "work_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -382,14 +378,13 @@
                     Persona
                 </h2>
             </li>
-          
+
             <!--TEXT HERE-->
-            <li class = "work_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <li class = "ux_caption col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <p>
-                    Understanding multilingual learners and users who is the first time to learn a foreign languages.
+                    Understanding multilingual learners and users who are the first time to learn a foreign language.
                 </p>
             </li>
-          
             
             <!--TEXT HERE-->
             <li class = "work_word col-xs-12 col-sm-12 col-md-4 col-lg-4">
@@ -401,7 +396,8 @@
                     
                     <ol class="ux_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <i>
-                            “I want to explore more new things in my life, I feels good when I learned more Chinese.”
+                            Alex is a busy IT consultant who speaks multilingual languages. 
+                            He needs to practice the language and experience different cultures because he can travel and communicate without languages barrier.
                         </i>
                     </ol>
                 </div>
@@ -413,7 +409,7 @@
                     <div class="work_item_container">
                         <div class="work_item_container_description"></div>
                         <div class="work_item_container_content">
-                            <img src="persona_1.jpg" alt="persona">
+                            <img src="persona_1.jpg" alt="">
                         </div>
                     </div>
             </li>
@@ -429,7 +425,8 @@
                     
                     <ol class="ux_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <i>
-                            “My routine is very regular, taking care of my family and try something new during my free time.” 
+                            Joan is a tidy housewife who learns the first foreigner language. 
+                            She needs to practice the language and explore something new at her odd moment because she can travel different countries and visit her children abroad. 
                         </i>
                     </ol>
                 </div>
@@ -441,11 +438,10 @@
                     <div class="work_item_container">
                         <div class="work_item_container_description"></div>
                         <div class="work_item_container_content">
-                            <img src="persona_2.jpg" alt="persona">
+                            <img src="persona_2.jpg" alt="">
                         </div>
                     </div>
             </li>
-
 
 
 
@@ -455,6 +451,15 @@
                     Storyboard
                 </h2>
             </li>
+
+            <li class = "ux_caption col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p>
+                    1.One day, when users study and practice languages. 2.They think “I will travel to Switerland and speak in German.” 3.Users open the “Multi-Multi” application. 4. Search the place they want to visit.  
+                    <br>
+                    <br>
+                    5.The user searches for "Zurich ice cream shop". There is a dialogue on the screen showing how to order ice cream in German. 6.Users explore different sights and practice languages on the Multi-Multi application.  7.Users practice the language by exploring the world. 8.They have learned multiple languages and have a better understanding of different cultures.
+                </p>
+            </li>
                 
             <!--DIAGRAM HERE-->
             <li class="work_item diagram col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -462,11 +467,10 @@
                     <div class="work_item_container">
                         <div class="work_item_container_description">Storyboard</div>
                         <div class="work_item_container_content">
-                            <img src="storyboard.jpg" alt="storyboard">
+                            <img src="storyboard.jpg" alt="">
                         </div>
                     </div>
             </li>    
-
 
 
 
@@ -476,6 +480,17 @@
                     Information Architecture & User Flow
                 </h2>
             </li>
+
+            <li class = "ux_caption col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p>
+                    Here I work on designing for responsive website and mobile application. I use the Multi-Multi sitemap to guide the organizational structure of each screen’s design to ensure a cohesive and consistent experience across devices. 
+                    <br>
+                    <br>
+                    The purpose of user flow is to provide users with appropriate materials to practice language and learn more about local culture. According to the city or attraction the user is looking for, the app provides vocabulary, conversation, reading and listening.
+                </p>
+            </li>
+
+
             
             <!--DIAGRAM HERE-->
             <li class="work_item diagram col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -483,17 +498,16 @@
                     <div class="work_item_container">
                         <div class="work_item_container_description">Information Architecture</div>
                         <div class="work_item_container_content">
-                            <img src="ia.jpg" alt="information architecture">
+                            <img src="ia.png" alt="">
                         </div>
                     </div>
             </li>
 
 
-
             <!--TEXT HERE-->
             <li class = "work_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <h2>
-                    Wireframes
+                    Paper Wireframes
                 </h2>
             </li>
             
@@ -501,17 +515,14 @@
             <li class="work_item diagram col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <a href="#"></a>
                     <div class="work_item_container">
-                        <div class="work_item_container_description">Wireframes</div>
+                        <div class="work_item_container_description">Paper Wireframes</div>
                         <div class="work_item_container_content">
-                            <img src="wireframe.jpg" alt="wireframes">
+                            <img src="wireframe.jpg" alt="">
                         </div>
                     </div>
             </li>
 
-
-
-
-            <!--TEXT HERE-->
+             <!--TEXT HERE-->
              <li class = "work_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <h2>
                     Usability Study
@@ -537,33 +548,32 @@
                     <ol class="ux_word col-xs-12 col-sm-4 col-md-4 col-lg-4">
                         <h3>
                             Basic learning materials
-                        </h3><br>
-                        <p>
-                            People search more materials online to practice listening, reading, speaking and writing.
-                        </p>    
+                         </h3><br>
+                            <p>
+                                People search more materials on the Internet to practice listening, reading, speaking and writing.
+                            </p>    
                   </ol>
-                  <ol class="ux_word col-xs-12 col-sm-4 col-md-4 col-lg-4">                        
-                        <h3>
-                            Search function
-                        </h3><br>
-                        <p>
-                            Directly search the attractions, users find where they want to visit and plan their trips easily.
-                        </p>
+                  <ol class="ux_word col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        
+                            <h3>
+                                Search function
+                            </h3><br>
+                            <p>
+                                By directly searching for attractions, users find where they want to visit and plan their trips easily.
+                            </p>
                   </ol>
                   
                    <ol class="ux_word col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                        <h3>
-                            Add to favorites
-                        </h3><br>
-                        <p>
-                            People want to add different categories to the collection as their notes. 
-                            With this function users also can practice languages and prepare conversations for their trips.
-                        </p>    
+                            <h3>
+                                Add to favorites
+                            </h3><br>
+                            <p>
+                                People want to add different categories to the collection as their notes. 
+                                With this feature, users also can practice languages and prepare conversations for their trips.
+                            </p>
                   </ol>
               </div>
             </li>
-
-
 
 
             <!--TEXT HERE-->
@@ -574,9 +584,9 @@
             </li>
 
             <li class = "work_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h3>
+                <h2>
                     Low Fidelity Prototype
-                </h3>
+                </h2>
             </li>
             
             <!--DIAGRAM HERE-->
@@ -585,7 +595,7 @@
                     <div class="work_item_container">
                         <div class="work_item_container_description">Low Fidelity Prototype</div>
                         <div class="work_item_container_content">
-                            <img src="low-fidelity prototype.jpg" alt="low-fidelity prototype">
+                            <img src="low-fidelity prototype.jpg" alt="">
                         </div>
                     </div>
             </li>
@@ -602,29 +612,117 @@
                     <div class="work_item_container">
                         <div class="work_item_container_description">High Fidelity Prototype</div>
                         <div class="work_item_container_content">
-                            <img src="prototype.gif" alt="high-fidelity prototyp">
+                            <img src="prototype.gif" alt="">
                         </div>
                     </div>
             </li>
 
-            
+        
+            <li class = "work_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2>
+                    Main Features
+                </h2>
+            </li>
+
+            <li class = "ux_caption col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h3>
+                    Practice the languages with attractions
+                </h3>
+            </li>
 
             
+            <li class = "work_word col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="resume_item_container">                    
+                    <ol class="ux_word_center col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <p>
+                            Users explore sights and practice relative vocabulary. Search some restaurant and learn the basic conversation to order your food.
+                        </p>
+                    </ol>
+                </div>
+            </li>
+            
+            <!--DIAGRAM HERE-->
+            <li class="work_item diagram col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <a href="#"></a>
+                    <div class="work_item_container">
+                        <div class="work_item_container_description"></div>
+                        <div class="work_item_container_content">
+                            <img src="feature.gif" alt="multi-multi">
+                        </div>
+                    </div>
+            </li>
+
+        
+            <li class = "work_word col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="resume_item_container">                    
+                    <ol class="ux_word_center col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <p>
+                            Also can read the introduction of attraction and the origin of event.
+                        </p>
+                    </ol>
+                </div>
+            </li>
+            
+            <!--DIAGRAM HERE-->
+            <li class="work_item diagram col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <a href="#"></a>
+                    <div class="work_item_container">
+                        <div class="work_item_container_description"></div>
+                        <div class="work_item_container_content">
+                            <img src="feature_1.gif" alt="multi-multi">
+                        </div>
+                    </div>
+            </li>
+            
+
+            <li class = "work_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h3>
+                    Make your notes and save your trips
+                </h3>
+            </li>
+            
+            <li class = "work_word col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <div class="resume_item_container">                    
+                    <ol class="ux_word_center col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <p>
+                            Take notes about vocabulary, conversations, and introductions by saving sights to your list. You can also plan your trip to practice your language.
+                        </p>
+                    </ol>
+                </div>
+            </li>
+            
+            <!--DIAGRAM HERE-->
+            <li class="work_item diagram col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <a href="#"></a>
+                    <div class="work_item_container">
+                        <div class="work_item_container_description"></div>
+                        <div class="work_item_container_content">
+                            <img src="feature_2.gif" alt="multi-multi">
+                        </div>
+                    </div>
+            </li>
+
+
+            <li class = "work_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h3>
+                    Cross platform
+                </h3>
+            </li>
+
+
             <!--DIAGRAM HERE-->
             <li class="work_item diagram col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <a href="#"></a>
                     <div class="work_item_container">
-                        <div class="work_item_container_description">Final polished designs</div>
+                        <div class="work_item_container_description">Cross-platform</div>
                         <div class="work_item_container_content">
-                            <img src="final.png" alt="multi-multi augmented-reality languages application">
+                            <img src="final.png" alt="">
                         </div>
                     </div>
             </li>
-          
-          
-          
-          
-          <!--TEXT HERE-->
+
+
+            <!--TEXT HERE-->
             <li class = "work_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <h2>
                     Takeaways
@@ -643,8 +741,8 @@
                     
                     <ol class="ux_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <p>
-                            Users said that the app keeps their motivation and brings new exploration for them. 
-                            They step by step to learn and practice the languages, the app encourage them to explore more around the world.
+                            Users said that the application maintained their motivation and brought them new explorations. 
+                            They learn and practice the language step by step, and the app encourages them to explore more all over the world.
                         </p>
                     </ol>
                 </div>
@@ -654,9 +752,9 @@
             <li class="work_item diagram col-xs-6 col-sm-6 col-md-6 col-lg-6">
                 <a href="#"></a>
                     <div class="work_item_container">
-                        <div class="work_item_container_description"></div>
+                        <div class="work_item_container_description">Impact</div>
                         <div class="work_item_container_content">
-                            <img src="impact.png" alt="multi-multi_you_impact">
+                            <img src="impact.png" alt="outfits_you_impact">
                         </div>
                     </div>
             </li>
@@ -667,9 +765,9 @@
             <li class="work_item diagram col-xs-6 col-sm-6 col-md-6 col-lg-6">
                 <a href="#"></a>
                     <div class="work_item_container">
-                        <div class="work_item_container_description"></div>
+                        <div class="work_item_container_description">Here is what I learned</div>
                         <div class="work_item_container_content">
-                            <img src="learn.png" alt="multi-multi_learned">
+                            <img src="learn.png" alt="outfits_you_learned">
                         </div>
                     </div>
             </li>
@@ -685,15 +783,13 @@
                     
                     <ol class="ux_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <p>
-                            I learned that even though the problem I was trying to solve was a big one. 
-                            Diligently going through each step of the design process and aligning with specific user needs. 
-                            It helped me come up with solutions that were both feasible and useful.
+                            I learned that even though the problem I'm trying to solve is big.
+                            Diligently complete each step of the design process and align it consistent with specific user needs. 
+                            It helped me come up with solutions that are both feasible and useful.
                         </p>
                     </ol>
                 </div>
             </li>
-
-
 
 
             <!--TEXT HERE-->
@@ -710,7 +806,7 @@
                        1
                     </h3><br>
                     <p>
-                        Conduct follow-up usability testing on the new website and application.
+                        Follow-up usability testing of new websites and applications.
                     </p>
                 </ol>
                 <ol class="ux_word col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -718,7 +814,7 @@
                        2
                     </h3><br>
                     <p>
-                        Conduct another round of usability studies for users who speak different languages to validate whether the pain points users experienced have been effectively addressed.
+                        Conduct another round of usability studies for users who speak different languages to validate whether pain points experienced by users have been effectively addressed.
                     </p>
                 </ol>
                 <ol class="ux_word col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -726,14 +822,13 @@
                        3
                     </h3><br>
                     <p>
-                        Update application from users's need adn add more materials for users to learn well, 
-                        such as topics of basic conversation, vocabulary cards and articels of events or stories.
+                        Update the application according to user needs and add more user learning materials, such as basic conversations, vocabulary cards, event articles or introductions to sights, etc.
                     </p>
                 </ol>
               </div>
-            </li>  
+            </li>   
 
-          
+
             <!--DIAGRAM HERE-->
             <li class="work_item diagram col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <a href="#"></a>
@@ -744,9 +839,26 @@
                         </div>
                     </div>
             </li>
-      
 
-          
+
+            <!--TEXT HERE-->
+            <li class = "work_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2>
+                    Reflection
+                </h2>
+            </li>
+
+            <li class = "ux_caption col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p>
+                    I have always been a self-taught person, learning different skills from coding and robotics to languages. 
+                            I remember when studying in Switzerland, the first step in learning German was to go to the supermarket to learn food names. 
+                            Learn from the little thing I do twice a week. These learning experiences inspired the idea of designing this language application. 
+                            Establishing connections with good experiences in life is a great help in practicing language. Most of us like to travel the world. 
+                            I took advantage of this advantage to design a learning environment that allows users to practice vocabulary and dialogue when planning a trip. 
+                            When a trip is coming, users can easily and naturally have small conversations. I hope I can launch this application as one of my side project and use this product to help more people learn.
+                </p>
+            </li>
+      
           
 
             <!--Credit HERE-->

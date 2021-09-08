@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="keywords" content="">
+  <meta name="color-scheme" content="light dark"/>
   <link rel="stylesheet" href="/yshiuanc/static/style.css">
   <link rel="canonical" href="https://yingshiuan.github.io/yshiuanc/portfolio/outfitsyou/" />
   <!--This is title of website /tab/ -->
@@ -20,21 +21,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script type="text/javascript" src="/yshiuanc/static/js/mode-theme.js"></script>
   <!-- Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
   <!--SEO-->
   <meta property='og:title' content="Outfits You | Ying-Shiuan Chen"/>
   <meta property='og:image' content="https://yingshiuan.github.io/yshiuanc/portfolio/outfitsyou/outfitsyoujpg"/>
   <meta property='og:description' content="OUTFITS YOU is an augmented reality try-on app for users create their own outfits and build their own collection by adding fashion items."/>
   <meta property='og:url' content="https://yingshiuan.github.io/yshiuanc/portfolio/outfitsyou/" />
-  
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-18RYESZYQ5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-18RYESZYQ5');
   </script>
 
@@ -47,8 +48,17 @@
     <header>
         <div class="headerContainer">
             <div class = "logo"> </div>
-            <div class ="homepage"><a href = "/yshiuanc/">YShiuan_C</a>
-                <span class="tooltip">Homepage</span>
+            <div class="top">
+                <div class ="homepage"><a href = "/yshiuanc/">YShiuan_C</a>
+                    <span class="tooltip">Homepage</span>
+                </div>
+
+                <div class="mode">
+                    <button id="mode-button" class="mode-button">
+                        <span class="material-icons">tonality</span>
+                        <span id="mode">system</span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -60,17 +70,10 @@
             </div>
         </div>
 
-        <!-- -->
-        <div class="mode">
-            <button id="mode-button" class="mode-button" onclick="mode()">Light Mode</button>
-        </div>
-        
-
-        
     <!--nav-->
     <nav>
         <ul id="navbar">
-            <li class="logo"><a href="/yshiuanc/">YShiuan_C</a></li>
+            <li class="logo"><a href="/yshiuanc/"> </a></li>
             
             <li class="item">
                 <a href="/yshiuanc/about-me/">About me</a>
@@ -100,7 +103,7 @@
   <main class="main_container">
   
 
-    <!-- Bending-Active Structural Pavilion  -->
+    <!-- Outfits You  -->
 
     <div class="work_main">
         <ul class="row">
@@ -118,8 +121,10 @@
         
 
             <li class ="work_title col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <p><p>OUTFITS YOU is an interactive try-on app for users create their own outfits and build their own collection by adding fashion items. Through creating process and its interface to help people figure out suitable styles and outfits. OUTFITS YOU wants to make people try on different fashion items and find out what kind of outfits fit to users on any occasions.</p>
-
+                <p>
+                    OUTFITS YOU is an interactive try-on application where users can create their own outftis and build their own fashion collections. 
+                    Through the creative process, help people find suitable styles and clothing. 
+                    The goal is to encourage people try different fashion items and find types of clothing that suits the user on a specific occasion.
                     <br>
                 </p>
             </li>
@@ -156,29 +161,7 @@
     </div>
     
 
-
-
-    <!-- work gallery-->
-    <div class="work">
-        <ul class="row">
-            <li class="work_item work__item--tall work_item_tall_4 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <a href="/yshiuanc/portfolio/outfitsyou/">
-                    <div class="work_item_container">
-                        <div class="work_item_container_description">OUTFITS YOU</div>
-                        <div class="work_item_container_content">
-                            <img src="outfitsyou.jpg" alt="outfits-you-app">
-                        </div>
-                    </div>
-                </a>
-            </li>
-
-            <li class="work_item work_item_m col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xs-hide col-sm-hide col-md-hide"></li>
-        </ul>        
-    </div>
-
-
-
-   <!--work_describe-->         
+    <!--work_describe-->         
    <div class="work_describe">
     <ul class="row">
             <!--TEXT HERE-->
@@ -204,8 +187,7 @@
                     </ol>
                     <ol class="ux_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <p>
-                            Design an augmented reality application, OUTFITS YOU, that people can find out what kind of clothes suit to them by creating and trying on outfits 
-                          and get inspiration of outfits by weather and occasion.
+                            Design an augmented reality application OUTFITS YOU, where people can find a style that suits them by creating and trying on clothes. Users can also get clothing inspiration according to the weather and occasion.
                         </p>
                     </ol>
                 </div>
@@ -270,7 +252,6 @@
                 </h1>
             </li>
 
-
             
             <!--TEXT HERE-->
             <li class = "word_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -283,7 +264,7 @@
                     
                     <ol class="ux_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <p>
-                            Help people explore different styles of outfits and find out what suits to them.
+                            Help people explore different styles of clothing and find out what suits to them.
                         </p>
                     </ol>
 
@@ -301,7 +282,7 @@
                             Look and Find
                          </h3><br>
                             <p>
-                                Get inspiration by weather or occasion and find items to make the outfit.
+                                Get inspiration from the weather or occasion and find items to make outfits.
                             </p>    
                     </ol>
 
@@ -339,7 +320,7 @@
                                 Share and Collect 
                             </h3><br>
                             <p>
-                                Share your outfits on the internet and build collections for your favorite fashion items.
+                                Share your outfit on the Internet and create a list for your favorite fashion items.
                             </p>
                    </ol>
                   
@@ -349,7 +330,7 @@
                             Look and Find
                          </h3><br>
                             <p>
-                                Get inspiration by weather or occasion and find items to make the outfit.
+                                Get inspiration from the weather or occasion and find items to make outfits.
                             </p>    
                     </ol>
                     <ol class="ux_word col-xs-hide col-sm-4 col-md-4 col-lg-4">                        
@@ -366,16 +347,12 @@
                                 Share and Collect 
                             </h3><br>
                             <p>
-                                Share your outfits on the internet and build collections for your favorite fashion items.
+                                Share your outfit on the Internet and create a list for your favorite fashion items.
                             </p>
                    </ol>
                 </div>
             </li>
    
-
-
-            
-
 
             <!--TEXT HERE-->
             <li class = "work_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -400,7 +377,7 @@
                     
                     <ol class="ux_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <i>
-                            Millie is an enthusiasm scientific researcher who needs to try on different styles of outfits when she see some fashion items because she can find out what kinds of items suit to her.
+                            Millie is a passionate scientific researcher and she wants to know what style suits to her. When she sees new fashion items, she needs to try different clothes.
                         </i>
                     </ol>
                 </div>
@@ -417,6 +394,7 @@
                     </div>
             </li>
 
+
             <!--TEXT HERE-->
             <li class = "work_word col-xs-12 col-sm-12 col-md-4 col-lg-4">
                 <div class="resume_item_container">
@@ -427,7 +405,7 @@
                     
                     <ol class="ux_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <i>
-                            Chris is a stylish and fashionable retired professor who needs to know what is trendy outfits now because he can try something new and share his outfits on social medias.
+                            Chris is a retired sytlish professor who wants to keep up with trends. He needs to understand fashion because he can try new items and share his clothes on social media.
                         </i>
                     </ol>
                 </div>
@@ -445,7 +423,6 @@
             </li>
 
 
-
             <!--TEXT HERE-->
             <li class="work_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <h2>
@@ -454,10 +431,10 @@
             </li>
             <li class="ux_caption col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <p>
-                    1.User is thinking what should I wear and go hiking on the sunny day?  2.Searching online for inspiration and thinking what clothes I have.  3.Open the OUTFTIS YOU application and select the date and activities(occasions).  4.It recommend the outfits for user.  
+                    1.User is thinking what should I wear and go hiking on the sunny day?  2.Searching online for inspirations and thinking what kind of clothes I have.  3.Open the OUTFTIS YOU application to get ideas.  4.Application recommends outfits for user.  
                     <br>
                     <br>
-                    5.User uses the creating mode to take a photo.  6.User makes his own outfits on the interface.  7.After editing and making outfits, user find a good idea.  8.User enjoy the outfits and go hiking on the sunny day.
+                    5.User uses the creating mode to take a photo.  6.User makes his own outfits on the interface.  7.After editing and making, user find a good idea.  8.User wears the outfit he make and go hiking on the sunny day.
                 </p>
             </li>
                 
@@ -530,8 +507,6 @@
             </li>
 
 
-
-
             <!--TEXT HERE-->
             <li class="work_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <h2>
@@ -569,7 +544,7 @@
                             1. Design frames as reference to help users take the photo of items in scale.
                             <br>
                             <br>
-                            2. Add search functions and also add main categories, outfits, items, tags and occasions.
+                            2. Add search functions and sort by few main categories, such as outfits, items, tags and occasions.
                         </p>
                     </ol>
                   </div> 
@@ -583,7 +558,7 @@
                           Round 2 Findings
                       </h3><br>
                       <p>
-                          1. Users want tips to help creating outfits and items
+                          1. Users want tips to help creating outfits and adding items
                           <br>
                           <br>
                           2. Users are not sure what details they should add for outfits or items to build collection
@@ -595,7 +570,8 @@
                           Insight
                       </h3><br>
                       <p>        
-                          1. Add tips and introduction to guide users when users need help
+                          1. Add tips and tutorial to guide users.
+                          <br>
                           <br>
                           <br>
                           <br>
@@ -612,7 +588,8 @@
                 <h2>
                     Prototype
                 </h2>
-            </li>  
+            </li>
+            
             
             <li class = "work_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <h3>
@@ -638,10 +615,16 @@
                 </h2>
             </li>
 
+            <li class = "ux_caption col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h3>
+                    Create outfits and save to the collections
+                </h3>
+            </li>
+
             
-            <li class = "work_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <li class = "ux_caption col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <p>
-                    In the creating outfits mode, the frames help users to take photo for items in scale. Add the outfits into the collection and fill details for each items. 
+                    In the creating outfits mode, the frames help users to take photo for items in scale. Add outfits into the collection and fill details for each items. 
                 </p>
             </li>
             
@@ -676,8 +659,8 @@
                     
                     <ol class="ux_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <p>
-                            The application gives users an intriguing way to find out what suits to their style and explore outfits and items through Augmented Reality. 
-                            Also it gives people inspirations about what should they wear in any occasions and weather.
+                            The application gives users an intriguing way to find out what suits to them. They explore styles of outfit and clothes through Augmented Reality. 
+                            It also provides the inspiration for people to dress according to the occasion and weather.
                         </p>
                     </ol>
                 </div>
@@ -718,8 +701,7 @@
                     
                     <ol class="ux_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <p>
-                            While designing the OUTFITS YOU app, I learned that the first ideas for the app are only the beginning of the process. 
-                            Usability studies and peer's feedback influenced each iteration of the app’s designs. I can aim on the users' need to design and make the application more accessible.
+                            While designing the OUTFITS YOU app, I learned that the first ideas of the application was just the beginning of the process. Usability studies and peer feedback influenced each iteration of the app’s designs. I can aim on the users' need to design and make the application more accessible.
                         </p>
                     </ol>
                 </div>
@@ -740,7 +722,7 @@
                        1
                     </h3><br>
                     <p>
-                        Conduct another round of usability studies to validate whether the pain points users experienced have been effectively addressed.
+                        Conduct another round of usability studies to validate whether pain points users experienced have been effectively addressed.
                     </p>
                 </ol>
                 <ol class="ux_word col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -799,9 +781,8 @@
 
             <li class = "ux_caption col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <p>
-                    I have always been interested in emerging technologies and its the application in the industry. In this project, I research on designing a good AR application for users. After I dig in, I translate similar designing criteria and methodology from my project of robotic arm into this AR project. 
-                    Such like, the environment, movement, interaction, initaltization and from digital prototyping to physical experience. 
-                    By gaining knowledges continuously, it make me understand issues and inspire me to merge what I learn to apply on different field. I am looking forward for the next challenges.
+                    I have always been interested in emerging technologies and their applications in the industry. In this project, I researched to design a good AR application for users. After in-depth research, I transformed the similar design criteria and methods in my robotic arm project into this AR project. Such as environment, movement, interaction, initialization, and from digital prototype to physical experience.
+                    Through continuous acquisition of knowledge, it allows me to understand the problem and motivates me to integrate the knowledge I have learned into different fields. I look forward to the next challenge.
                 </p>
             </li>
 

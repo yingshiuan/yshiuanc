@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="From computationally design material to Integrate advanced fabrication methods of robotics. In this project, we presents a significant aesthetic potential of 3D concrete printing, with building-scale columns.">
   <meta name="keywords" content="">
+  <meta name="color-scheme" content="light dark"/>
   <link rel="stylesheet" href="/yshiuanc/static/style.css">
   <link rel="canonical" href="https://yingshiuan.github.io/yshiuanc/portfolio/concrete-choreography/" />
   <!--This is title of website /tab/ -->
@@ -20,21 +21,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script type="text/javascript" src="/yshiuanc/static/js/mode-theme.js"></script>
   <!-- Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
   <!--SEO-->
   <meta property='og:title' content="Concrete  Choreography | Ying-Shiuan Chen"/>
   <meta property='og:image' content="https://yingshiuan.github.io/yshiuanc/portfolio/concrete-choreography/concrete-choreography.jpg"/>
   <meta property='og:description' content="From computationally design material to Integrate advanced fabrication methods of robotics. In this project, we presents a significant aesthetic potential of 3D concrete printing, with building-scale columns."/>
   <meta property='og:url' content="https://yingshiuan.github.io/yshiuanc/portfolio/concrete-choreography/" />
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-18RYESZYQ5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-18RYESZYQ5');
   </script>
   
@@ -47,8 +48,17 @@
     <header>
         <div class="headerContainer">
             <div class = "logo"> </div>
-            <div class ="homepage"><a href = "/yshiuanc/">YShiuan_C</a>
-                <span class="tooltip">Homepage</span>
+            <div class="top">
+                <div class ="homepage"><a href = "/yshiuanc/">YShiuan_C</a>
+                    <span class="tooltip">Homepage</span>
+                </div>
+
+                <div class="mode">
+                    <button id="mode-button" class="mode-button">
+                        <span class="material-icons">tonality</span>
+                        <span id="mode">system</span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -60,17 +70,11 @@
             </div>
         </div>
 
-        <!-- -->
-        <div class="mode">
-            <button id="mode-button" class="mode-button" onclick="mode()">Light Mode</button>
-        </div>
-        
-
         
     <!--nav-->
     <nav>
         <ul id="navbar">
-            <li class="logo"><a href="/yshiuanc/">YShiuan_C</a></li>
+            <li class="logo"><a href="/yshiuanc/"> </a></li>
             
             <li class="item">
                 <a href="/yshiuanc/about-me/">About me</a>
