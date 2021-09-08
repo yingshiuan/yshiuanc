@@ -160,13 +160,18 @@ header{
 }
 
 
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 /* word in container */
 .homepage{
     padding:0.5rem 0rem 0.5rem 0rem ;
 }
 
 .homepage a{
-    display: inline-flex;
     color:white; 
     text-decoration: none;
 
@@ -191,7 +196,7 @@ header{
 }
 
 
-.homepage:hover span {
+.homepage:hover .tooltip{
     display: block;
     margin-top: 1rem;
     text-align: center;
@@ -213,18 +218,19 @@ header{
 }
 
 
+
 /* MODE */
 
 .mode{
-    margin: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
-    position: sticky;
-    z-index: 1;
-    top: 4rem;
+    padding:0.5rem 0rem 0.5rem 0rem;
 }
+
+.mode .material-icons{
+    font-size: 0.8rem;
+    margin-bottom: 0.1rem;
+    padding: 0rem;
+}
+
 
 .mode-button{
     padding: 0.2rem;
@@ -239,6 +245,7 @@ header{
     background: var(--text-hover);
     box-shadow: 0.1rem 0.1rem var(--text-color);
 }
+
 
 
 
@@ -334,8 +341,13 @@ nav ul li.logo{
     padding: 0rem;
     user-select: none;
     display: none;
-   
 }
+
+nav ul li.mode-theme{
+    user-select: none;
+    display: none;
+}
+
 
 /* nav hover */
 nav ul li a{
@@ -421,6 +433,10 @@ nav ul li.navbarToggle.hide i::before{
         display: block;
     }
 
+    nav ul li.mode-theme{
+        display: block;
+    }
+
     nav ul li a{
         color: white;
       }
@@ -474,11 +490,6 @@ nav ul li.navbarToggle.hide i::before{
     footer .navbar_footer ul li{
         padding: 0rem 2rem 0rem 0.5rem; 
     }
-
-
-
-
-
 }
   
 
@@ -1304,11 +1315,20 @@ UX CASE STUDY
 */
 
 
+
 .ux_word{
     margin: 1rem auto 1rem auto;
     position: relative;
     color: var(--text-color);
     text-align: center;
+}
+
+.ux_word_center{
+    margin: 1rem auto 1rem auto;
+    position: relative;
+    color: var(--text-color);
+    align-self: center;
+
 }
 
 

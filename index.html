@@ -7,8 +7,9 @@
   <meta name="author" content="Ying-Shiuan Chen" />
   <meta name="copyright" content="Ying-Shiuan Chen" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
+  <meta name="description" content="UX-Product-Designer">
   <meta name="keywords" content="">
+  <meta name="color-scheme" content="light dark"/>
   <link rel="stylesheet" href="/yshiuanc/static/style.css">
   <link rel="canonical" href="https://yingshiuan.github.io/yshiuanc/" />
   <!--This is title of website /tab/ -->
@@ -20,6 +21,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script type="text/javascript" src="/yshiuanc/static/js/mode-theme.js"></script>
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
@@ -28,15 +30,12 @@
   <meta property='og:image' content="https://yingshiuan.github.io/yshiuanc/"/>
   <meta property='og:description' content=""/>
   <meta property='og:url' content="https://yingshiuan.github.io/yshiuanc/" />
-
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-18RYESZYQ5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-18RYESZYQ5');
   </script>
 </head>
@@ -51,6 +50,12 @@
             <div class ="homepage"><a href = "/yshiuanc/">YShiuan_C</a>
                 <span class="tooltip">Homepage</span>
             </div>
+            <div class="mode">
+                <button id="mode-button" class="mode-button">
+                    <span class="material-icons">tonality</span>
+                    <span id="mode">system</span>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -60,14 +65,7 @@
                 <p></p>
             </div>
         </div>
-
-        <!-- -->
-        <div class="mode">
-            <button id="mode-button" class="mode-button" onclick="mode()">Light Mode</button>
-        </div>
-        
-
-        
+       
     <!--nav-->
     <nav>
         <ul id="navbar">
@@ -475,19 +473,6 @@ Ying-Shiuan Chen.</p>
             });
         });
 
-        
-        /* dark-mode*/
-        const btn = document.querySelector(".mode-button");
-        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-
-        btn.addEventListener("click", function () {
-            if (prefersDarkScheme.matches) {
-                document.body.classList.toggle("light-theme");
-            } else {
-                document.body.classList.toggle("dark-theme"); 
-            }
-        });
-
         /* switch button */
         function mode() {
         if (document.getElementById("mode-button").innerHTML === "Dark Mode") {
@@ -496,16 +481,6 @@ Ying-Shiuan Chen.</p>
             document.getElementById("mode-button").innerHTML = "Dark Mode";
         }
         }
-        
-
-        
-        
-       
-        
-       
-        
-
-
 
     </script>
 </body>
