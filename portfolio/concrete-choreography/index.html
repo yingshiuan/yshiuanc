@@ -434,46 +434,25 @@ Choreography</p>
   
     <!--script java-->
     <script>        
-        /* Click Hide mennu */
+        /* Click Hide menu */
         $(document).ready(function(){
             $('.navbarToggle').click(function(){
             $('.item').toggleClass("show");
-            $('ul li').toggleClass("hide");          
+            $('.navbarToggle').toggleClass("hide");          
             });
         });
-
-        
-        /* dark-mode*/
-        const btn = document.querySelector(".mode-button");
-        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-
-        btn.addEventListener("click", function () {
-            if (prefersDarkScheme.matches) {
-                document.body.classList.toggle("light-theme");
-            } else {
-                document.body.classList.toggle("dark-theme"); 
-            }
-        });
-
-        /* switch button */
-        function mode() {
-        if (document.getElementById("mode-button").innerHTML === "Dark Mode") {
-            document.getElementById("mode-button").innerHTML = "Light Mode";
-        } else {
-            document.getElementById("mode-button").innerHTML = "Dark Mode";
+    
+        /*scroll*/
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("scroll").style.top = "20px";
+          } else {
+            document.getElementById("scroll").style.top = "-100px";
+          }
+          prevScrollpos = currentScrollPos;
         }
-        }
-        
-
-        
-        
-       
-        
-       
-        
-
-
-
     </script>
 </body>
 
