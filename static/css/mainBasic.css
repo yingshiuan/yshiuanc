@@ -379,6 +379,7 @@ nav ul li i{
 
 nav ul li.navbarToggle{
     display: none;
+    padding: 0rem;
     
 }
 
@@ -386,6 +387,7 @@ nav ul li.navbarToggle.hide i::before{
     content: '\e5cd'; 
     background: #2C2C2E;
     display: block;
+    justify-content: flex-end;
     position: absolute;
 }
 
@@ -396,30 +398,27 @@ nav ul li.navbarToggle.hide i::before{
 @media all and (max-width: 900px){
 
     header{
-        display: none;
+        background: none;
+        width: 90%;
     }
 
     .currently{
         position: fixed;
-        margin: 2.4rem auto 0rem auto;
+        margin: 1rem auto 0rem auto;
+        padding-top: 0.2rem;
     }
 
-    .mode{
-        margin: 5rem auto 0rem auto;
-        padding: 0rem 2.5rem 0.2rem 2.5rem;   
-        top: 6rem;     
-    }
-
+   
 
     nav{
         background: #2C2C2E;
         margin: 0rem auto 2rem  auto;
-        padding: 0rem 2.5rem 0.2rem 2.5rem;
+        padding: 0rem 2.5rem 0rem 2.5rem;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 9999;
+        z-index: 99;
         filter:opacity(90%);
         backdrop-filter: blur(0.5rem);
     }
