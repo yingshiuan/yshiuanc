@@ -1169,6 +1169,7 @@ main div.work{
 .work_cover{
     border-radius: 12px;
     border: 5px solid var(--boder-color);
+    background-color: var(--work-backgorund);
 }
 
 
