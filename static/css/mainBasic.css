@@ -618,7 +618,6 @@ aboutme
 .aboutme_item_container:hover .img_show{
     opacity: 1;
     display: block;
-    position: absolute;
 }
 
 
