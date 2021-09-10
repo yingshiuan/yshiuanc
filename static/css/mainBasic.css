@@ -631,6 +631,9 @@ aboutme
     .aboutme_item {
         margin: 4rem auto 0rem auto;  
     }
+    .aboutme_item p{
+        margin: 1rem auto 1rem auto;
+    }
 }
 
 
