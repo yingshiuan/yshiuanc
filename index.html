@@ -231,9 +231,20 @@ Ying-Shiuan Chen.</p>
             <li class="work_item homepage_cover work__item--tall col-xs-12 col-sm-12 col-md-6 col-lg-4">
                 <a href="#!">
                     <div class="work_item_container">
-                        <div class="work_item_container_description"></div>
+                        <div class="work_item_container_description">XR</div>
                         <div class="work_item_container_content">
-                            <img src="/yshiuanc/portfolio/cover/comingsoon.png" alt="">
+                            <model-viewer
+                                loading="eager"
+                                camera-controls
+                                ar
+                                ar-placement="wall"
+                                ar-modes="webxr scene-viewer quick-look"
+                                src="/yshiuanc/portfolio/ar/yshiuan_c.glb"
+                                ios-src="/yshiuanc/portfolio/ar/yshiuan_c.usdz"
+                                alt="yshiuan_c"
+                                autoplay
+                                >
+                            </model-viewer> 
                         </div>
                     </div>
                 </a>
