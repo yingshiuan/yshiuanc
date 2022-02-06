@@ -465,7 +465,7 @@ Ying-Shiuan Chen.</p>
             
             <div class="footer_copyright">
                 <li>
-                    <p>&copy 2021 <a href="/yshiuanc/">Ying-Shiuan Chen</a> All rights reserved</p>
+                    <p>&copy <span id="year"></span> <a href="{{ '/'|url }}">Ying-Shiuan Chen</a> All rights reserved</p>
                 </li>
             </div>
         </div>          
@@ -493,6 +493,10 @@ Ying-Shiuan Chen.</p>
           }
           prevScrollpos = currentScrollPos;
         }
+        
+        /*year*/
+        const d = new Date();
+        document.getElementById("year").innerHTML = d.getFullYear();
     </script>
 </body>
 
