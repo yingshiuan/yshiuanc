@@ -1,4 +1,8 @@
-Sitemap: https://yingshiuan.github.io/yshiuanc/sitemap.xml
+User-agent: Googlebot
+Disallow: /nogooglebot/
 
 User-agent: *
-Disallow:
+Allow: /
+
+Sitemap: https://yingshiuan.github.io/yshiuanc/sitemap.xml
+
