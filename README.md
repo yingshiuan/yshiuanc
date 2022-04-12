@@ -1,5 +1,6 @@
 # The source code of my website
 
-Still work in pogress...
+Welcome to my website
 
-This website is using [Lektor](https://www.getlektor.com/) 
+This website is using [Lektor CMS](https://www.getlektor.com/) 
+
