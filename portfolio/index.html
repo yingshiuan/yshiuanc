@@ -3,7 +3,7 @@
 <meta charset="urf-8">
 
 <head>
-  <meta name="title" content="Portfolio | Ying-Shiuan Chen" />
+  <meta name="title" content="Projects | Ying-Shiuan Chen" />
   <meta name="author" content="Ying-Shiuan Chen" />
   <meta name="copyright" content="Ying-Shiuan Chen" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,27 +12,35 @@
   <meta name="color-scheme" content="light dark"/>
   <link rel="stylesheet" href="/yshiuanc/static/style.css">
   <link rel="canonical" href="https://yingshiuan.github.io/yshiuanc/portfolio/" />
+  <!--preload-->
+  <link rel="preload" href="/yshiuanc/static/style.css" as="style">
+  <link rel="preload" href="/yshiuanc/static/js/mode-theme.js" as="script">
   <!--This is title of website /tab/ -->
-  <title>Portfolio | YShiuan_C</title>
+  <title>Projects | Ying-Shiuan Chen</title>
   <!-- Logo on the Tab  -->
-  <link rel="icon" sizes="16x16" type="image/png" href="/yshiuanc/static/logo/YShiuan_C_16x16.png">
-  <!-- icon -->
+  <link rel="icon" sizes="16x16" type="image/png" href="/yshiuanc/static/logo/yinz.png">
+  <!--icon-->
   <script src="https://kit.fontawesome.com/03192cca0c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script type="text/javascript" src="/yshiuanc/static/js/mode-theme.js"></script>
-  <!-- Font -->
+  <!--javascript-->
+  <script async type="text/javascript" src="/yshiuanc/static/js/mode-theme.js"></script>
+  <script async type="text/javascript" src="/yshiuanc/static/js/function.js"></script>
+  <!--model-viewer-->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <!--font-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <!--SEO-->
-  <meta property='og:title' content="Portfolio | Ying-Shiuan Chen"/>
+  <meta property='og:title' content="Projects | Ying-Shiuan Chen"/>
   <meta property='og:image' content="https://yingshiuan.github.io/yshiuanc/portfolio/"/>
   <meta property='og:description' content="Ying-Shiuan Chen Portfolio"/>
   <meta property='og:url' content="https://yingshiuan.github.io/yshiuanc/portfolio/" />
+  <meta name="google-site-verification" content="7x_392_0i3J2ueR1hniQdwveOFtObZQZRLa89TBTdXc" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-203319087-1"></script>
-  <script src="/yshiuanc/static/js/ga.js"></script>
+  <script src="/yshiuanc/static/js/ga.js"></script>  
 
 </head>
 
@@ -44,14 +52,17 @@
         <div class="headerContainer">
             <div class = "logo"> </div>
             <div class="top">
-                <div class ="homepage"><a href = "/yshiuanc/">YShiuan_C</a>
-                    <span class="tooltip">Homepage</span>
+                <div class ="homepage"><a class="tags" href = "/yshiuanc/">Yinz</a>
+                    <span class="tooltip">Nice to meet you :)</span>
                 </div>
 
                 <div class="mode">
                     <button id="mode-button" class="mode-button">
-                        <span class="material-icons">tonality</span>
-                        <span id="mode">system</span>
+                        <span class="material-icons" id="mode">tonality</span>
+                        <!--
+                        <span id="display">system</span>
+                        -->
+                        <span class="tooltip">mode</span>
                     </button>
                 </div>
             </div>
@@ -59,19 +70,19 @@
     </header>
 
     <!-- currently -->
-    <div class="currently" id="scroll">
-        <div class="info">
-            <p> </p>
+        <div class="currently" id="scroll">
+            <div class="info">
+                <p>Currently, I am looking for a position in Interaction Design or UX Researcher.</p>
+            </div>
         </div>
-    </div>      
-
+        
     <!--nav-->
     <nav>
         <ul id="navbar">
             <li class="logo"><a href="/yshiuanc/"> </a></li>
             
             <li class="item">
-                <a href="/yshiuanc/about-me/">About me</a>
+                <a href="/yshiuanc/portfolio/">Projects</a>
             </li>
             
             <li class="item">
@@ -79,11 +90,7 @@
             </li>
             
             <li class="item">
-                <a href="/yshiuanc/portfolio/">Portfolio</a>
-            </li>
-            
-            <li class="item">
-                <a href="/yshiuanc/contact/">Contact</a>
+                <a href="/yshiuanc/about-me/">About</a>
             </li>
 
             <li class="navbarToggle"><a href="#!"><i class="material-icons">menu</i></a></li> 
@@ -101,53 +108,83 @@
 <div class="greeting">
     <ul class="row">
         <li class ="greeting_item col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h1><p>Hello<br>
-I'm<br>
-Ying-Shiuan Chen<br>
-A Designer and Developer.</p>
+            <p>Hi there!
+                <br>I am
+            </p>
+            <h1>
+                <p>Ying-Shiuan Chen</p>
 
-                <br>
-                <br>
             </h1>
         </li>
 
         <li class ="greeting_item col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <p>I believe that different perspectives lead to the best idea and help bring a viable product to life. By boosting the knowledge overlaps, I can understand issues and communicate with collaborators to find out the best solution.</p>
+            <p>
+                An
+            </p>
+            <h2>
+                Interaction Desinger 
+            </h2>
+            <p>who love creating functional yet fun interaction to humanize the technology!</p>
         </li>
+
+        <li class ="greeting_item col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        </li>
+
+        <li class ="work_title work_tag col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p class="tags"> 
+              <a href="#interaction">Interaction Design</a>
+            </p>
+    
+            <p class="tags"> 
+              <a href="#ux-research">UI/UX & Product Design</a>
+            </p>
+            
+            <p class="tags"> 
+              <a href="#robotic-fabrication">Human-Robot Collaboration</a> 
+            </p>
+    
+            <p class="tags"> 
+              <a href="#digital-fabrication">Digital Fabrication & Design</a>
+            </p>
+
+            <p class="tags"> 
+                <a href="#architecture">Architecture</a>
+            </p>
+        </li>
+        <!--
+        <li class ="greeting_item col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p>
+                As a conscious __Designer__ and __Developer__, my passion is to curiously find out what suits individuals and practice creativity in both the digital and physical worlds. In the dynamic process of designing products, I do research and strategy to develop products in multiple ways. I believe collaborations among other creatives and holding a curiosity about the world are motivations to create.
+            </p>
+        </li>
+        -->
+
+        <ul class="row">
+            <li class ="greeting_item col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1>
+                    <br>
+                    <br>
+                </h1>
+            </li>
+      
+            <li class ="greeting_item col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <p><p>I believe that different perspectives lead to the best idea and help bring a viable product to life. By boosting the knowledge overlaps, I can understand issues and communicate with collaborators to find out the best solution.</p>
+
+                </p>
+            </li>
+        </ul>
     </ul>
+
 </div>
 
 
 
-<div class="work_describe">
-  <ul class="row">
-      <!--TEXT HERE-->
-      <li class ="work_title work_tag col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <p class="tags"> 
-            <a href="#interaction">Interaction Design</a>
-        </p>
-
-        <p class="tags"> 
-            <a href="#ux-research">UI/UX & Product Design</a>
-        </p>
-
-        <p class="tags"> 
-          <a href="#robotic-fabrication">Human-Robot Collaboration</a> 
-        </p>
-
-        <p class="tags"> 
-            <a href="#digital-fabrication">Digital Fabrication</a>
-          </p>
-
-      </li>
-  </ul>
-</div>
 
 <!-- interaction -->
 <div class="work_describe">
     <ul class="row">
         <!--TEXT HERE-->
-        <li id="interaction" class ="work_word  col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <li id="interaction" class ="work_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <p>
             </p>
         </li>
@@ -159,35 +196,65 @@ A Designer and Developer.</p>
 <div class="work">
     <ul class="row">
         <!-- Topic 1-->
-        <li class="work_item work__item--tall work_item_m work_item_tall work_cover work_item_tall_3 col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <li class="square_item work__item--tall work__item--bottom work_cover work_item_tall_3 col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <a href="#!">
-                <div class="work_item_container">
-                    <div class="work_item_container_description"></div>
+                <div class="square_item_container">
+                    <div class="square_item_title_container_description">
+                        <ol class="square_word s_title">
+                            <h1>Interaction Design</h1>
+                        </ol>
+                        <ol class="square_word s_dscription" >
+                            <p></p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Digital Prototyping</p>
+                            <p class="tags">XR Development</p>
+                            <p class="tags">Motion Graphics</p>
+                            <p class="tags">HCI</p>
+                        </ol>
+                    </div>
+
                     <div class="work_item_container_content">
-                        <img src="cover/topics-03.png" alt="">
-                        <img class="img_show" src="cover/skills-03.png" alt="">
+                        <img src="" alt="">
+                        <img class="img_show" src="" alt="">
                     </div>
                 </div>
             </a>
         </li>
 
         <!-- small 23-->
-        <li class="work_item work_item_m work_cover col-xs-3 col-sm-3 col-md-3 col-lg-2">
+        <li class="work_item square_item work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2">
             <a href="motion-graphics/">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Motion Graphics</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Motion Graphics</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">2D</p>
+                            <p class="tags">3D</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
                         <img src="motion-graphics/12.gif" alt="motion-graphics">
-                        <img class="img_show" src="motion-graphics/12.png" alt="motion-graphics">
+                        <img class="img_show" src="motion-graphics/12.png" alt="">
                     </div>
                 </div>
             </a>
         </li>
 
-        <li class="work_item work_item_m work_cover col-xs-3 col-sm-3 col-md-3 col-lg-2">
+        <li class="work_item square_item work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2">
             <a href="#!">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Digital Prototyping<br>(coming soon)</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Digital Prototyping</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Code</p>
+                            <p class="tags">UI</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
                         <img src="cover/terminal.gif" alt="terminal">
                         <img class="img_show" src="cover/code.png" alt="code">
@@ -198,10 +265,18 @@ A Designer and Developer.</p>
 
     
         <!-- tall  4-->
-        <li class="work_item work_item_m work_item_tall work__item--tall work_cover col-xs-3 col-sm-3 col-md-3 col-lg-2">
+        <li class="work_item square_item work__item--tall work__item--bottom work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2">
             <a href="force-feedback-function/">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Force Feedback Function</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Force Feedback Function</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Robtic arm</p>
+                            <p class="tags">Interaction</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
                         <img src="force-feedback-function/force_feedback.jpg" alt="force-feedback-function">
                         <img class="img_show" src="force-feedback-function/force_feedback.gif" alt="force-feedback-function">
@@ -211,7 +286,7 @@ A Designer and Developer.</p>
         </li>
 
         <!-- large hide  4+1-->
-        <li class="work_item work_item_m work_item_tall work__item--tall work_cover col-xs-3 col-sm-3 col-md-3 col-lg-2 col-lg-hide">
+        <li class="work_item work__item--tall work__item--bottom work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2 col-lg-hide">
             <a href="#">
                 <div class="work_item_container">
                     <div class="work_item_container_description">Force Feedback Function</div>
@@ -230,10 +305,18 @@ A Designer and Developer.</p>
 
 
         <!-- Rec 5-->
-        <li class="work_item work__item--tall work_item_m work_item_tall work_cover col-md-pullup-1 col-m-pullup-1 col-md-pullup-3 col-xs-6 col-sm-6 col-md-6 col-lg-4">
+        <li class="work_item square_item work__item--tall work_cover col-md-pullup-1 col-md-pullup-3 col-xs-12 col-sm-12 col-md-6 col-lg-4">
             <a href="robotic-fabrication-of-brick-wall/">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Robotic Fabrication of Brick Wall<br>With HTC VIVE Tracker</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Robotic Fabrication of Brick Wall</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">HTC VIVE Tacker</p>
+                            <p class="tags">Robotic System</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
                         <img src="robotic-fabrication-of-brick-wall/brickwall.jpg" alt="robotic-fabrication-of-brick-wall">
                         <img class="img_show" src="robotic-fabrication-of-brick-wall/brickwall.gif" alt="robotic-fabrication-of-brick-wall">
@@ -244,18 +327,27 @@ A Designer and Developer.</p>
 
 
         <!--hide1 -->
-        <li class="work_item work_item_m col-xs-3 col-sm-3 col-md-3 col-lg-2 col-lg-hide "></li>
-        <li class="work_item work_item_m col-xs-3 col-sm-3 col-md-3 col-lg-2 col-lg-hide "></li>
+        <li class="work_item col-xs-hide col-sm-hide col-md-3 col-lg-hide "></li>
+        <li class="work_item col-xs-hide col-sm-hide col-md-3 col-lg-hide "></li>
 
-        
+
         <!--small 6-->
-        <li class="work_item work_item_m col-md-pullup-1 col-m-pullup-1 work_cover col-xs-3 col-sm-3 col-md-3 col-lg-2">
-            <a href="https://yshiuan-c.medium.com/prototype-ar-experiences-3452901e3347">
+        <li class="work_item square_item col-md-pullup-1 work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2">
+            <a href="#!">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">XR Development<br>(Work in Progress)</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>XR Development</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">WebXR</p>
+                            <p class="tags">Mobile</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
                         <img src="cover/coordinate.png" alt="AR-VR-XR">
                         <img class="img_show" src="cover/coordinate.png" alt="AR-VR-XR">
+                        
                     </div>
                 </div>
             </a>
@@ -264,10 +356,18 @@ A Designer and Developer.</p>
 
 
         <!--large hide  6+1-->
-        <li class="work_item work_item_m col-md-pullup-1 col-m-pullup-1 work_cover col-xs-3 col-sm-3 col-md-3 col-lg-2 col-lg-hide">
+        <li class="work_item square_item col-md-pullup-1 work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2 col-lg-hide">
             <a href="#!">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">WebAR</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>WebXR</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Prototyping</p>
+                            <p class="tags">Research</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
                         <img src="cover/coordinate.png" alt="AR-VR-XR">
                         <img class="img_show" src="cover/coordinate.png" alt="AR-VR-XR">
@@ -278,8 +378,6 @@ A Designer and Developer.</p>
 
     </ul>        
 </div>
-
-
 
 <!-- ux-research -->
 <div class="work_describe">
@@ -298,10 +396,18 @@ A Designer and Developer.</p>
 <div class="work">
     <ul class="row">
         <!-- small 23-->
-        <li class="work_item work_item_m work_cover col-xs-3 col-sm-3 col-md-3 col-lg-2">
+        <li class="work_item square_item work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2">
             <a href="#">
                 <div class="work_item_container">
-                    <div class="work_item_container_description"></div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Desgin System</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags"></p>
+                            <p class="tags"></p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
                         <img src="cover/guideline.png" alt="">
                         <img class="img_show" src="cover/guideline.png" alt="">
@@ -310,10 +416,18 @@ A Designer and Developer.</p>
             </a>
         </li>
 
-        <li class="work_item work_item_m work_cover col-xs-3 col-sm-3 col-md-3 col-lg-2">
-            <a href="#!">
+        <li class="work_item square_item work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2">
+            <a href="foodies/">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Foo:D<br>Coming soon!</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Foo:D</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">XR</p>
+                            <p class="tags"></p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
                         <img src="foodies/foodies.png" alt="">
                         <img class="img_show" src="foodies/foodies.png" alt="">
@@ -323,39 +437,69 @@ A Designer and Developer.</p>
         </li>
 
         <!-- large hide  4+1-->
-        <li class="work_item work_item_m work_item_tall work__item--tall work_cover col-xs-3 col-sm-3 col-md-3 col-lg-2 col-lg-hide">
+        <li class="work_item square_item work__item--tall work__item--bottom work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2 col-lg-hide">
             <a href="outfitsyou/">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Outfits You<br>Augmented Reality<br>Application</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Outfits You</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Augmented Reality</p>
+                            <p class="tags">Application</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
-                        <img src="outfitsyou/outfitsyoulogo.png" alt="Outfits augmented reality application">
-                        <img class="img_show" src="outfitsyou/outfitsyoulogo.png" alt="Outfits augmented reality application">
+                        <img src="outfitsyou/outfitsyoulogo.png" alt="">
+                        <img class="img_show" src="outfitsyou/outfitsyoulogo.png" alt="">
                     </div>
                 </div>
             </a>
         </li>
 
          <!-- tall  4-->
-         <li class="work_item work_item_m work_item_tall work__item--tall work_cover col-xs-3 col-sm-3 col-md-3 col-lg-2">
+         <li class="work_item square_item work__item--tall work__item--bottom work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2">
             <a href="outfitsyou/">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Outfits You<br>Augmented Reality<br>Application</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Outfits You</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Augmented Reality</p>
+                            <p class="tags">Application</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
-                        <img src="outfitsyou/outfitsyou.png" alt="Outfits augmented reality application">
-                        <img class="img_show" src="outfitsyou/outfitsyoufeature.gif" alt="augmented reality application">
+                        <img src="outfitsyou/outfitsyou.png" alt="">
+                        <img class="img_show" src="outfitsyou/outfitsyoufeature.gif" alt="">
                     </div>
                 </div>
             </a>
         </li>
 
         <!-- Topic 1-->
-        <li class="work_item work__item--tall col-md-pullup-1 col-m-pullup-1  work_item_m work_item_tall work_cover work_item_tall_3 col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <li class="square_item work__item--tall col-md-pullup-1 work__item--bottom work_cover work_item_tall_3 col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <a href="#!">
                 <div class="work_item_container">
-                    <div class="work_item_container_description"></div>
+                    <div class="square_item_title_container_description">
+                        <ol class="square_word s_title">
+                            <h1>UI / UX Case Study</h1>
+                        </ol>
+                        <ol class="square_word s_dscription" >
+                            <p></p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">User Research</p>
+                            <p class="tags">Product Design</p>
+                            <p class="tags">Web</p>
+                            <p class="tags">Mobile</p>
+                        </ol>
+                    </div>
+
                     <div class="work_item_container_content">
-                        <img src="cover/topics-04.png" alt="UX-Case-Study">
-                        <img class="img_show" src="cover/skills-04.png" alt="UX-Product-Skills">
+                        <img src="" alt="">
+                        <img class="img_show" src="" alt="">
                     </div>
                 </div>
             </a>
@@ -363,27 +507,43 @@ A Designer and Developer.</p>
     
 
         <!-- Rec 5-->
-        <li class="work_item work__item--tall work_item_m work_item_tall work_cover col-md-pullup-3 col-xs-6 col-sm-6 col-md-6 col-lg-4">
+        <li class="work_item square_item work__item--tall work_cover col-md-pullup-3 col-xs-12 col-sm-12 col-md-6 col-lg-4">
             <a href="multi-multi/">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Multi-Multi Language Application</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Multi-Multi Language Application</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Languages</p>
+                            <p class="tags">Application</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
-                        <img src="multi-multi/multi.png" alt="Multi-Multi language application">
-                        <img class="img_show" src="multi-multi/multi.gif" alt="Multi-Multi language application">
+                        <img src="multi-multi/multi.png" alt="">
+                        <img class="img_show" src="multi-multi/multi.gif" alt="">
                     </div>
                 </div>
             </a>
         </li>
 
-
+        
 
         <!--small 6-->
-        <li class="work_item work_item_m work_cover col-md-pullup-1 col-m-pullup-1 col-xs-3 col-sm-3 col-md-3 col-lg-2">
+        <li class="work_item square_item work_cover col-md-pullup-1 col-xs-6 col-sm-6 col-md-3 col-lg-2">
             <a href="#">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Product Design<br>Website / Application</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Product Design</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Website</p>
+                            <p class="tags">Application</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
-                        <img src="cover/website.png" alt="product-design">
+                        <img src="cover/website.png" alt="">
                         <img class="img_show" src="cover/web.gif" alt="product-design">
                     </div>
                 </div>
@@ -393,9 +553,18 @@ A Designer and Developer.</p>
 
 
         <!--large hide  6+1-->
-        <li class="work_item work_item_m work_cover col-md-pullup-1 col-m-pullup-1 col-xs-3 col-sm-3 col-md-3 col-lg-2 col-lg-hide">
+        <li class="work_item square_item work_cover col-md-pullup-1 col-xs-6 col-sm-6 col-md-3 col-lg-2 col-lg-hide">
             <a href="#">
                 <div class="work_item_container">
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Information Architecture</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags"></p>
+                            <p class="tags"></p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_description"></div>
                     <div class="work_item_container_content">
                         <img src="cover/ia.png" alt="">
@@ -407,18 +576,15 @@ A Designer and Developer.</p>
 
        
 
-         <!--hide2 -->
-         <li class="work_item work_item_m col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xs-hide col-sm-hide col-md-hide "></li>
-         <li class="work_item work_item_m col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xs-hide col-sm-hide col-md-hide "></li>
-         <li class="work_item work_item_m col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xs-hide col-sm-hide col-md-hide "></li>
+          <!--hide2 -->
+          <li class="work_item work_item_m col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xs-hide col-sm-hide col-md-hide "></li>
+          <li class="work_item work_item_m col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xs-hide col-sm-hide col-md-hide "></li>
+          <li class="work_item work_item_m col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xs-hide col-sm-hide col-md-hide "></li>
 
         
 
     </ul>        
 </div>
-
-
-
 
 <!-- Robotic Fabrication -->
 <div class="work_describe">
@@ -432,26 +598,52 @@ A Designer and Developer.</p>
 </div>
 
 
+
+
 <div class="work">
     <ul class="row">
         <!-- Topic 1-->
-        <li class="work_item work__item--tall work_item_m work_item_tall work_cover work_item_tall_3 col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <li class="square_item work__item--tall work__item--bottom work_cover work_item_tall_3 col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <a href="#!">
                 <div class="work_item_container">
-                    <div class="work_item_container_description"></div>
+                    <div class="square_item_title_container_description">
+                        <ol class="square_word s_title">
+                            <h1>Human-Robot Collaboration</h1>
+                        </ol>
+                        <ol class="square_word s_dscription" >
+                            <p></p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Robotics</p>
+                            <p class="tags">Human-Computer Interaction</p>
+                            <p class="tags">Process Design</p>
+                            <p class="tags">Ergonomics</p>
+                        </ol>
+                    </div>
+
                     <div class="work_item_container_content">
-                        <img src="cover/topics-01.png" alt="">
-                        <img class="img_show" src="cover/skills-01.png" alt="">
+                        <img src="" alt="">
+                        <img class="img_show" src="" alt="">
                     </div>
                 </div>
+                    
+               
             </a>
         </li>
 
         <!-- small 23-->
-        <li class="work_item work_item_m work_cover col-xs-3 col-sm-3 col-md-3 col-lg-2">
+        <li class="work_item square_item work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2">
             <a href="robotic-drawing/">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Robotic Drawing</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Robotic Drawing</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Universal Robot 5</p>
+                            <p class="tags">Human Emulation</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
                         <img src="robotic-drawing/drawing.jpg" alt="robotic-drawing">
                         <img class="img_show" src="robotic-drawing/drawing.gif" alt="robotic-drawing">
@@ -460,10 +652,18 @@ A Designer and Developer.</p>
             </a>
         </li>
 
-        <li class="work_item work_item_m work_cover col-xs-3 col-sm-3 col-md-3 col-lg-2">
+        <li class="work_item square_item work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2">
             <a href="rapid-clay-formations/">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Rapid Clay<br>Formations</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Rapid Clay Formations</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Material Behavior</p>
+                            <p class="tags">Process Design</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
                         <img src="rapid-clay-formations/clay-formations.jpg" alt="rapid-clay-formations">
                         <img class="img_show" src="rapid-clay-formations/clay-formations.gif" alt="rapid-clay-formations">
@@ -474,12 +674,20 @@ A Designer and Developer.</p>
 
     
         <!-- tall  4-->
-        <li class="work_item work_item_m work_item_tall work__item--tall work_cover col-xs-3 col-sm-3 col-md-3 col-lg-2">
+        <li class="work_item square_item work__item--tall work__item--bottom work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2">
             <a href="concrete-choreography/">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Concrete Choreography</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Concrete Choreography</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Robotic 3D-printing</p>
+                            <p class="tags">Concrete</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
-                        <img src="concrete-choreography/concrete.jpg" alt="concrete-choreography">
+                        <img class="img_now" src="concrete-choreography/concrete.jpg" alt="concrete-choreography">
                         <img class="img_show" src="concrete-choreography/concrete.gif" alt="concrete-choreography">
                     </div>
                 </div>
@@ -487,10 +695,18 @@ A Designer and Developer.</p>
         </li>
 
         <!-- large hide  4+1-->
-        <li class="work_item work_item_m work_item_tall work__item--tall work_cover col-xs-3 col-sm-3 col-md-3 col-lg-2 col-lg-hide">
+        <li class="work_item square_item work__item--tall work__item--bottom work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2 col-lg-hide">
             <a href="concrete-choreography/">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Concrete Choreography</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Concrete Choreography</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Robotic 3D-printing</p>
+                            <p class="tags">Concrete</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
                         <img src="concrete-choreography/concrete_1.jpg" alt="concrete-choreography">
                         <img class="img_show" src="concrete-choreography/concrete.gif" alt="concrete-choreography">
@@ -506,10 +722,19 @@ A Designer and Developer.</p>
 
 
         <!-- Rec 5-->
-        <li class="work_item work__item--tall work_item_m work_item_tall work_cover col-md-pullup-1 col-m-pullup-1 col-md-pullup-3 col-xs-6 col-sm-6 col-md-6 col-lg-4">
+        <li class="work_item square_item work__item--tall work_cover col-md-pullup-1 col-md-pullup-3 col-xs-12 col-sm-12 col-md-6 col-lg-4">
             <a href="robotic-claygraphy/">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Robotic Claygraph</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Robotic Claygraph</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Research</p>
+                            <p class="tags">Process Design</p>
+                            <p class="tags">Clay Material</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
                         <img src="robotic-claygraphy/claygraphy.jpg" alt="robotic-claygraphy">
                         <img class="img_show" src="robotic-claygraphy/claygraphy.gif" alt="robotic-claygraphy">
@@ -520,15 +745,23 @@ A Designer and Developer.</p>
 
 
         <!--hide1 -->
-        <li class="work_item work_item_m col-xs-3 col-sm-3 col-md-3 col-lg-2 col-lg-hide "></li>
-        <li class="work_item work_item_m col-xs-3 col-sm-3 col-md-3 col-lg-2 col-lg-hide "></li>
+        <li class="work_item col-xs-hide col-sm-hide col-md-3 col-lg-hide "></li>
+        <li class="work_item col-xs-hide col-sm-hide col-md-3 col-lg-hide "></li>
 
         
         <!--small 6-->
-        <li class="work_item work_item_m col-md-pullup-1 col-m-pullup-1 work_cover col-xs-3 col-sm-3 col-md-3 col-lg-2">
+        <li class="work_item square_item col-md-pullup-1 work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2">
             <a href="up-sticks/">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Up Sticks</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Up Sticks</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Robotic Fabrication</p>
+                            <p class="tags">Process Design</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
                         <img src="up-sticks/sticks.jpg" alt="up-sticks">
                         <img class="img_show" src="up-sticks/sticks.gif" alt="up-sticks">
@@ -540,10 +773,18 @@ A Designer and Developer.</p>
 
 
         <!--large hide  6+1-->
-        <li class="work_item work_item_m col-md-pullup-1 col-m-pullup-1 work_cover col-xs-3 col-sm-3 col-md-3 col-lg-2 col-lg-hide">
+        <li class="work_item square_item col-md-pullup-1 work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2 col-lg-hide">
             <a href="up-sticks/">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Up Sticks</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Up Sticks</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Timber</p>
+                            <p class="tags">Building-Scale</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
                         <img src="up-sticks/sticks_1.jpg" alt="up-sticks">
                         <img class="img_show" src="up-sticks/sticks.gif" alt="up-sticks">
@@ -554,8 +795,6 @@ A Designer and Developer.</p>
 
     </ul>        
 </div>
-
-
 
 <!-- Digital Fabrication -->
 <div class="work_describe">
@@ -573,10 +812,18 @@ A Designer and Developer.</p>
 <div class="work">
     <ul class="row">
         <!-- small 23-->
-        <li class="work_item work_item_m work_cover col-xs-3 col-sm-3 col-md-3 col-lg-2">
+        <li class="work_item square_item work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2">
             <a href="heping-island/">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Research & Proposal<br>Shipbuilding<br>Archeology</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Shipbuilding Archeology</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Design Strategy</p>
+                            <p class="tags">Data</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
                         <img src="heping-island/research.jpg" alt="heping-island">
                         <img class="img_show" src="heping-island/heping.gif" alt="heping-island">
@@ -585,10 +832,18 @@ A Designer and Developer.</p>
             </a>
         </li>
 
-        <li class="work_item work_item_m work_cover col-xs-3 col-sm-3 col-md-3 col-lg-2">
+        <li class="work_item square_item work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2">
             <a href="continuous-laminae/">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Continuous Laminae</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Continuous Laminae</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Material Research</p>
+                            <p class="tags">Parametric Design</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
                         <img src="continuous-laminae/laminae.jpg" alt="continuous-laminae">
                         <img class="img_show" src="continuous-laminae/laminae.gif" alt="continuous-laminae">
@@ -599,10 +854,18 @@ A Designer and Developer.</p>
 
 
         <!-- tall  4-->
-        <li class="work_item work_item_m work_item_tall work__item--tall work_cover col-xs-3 col-sm-3 col-md-3 col-lg-2">
+        <li class="work_item square_item work__item--tall work__item--bottom work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2 col-lg-hide">
             <a href="hyperbolic-paraboloid/">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Hyperbolic Paraboloid</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Hyperbolic Paraboloid</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Prototyping</p>
+                            <p class="tags">Process Design</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
                         <img src="hyperbolic-paraboloid/hyperbolic.jpg" alt="hyperbolic-paraboloid">
                         <img class="img_show" src="hyperbolic-paraboloid/hyperbolic.gif" alt="hyperbolic-paraboloid">
@@ -612,10 +875,18 @@ A Designer and Developer.</p>
         </li>
 
         <!-- large hide  4+1-->
-        <li class="work_item work_item_m work_item_tall work__item--tall work_cover col-xs-3 col-sm-3 col-md-3 col-lg-2 col-lg-hide">
+        <li class="work_item square_item work__item--tall work__item--bottom work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2">
             <a href="hyperbolic-paraboloid/">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Hyperbolic Paraboloid</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Hyperbolic Paraboloid</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Prototyping</p>
+                            <p class="tags">Process Design</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
                         <img src="hyperbolic-paraboloid/hyperbolic_1.jpg" alt="hyperbolic-paraboloid">
                         <img class="img_show" src="hyperbolic-paraboloid/hyperbolic.gif" alt="hyperbolic-paraboloid">
@@ -627,13 +898,26 @@ A Designer and Developer.</p>
          
 
         <!-- Topic 1-->
-        <li class="work_item work__item--tall col-md-pullup-1 col-m-pullup-1  work_item_m work_item_tall work_cover work_item_tall_3 col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <li class="square_item work__item--tall col-md-pullup-1 work__item--bottom work_cover work_item_tall_3 col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <a href="#!">
                 <div class="work_item_container">
-                    <div class="work_item_container_description"></div>
+                    <div class="square_item_title_container_description">
+                        <ol class="square_word s_title">
+                            <h1>Digital Fabrication<br>Computatioanl Design</h1>
+                        </ol>
+                        <ol class="square_word s_dscription" >
+                            <p></p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Research</p>
+                            <p class="tags">Digital / Physical Prototyping</p>
+                            <p class="tags">Manufacturing Workflow</p>
+                            <p class="tags">Material</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
-                        <img src="cover/topics-02.png" alt="">
-                        <img class="img_show" src="cover/skills-02.png" alt="">
+                        <img src="" alt="">
+                        <img class="img_show" src="" alt="">
                     </div>
                 </div>
             </a>
@@ -641,10 +925,20 @@ A Designer and Developer.</p>
     
 
         <!-- Rec 5-->
-        <li class="work_item work__item--tall work_item_m work_item_tall work_cover col-md-pullup-3 col-xs-6 col-sm-6 col-md-6 col-lg-4">
+        <li class="work_item square_item work__item--tall work_cover col-md-pullup-3 col-xs-12 col-sm-12 col-md-6 col-lg-4">
             <a href="bending-active-structural-pavilion/">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Bending Active Structural Pavilion</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Bending Active Structural Pavilion</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">Research</p>
+                            <p class="tags">Simulation</p>
+                            <p class="tags">Form-Finding</p>
+                            <p class="tags">Building-Scale Prototype</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
                         <img src="bending-active-structural-pavilion/bending.jpg" alt="bending-active-structural-pavilion">
                         <img class="img_show" src="bending-active-structural-pavilion/bending.gif" alt="bending-active-structural-pavilion">
@@ -655,10 +949,18 @@ A Designer and Developer.</p>
 
         
         <!--small 6-->
-        <li class="work_item work_item_m work_cover col-md-pullup-1 col-m-pullup-1 col-xs-3 col-sm-3 col-md-3 col-lg-2">
+        <li class="work_item square_item work_cover col-md-pullup-1 col-xs-6 col-sm-6 col-md-3 col-lg-2">
             <a href="frame-moebel/">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Frame Möbel</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Frame Möbel</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">3D-Printing</p>
+                            <p class="tags">Prototyping</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
                         <img src="frame-moebel/moebel.jpg" alt="frame-moebel">
                         <img class="img_show" src="frame-moebel/printing.gif" alt="frame-moebel">
@@ -670,10 +972,18 @@ A Designer and Developer.</p>
 
 
         <!--large hide  6+1-->
-        <li class="work_item work_item_m work_cover col-md-pullup-1 col-m-pullup-1 col-xs-3 col-sm-3 col-md-3 col-lg-2 col-lg-hide">
+        <li class="work_item square_item work_cover col-md-pullup-1 col-xs-6 col-sm-6 col-md-3 col-lg-2 col-lg-hide">
             <a href="frame-moebel/">
                 <div class="work_item_container">
-                    <div class="work_item_container_description">Frame Möbel</div>
+                    <div class="square_item_container_description">
+                        <ol class="square_word s_title">
+                            <p>Frame Möbel</p>
+                        </ol>
+                        <ol class="square_word s_tag" >
+                            <p class="tags">3D-Printing</p>
+                            <p class="tags">Prototyping</p>
+                        </ol>
+                    </div>
                     <div class="work_item_container_content">
                         <img src="frame-moebel/printing.jpg" alt="frame-moebel">
                         <img class="img_show" src="frame-moebel/printing.gif" alt="frame-moebel">
@@ -684,38 +994,47 @@ A Designer and Developer.</p>
 
        
 
-         <!--hide2 -->
-         <li class="work_item work_item_m col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xs-hide col-sm-hide col-md-hide "></li>
-         <li class="work_item work_item_m col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xs-hide col-sm-hide col-md-hide "></li>
-         <li class="work_item work_item_m col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xs-hide col-sm-hide col-md-hide "></li>
+        <!--hide2 -->
+        <li class="work_item work_item_m col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xs-hide col-sm-hide col-md-hide "></li>
+        <li class="work_item work_item_m col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xs-hide col-sm-hide col-md-hide "></li>
+        <li class="work_item work_item_m col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xs-hide col-sm-hide col-md-hide "></li>
 
         
 
     </ul>        
 </div>
 
-
-
-
-
-
-
-  
-
   
   </main>
   
       <main class="main_container">
-        <div class="sendme">
-            <p>Interested in what you see?
-                <br>
-                    <br>Shoot me an email <a href="mailto:ohis.yingshiuan@gmail.com">ohis.yingshiuan@gmail.com</a>
+        <div class="sendme row">
+            <ul class="row">
+                <li class ="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p>Interested in what you see?<p>
+                </li>
+
+                <li class ="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <br>
-                    <br>
-                <div class="media_icon">
-                    <a href="mailto:ohis.yingshiuan@gmail.com"><i class="fas fa-paper-plane"></i></a>
-                </div>
-            </p>
+                </li>
+
+                <li class ="col-lg-3 col-md-3 col-sm-12 col-xs-12"></li>
+
+                <li class ="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <p class="sendmebox">
+                        <a href="mailto:ohis.yingshiuan@gmail.com">Email me</a>
+                    </p>
+                    <p class="sendmebox">
+                        <a href="/yshiuanc/resume/Ying-Shiuan Chen-UX-Product-Designer_2021.pdf">PDF Resume</a>
+                    </p>
+                    <p class="sendmebox">
+                        <a href="https://www.linkedin.com/in/chenyingshiuan/">Linkedin</a>
+                    </p>
+                </li>
+                <li class ="col-lg-3 col-md-3 col-sm-12 col-xs-12"></li>
+                
+            </ul>
+
         </div>
     </main>  
   
@@ -724,18 +1043,16 @@ A Designer and Developer.</p>
         <div class="footer_container">
             <div class="footer_main">
                 <div class="topic">
-                <h2>Ying-Shiuan Chen
-                    <a href="mailto:ohis.yingshiuan@gmail.com"><i class="material-icons">email</i></a>
-                </h2>
+                <h2>Ying-Shiuan Chen</h2>
                 </div>
             </div>
             
             <div class="navbar_footer">
                 <ul>
-                    <li class="logo"><a href="/yshiuanc/">YShiuan_C</a></li>
+                    <li class="logo"><a href="/">Yinz</a></li>
                     
                     <li class="item">
-                        <a href="/yshiuanc/about-me/">About me</a>
+                        <a href="/yshiuanc/portfolio/">Projects</a>
                     </li>
                     
                     <li class="item">
@@ -743,11 +1060,7 @@ A Designer and Developer.</p>
                     </li>
                     
                     <li class="item">
-                        <a href="/yshiuanc/portfolio/">Portfolio</a>
-                    </li>
-                    
-                    <li class="item">
-                        <a href="/yshiuanc/contact/">Contact</a>
+                        <a href="/yshiuanc/about-me/">About</a>
                     </li>
                     
                     <li class="navbarToggle"><a href="#!"><i class="material-icons">menu</i></a></li>
@@ -758,56 +1071,30 @@ A Designer and Developer.</p>
                 <div class="topic"><h2> </h2></div>
                 <div class="media_icon">
                     <!--   
-                    <a href="https://github.com/yingshiuan" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://instagram.com/yshiuan_c?igshid=ejehd1tl8ce" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/channel/UCFpat39kIqYmYTbbfdoBNfA" target="_blank"><i class="fab fa-youtube"></i></a>
-                    -->
-                    <a href="https://vimeo.com/yshiuanc" target="_blank"><i class="fab fa-vimeo-v"></i></a>
-                    <a href="https://yshiuan-c.medium.com" target="_blank"><i class="fab fa-medium-m"></i></a>
                     <a href="https://www.linkedin.com/in/chenyingshiuan/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    -->
+                    <a href="https://yshiuan-c.medium.com" target="_blank"><i class="fab fa-medium-m"></i></a>
+                    <a href="https://vimeo.com/yshiuanc" target="_blank"><i class="fab fa-vimeo-v"></i></a>
+                    <a href="https://www.youtube.com/channel/UCFpat39kIqYmYTbbfdoBNfA" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://github.com/yingshiuan" target="_blank"><i class="fab fa-github"></i></a>
+                    
                 </div>
             </div>
             
             <div class="resouce">
                 <ul class="sitemap">
-                    <li><a href="/yshiuanc/sitemap/">Sitemap</a></li>
+                    <li><a href="/yshiuanc/sitemap">Sitemap</a></li>
                 </ul>
             </div>
             
             <div class="footer_copyright">
                 <li>
-                    <p>&copy <span id="year"></span> <a href="{{ '/'|url }}">Ying-Shiuan Chen</a> All rights reserved</p>
+                    <p>&copy <span id="year"></span>  <i>Design + Code</i> by <a href="/">Ying-Shiuan Chen</a>. All rights reserved.</p>
                 </li>
             </div>
         </div>          
     </footer>
   
   
-    <!--script java-->
-    <script>        
-        /* Click Hide menu */
-        $(document).ready(function(){
-            $('.navbarToggle').click(function(){
-            $('.item').toggleClass("show");
-            $('.navbarToggle').toggleClass("hide");          
-            });
-        });
-    
-        /*scroll*/
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            document.getElementById("scroll").style.top = "20px";
-          } else {
-            document.getElementById("scroll").style.top = "-100px";
-          }
-          prevScrollpos = currentScrollPos;
-        }
-        
-        /*year*/
-        const d = new Date();
-        document.getElementById("year").innerHTML = d.getFullYear();
-    </script>
 </body>
-
