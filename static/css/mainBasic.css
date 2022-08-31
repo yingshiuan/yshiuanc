@@ -427,6 +427,10 @@ nav ul li.navbarToggle.hide i::before{
 /* multi device */
 
 @media all and (max-width: 900px){
+    .headerContainer{
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+    }
 
     header{
         background: none;
@@ -453,7 +457,6 @@ nav ul li.navbarToggle.hide i::before{
         filter:opacity(90%);
         backdrop-filter: blur(0.5rem);
     }
-
  
    
 
