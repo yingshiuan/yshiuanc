@@ -1,29 +1,29 @@
 
-
-
-
 function getUserPreference() {
-  return localStorage.getItem('theme') || 'system';
+  return localStorage.getItem('mode') || 'system';
 }
 
 function saveUserPreference(userPreference) {
-  localStorage.setItem('theme', userPreference);
+  localStorage.setItem('mode', userPreference);
 }
 
+
 function getAppliedMode(userPreference) {
-  if (userPreference === 'light-theme') {
-    return 'light-theme';
+  if (userPreference === 'light_mode') {
+    return 'light_mode';
   }
-  if (userPreference === 'dark-theme') {
-    return 'dark-theme';
+  if (userPreference === 'dark_mode') {
+    return 'dark_mode';
   }
   
   // system
   if (matchMedia('(prefers-color-scheme: dark)').matches) {
-    return 'dark-theme';
+    return 'dark_mode';
   }
-  return 'light-theme';
+  return 'light_mode';
 }
+
+
 
 const colorScheme = document.querySelector('meta[name="color-scheme"]');
 function setAppliedMode(mode) {
@@ -31,19 +31,36 @@ function setAppliedMode(mode) {
   colorScheme.content = mode;
 }
 
+
 function rotatePreferences(userPreference) {
   if (userPreference === 'system') {
-    return 'light-theme'
+    return 'light_mode'
   }
-  if (userPreference === 'light-theme') {
-    return 'dark-theme';
+  if (userPreference === 'light_mode') {
+    return 'dark_mode';
   }
-  if (userPreference === 'dark-theme') {
+  if (userPreference === 'dark_mode') {
     return 'system';
   }
   // for invalid values, just in case
   return 'system';
 }
+
+/*change the content */
+function rotatePreferences(userPreference) {
+  if (userPreference === 'tonality') {
+    return 'light_mode'
+  }
+  if (userPreference === 'light_mode') {
+    return 'dark_mode';
+  }
+  if (userPreference === 'dark_mode') {
+    return 'tonality';
+  }
+  // for invalid values, just in case
+  return 'tonality';
+}
+
 
 
 /* init and eventListener for null on safari */
@@ -56,10 +73,12 @@ function init() {
     saveUserPreference(newUserPref);
     themeDisplay.innerText = newUserPref;
     setAppliedMode(getAppliedMode(newUserPref));
+    
   }
   let userPreference = getUserPreference();
   setAppliedMode(getAppliedMode(userPreference));
   themeDisplay.innerText = userPreference;
+
 }
 
 document.addEventListener('readystatechange', function() {
@@ -67,11 +86,3 @@ document.addEventListener('readystatechange', function() {
     init();
   }
 });
-
-
-
-
-
-
-
-
