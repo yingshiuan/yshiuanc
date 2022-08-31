@@ -853,6 +853,7 @@ main-send me
     border-radius: 6px;
     padding: 0.5rem;
     display: inline-block;
+    margin-bottom: 1rem;
 }
 
 .sendmebox a{
