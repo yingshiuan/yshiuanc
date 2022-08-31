@@ -7,56 +7,63 @@
   <meta name="author" content="Ying-Shiuan Chen" />
   <meta name="copyright" content="Ying-Shiuan Chen" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="OUTFITS YOU is an augmented reality try-on app for users create their own outfits and build their own collection by adding fashion items.">
+  <meta name="keywords" content=" Ying-Shiuan Chen">
   <meta name="color-scheme" content="light dark"/>
   <link rel="stylesheet" href="/yshiuanc/static/style.css">
   <link rel="canonical" href="https://yingshiuan.github.io/yshiuanc/portfolio/outfitsyou/" />
+  <!--preload-->
+  <link rel="preload" href="/yshiuanc/static/style.css" as="style">
+  <link rel="preload" href="/yshiuanc/static/js/mode-theme.js" as="script">
   <!--This is title of website /tab/ -->
-  <title>Outfits You | YShiuan_C</title>
+  <title>Outfits You | Ying-Shiuan Chen</title>
   <!-- Logo on the Tab  -->
-  <link rel="icon" sizes="16x16" type="image/png" href="/yshiuanc/static/logo/YShiuan_C_16x16.png">
-  <!-- icon -->
+  <link rel="icon" sizes="16x16" type="image/png" href="/yshiuanc/static/logo/yinz.png">
+  <!--icon-->
   <script src="https://kit.fontawesome.com/03192cca0c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script type="text/javascript" src="/yshiuanc/static/js/mode-theme.js"></script>
-  <!-- Font -->
+  <!--javascript-->
+  <script async type="text/javascript" src="/yshiuanc/static/js/mode-theme.js"></script>
+  <script async type="text/javascript" src="/yshiuanc/static/js/function.js"></script>
+  <!--model-viewer-->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <!--font-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <!--SEO-->
   <meta property='og:title' content="Outfits You | Ying-Shiuan Chen"/>
-  <meta property='og:image' content="https://yingshiuan.github.io/yshiuanc/portfolio/outfitsyou/outfitsyoujpg"/>
+  <meta property='og:image' content="https://yingshiuan.github.io/yshiuanc/portfolio/outfitsyou/"/>
   <meta property='og:description' content="OUTFITS YOU is an augmented reality try-on app for users create their own outfits and build their own collection by adding fashion items."/>
   <meta property='og:url' content="https://yingshiuan.github.io/yshiuanc/portfolio/outfitsyou/" />
+  <meta name="google-site-verification" content="7x_392_0i3J2ueR1hniQdwveOFtObZQZRLa89TBTdXc" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-18RYESZYQ5"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-18RYESZYQ5');
-  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-203319087-1"></script>
+  <script src="/yshiuanc/static/js/ga.js"></script>
+  
 
 </head>
 
 
 
 <body>
-      <!--Header-->  
+       <!--Header-->  
     <header>
         <div class="headerContainer">
             <div class = "logo"> </div>
             <div class="top">
-                <div class ="homepage"><a href = "/yshiuanc/">YShiuan_C</a>
-                    <span class="tooltip">Homepage</span>
+                <div class ="homepage"><a class="tags" href = "/yshiuanc/">Yinz</a>
+                    <span class="tooltip">Nice to meet you :)</span>
                 </div>
 
                 <div class="mode">
                     <button id="mode-button" class="mode-button">
-                        <span class="material-icons">tonality</span>
-                        <span id="mode">system</span>
+                        <span class="material-icons" id="mode">tonality</span>
+                        <!--
+                        <span id="display">system</span>
+                        -->
+                        <span class="tooltip">mode</span>
                     </button>
                 </div>
             </div>
@@ -64,19 +71,19 @@
     </header>
 
     <!-- currently -->
-    <div class="currently" id="scroll">
-        <div class="info">
-            <p> </p>
+        <div class="currently" id="scroll">
+            <div class="info">
+                <p></p>
+            </div>
         </div>
-    </div>
-
+        
     <!--nav-->
     <nav>
         <ul id="navbar">
             <li class="logo"><a href="/yshiuanc/"> </a></li>
             
             <li class="item">
-                <a href="/yshiuanc/about-me/">About me</a>
+                <a href="/yshiuanc/portfolio/">Projects</a>
             </li>
             
             <li class="item">
@@ -84,13 +91,9 @@
             </li>
             
             <li class="item">
-                <a href="/yshiuanc/portfolio/">Portfolio</a>
+                <a href="/yshiuanc/about-me/">About</a>
             </li>
-            
-            <li class="item">
-                <a href="/yshiuanc/contact/">Contact</a>
-            </li>
-            
+
             <li class="navbarToggle"><a href="#!"><i class="material-icons">menu</i></a></li> 
         </ul>
     </nav>
@@ -109,38 +112,37 @@
         <ul class="row">
             <li class ="work_title col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h1>
-                    <p>Outfits <br>
-                        You<br>
+                    <p>Outfits<br>
+You</p>
+
                 </h1>
                 <h3>
-                    <p>Augmented Reality Making Outfits Application</p>
-
+                    
                 </h3>
                 <br>
             </li>
         
 
             <li class ="work_title col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <p>
-                    OUTFITS YOU is an interactive try-on application where users can create their outfits and build their fashion collections. 
-                    Through the creative process, help people find suitable styles and clothing. 
-                    The goal is to encourage people to try different fashion items and find types of clothing that suit the user on a specific occasion.
+                <p><p>OUTFITS YOU is an interactive try-on application where users can create their outfits and build their fashion collections. Through the creative process, help people find suitable styles and clothing. The goal is to encourage people to try different fashion items and find types of clothing that suit the user on a specific occasion.</p>
+
                     <br>
                 </p>
             </li>
 
             <li class ="work_title work_tag col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 
+                    
                         <p class="tags"> 
                            Augmented Reality
                         </p>
-
+                    
                         <p class="tags"> 
                            UX Research
                         </p>
                     
                         <p class="tags"> 
-                           UI/UX Design
+                           UX/UI Design
                         </p>
                     
                         <p class="tags"> 
@@ -158,7 +160,52 @@
                 
             </li>
         </ul>
+
+
+        <div class="work_sum">
+            <ul class="row ">
+                <li class ="work_detail col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="work_detial_item_container">
+                        
+                        <ol class="col-lg-3 col-md-3 col-sm-3 col-xs-6" >
+                            <h4>Role</h4>
+                            <i><p>UX designer</p>
+</i>
+                        </ol>
+                        <ol class="col-lg-3 col-md-3 col-sm-3 col-xs-6" >
+                            <h4>Timeline</h4>
+                            <i><p>1 week</p>
+</i>
+                        </ol>
+                        <ol class="col-lg-3 col-md-3 col-sm-3 col-xs-6" >
+                            <h4>Completed</h4>
+                            <i><p>09/2021</p>
+</i>
+                        </ol>
+                        <ol class="col-lg-3 col-md-3 col-sm-3 col-xs-6" >
+                            <h4>Credits</h4>
+                            <i></i>
+                        </ol>
+                        <ol class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+                            <h4>Tools</h4>
+                            <i><p>Figma, Adobe XD, Adobe Illustrator, Adobe Photoshop, Adobe After Effects</p>
+</i>
+                        </ol>
+                        <ol class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+                            <h4>Role & Activities</h4>
+                            <i></i>
+                        </ol>
+                    </div>
+                </li>
+    
+            </ul>
+        </div>
     </div>
+
+    
+    
+
+
 
     <!-- work gallery-->
     <div class="work">
@@ -178,7 +225,8 @@
         </ul>        
     </div>
 
-    <!--work_describe-->         
+
+   <!--work_describe-->         
    <div class="work_describe">
     <ul class="row">
             <!--TEXT HERE-->
@@ -318,7 +366,7 @@
                                 Create and Explore
                             </h3><br>
                             <p>
-                                 Engage with fashion, by creating your own styles. Be Creative!
+                                 Engage with fashion, by creating your styles. Be Creative!
                             </p>                    
                     </ol>
 
@@ -337,7 +385,7 @@
                                 Share and Collect 
                             </h3><br>
                             <p>
-                                Share your outfit on the Internet and create a list for your favorite fashion items.
+                                Share your outfit on the Internet and create a list of your favorite fashion items.
                             </p>
                    </ol>
                   
@@ -355,7 +403,7 @@
                                 Create and Explore
                             </h3><br>
                             <p>
-                                 Engage with fashion, by creating your styles. Be Creative!
+                                 Engage with fashion, by creating your own styles. Be Creative!
                             </p>                    
                     </ol>
                   
@@ -522,6 +570,8 @@
                         </div>
                     </div>
             </li>
+
+
 
 
             <!--TEXT HERE-->
@@ -739,7 +789,7 @@
                        1
                     </h3><br>
                     <p>
-                        Conduct another round of usability studies to validate whether pain points users experienced have been effectively addressed.
+                        Conduct another round of usability studies to validate whether the pain points users experienced have been effectively addressed.
                     </p>
                 </ol>
                 <ol class="ux_word col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -789,6 +839,7 @@
             </li>
 
 
+
             <!--TEXT HERE-->
             <li class = "work_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <h2>
@@ -800,16 +851,39 @@
                 <p>
                     I have always been interested in emerging technologies and their applications in the industry. In this project, I researched to design a good AR application for users. After in-depth research, I transformed the similar design criteria and methods in my robotic arm project into this AR project. Such as environment, movement, interaction, initialization, and from digital prototype to physical experience.
                     Continuous acquisition of knowledge, allows me to understand the problem and motivates me to integrate the knowledge I have learned into different fields. I look forward to the next challenge.
-
                 </p>
             </li>
+
+
+
+            <!--TEXT HERE
+            <li class = "work_word col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p>
+                    Welcome to watch video below to get more details.
+                </p>
+            </li>
+            -->
+            
+            <!--Video embed HERE
+            <li class="work_item diagram col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <a href="#" target="_blank">
+                    <div class="work_item_container">
+                        <div class="work_item_container_description">Project title</div>
+                            <div class="work_item_container_content">
+                                <iframe class="responsive-iframe" title="vimeo-player" src="https://player.vimeo.com/video/226186996" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                                </iframe>
+                            </div>
+                    </div>
+                </a>
+            </li>
+            -->
 
 
             <!--Credit HERE-->
             <li class = "work_item work_credit col-xs-12 col-sm-12 col-md-12 col-lg-12">                
                 <div>
                     <i>
-                        <p>Year: 08/2021</p>
+                        <p>Year: 2021</p>
                         <br>
                         <br>
                         <p>Duration: 1 Week</p>
@@ -841,14 +915,13 @@
     <ul class="row">
         <li class = "pagination_item pagination_back col-xs-9 col-sm-9 col-md-9 col-lg-9"></li>  
         
-        <li class = "pagination_item pagination_back col-xs-1 col-sm-1 col-md-1 col-lg-1"></li>
 
-        <li class = "pagination_item pagination_forward col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <a href="/yshiuanc/portfolio/" target="_self">
+        <li class = "pagination_item pagination_forward col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <a href="/portfolio/" target="_self" class="tags">
                 <div class="pagination_container">
-                    <div class="pagination_description">Check more works</div>
+                    <div class="pagination_description">Check more works<i class="material-icons">arrow_forward_ios</i></div>
                         <div class="pagination_content">
-                            <i class="material-icons">arrow_forward_ios</i>
+                            
                     </div>
                 </div>
             </a>
@@ -858,108 +931,94 @@
   
   </main>
   
-      <main class="main_container">
-        <div class="sendme">
-            <p>Interested in what you see?
+  <main class="main_container">
+    <div class="sendme row">
+        <ul class="row">
+            <li class ="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <p>Interested in what you see?<p>
+            </li>
+
+            <li class ="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <br>
-                    <br>Shoot me an email <a href="mailto:ohis.yingshiuan@gmail.com">ohis.yingshiuan@gmail.com</a>
-                    <br>
-                    <br>
-                <div class="media_icon">
-                    <a href="mailto:ohis.yingshiuan@gmail.com"><i class="fas fa-paper-plane"></i></a>
-                </div>
-            </p>
+            </li>
+
+            <li class ="col-lg-3 col-md-3 col-sm-12 col-xs-12"></li>
+
+            <li class ="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <p class="sendmebox">
+                    <a href="mailto:ohis.yingshiuan@gmail.com">Email me</a>
+                </p>
+                <p class="sendmebox">
+                    <a href="/yshiuanc/resume/Ying-Shiuan Chen-UX-Product-Designer_2021.pdf">PDF Resume</a>
+                </p>
+                <p class="sendmebox">
+                    <a href="https://www.linkedin.com/in/chenyingshiuan/">Linkedin</a>
+                </p>
+            </li>
+            <li class ="col-lg-3 col-md-3 col-sm-12 col-xs-12"></li>
+            
+        </ul>
+
+    </div>
+</main>  
+
+
+<footer>
+    <div class="footer_container">
+        <div class="footer_main">
+            <div class="topic">
+            <h2>Ying-Shiuan Chen</h2>
+            </div>
         </div>
-    </main>  
-  
-  
-    <footer>
-        <div class="footer_container">
-            <div class="footer_main">
-                <div class="topic">
-                <h2>Ying-Shiuan Chen
-                    <a href="mailto:ohis.yingshiuan@gmail.com"><i class="material-icons">email</i></a>
-                </h2>
-                </div>
-            </div>
-            
-            <div class="navbar_footer">
-                <ul>
-                    <li class="logo"><a href="/yshiuanc/">YShiuan_C</a></li>
-                    
-                    <li class="item">
-                        <a href="/yshiuanc/about-me/">About me</a>
-                    </li>
-                    
-                    <li class="item">
-                        <a href="/yshiuanc/resume/">Resume</a>
-                    </li>
-                    
-                    <li class="item">
-                        <a href="/yshiuanc/portfolio/">Portfolio</a>
-                    </li>
-                    
-                    <li class="item">
-                        <a href="/yshiuanc/contact/">Contact</a>
-                    </li>
-                    
-                    <li class="navbarToggle"><a href="#!"><i class="material-icons">menu</i></a></li>
-                </ul>
-            </div>
-            
-            <div class="media">
-                <div class="topic"><h2> </h2></div>
-                <div class="media_icon">
-                    <!--   
-                    <a href="https://github.com/yingshiuan" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://instagram.com/yshiuan_c?igshid=ejehd1tl8ce" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/channel/UCFpat39kIqYmYTbbfdoBNfA" target="_blank"><i class="fab fa-youtube"></i></a>
-                    -->
-                    <a href="https://vimeo.com/yshiuanc" target="_blank"><i class="fab fa-vimeo-v"></i></a>
-                    <a href="https://yshiuan-c.medium.com" target="_blank"><i class="fab fa-medium-m"></i></a>
-                    <a href="https://www.linkedin.com/in/chenyingshiuan/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            
-            <div class="resouce">
-                <ul class="sitemap">
-                    <li><a href="/yshiuanc/sitemap/">Sitemap</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer_copyright">
-                <li>
-                    <p>&copy <span id="year"></span> <a href="{{ '/'|url }}">Ying-Shiuan Chen</a> All rights reserved</p>
-                </li>
-            </div>
-        </div>          
-    </footer>
-  
-  
-    <!--script java-->
-    <script>        
-        /* Click Hide menu */
-        $(document).ready(function(){
-            $('.navbarToggle').click(function(){
-            $('.item').toggleClass("show");
-            $('.navbarToggle').toggleClass("hide");          
-            });
-        });
-    
-        /*scroll*/
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            document.getElementById("scroll").style.top = "20px";
-          } else {
-            document.getElementById("scroll").style.top = "-100px";
-          }
-          prevScrollpos = currentScrollPos;
-        }
         
-        /*year*/
-        const d = new Date();
-        document.getElementById("year").innerHTML = d.getFullYear();
-    </script>
+        <div class="navbar_footer">
+            <ul>
+                <li class="logo"><a href="/">Yinz</a></li>
+                
+                <li class="item">
+                    <a href="/yshiuanc/portfolio/">Projects</a>
+                </li>
+                
+                <li class="item">
+                    <a href="/yshiuanc/resume/">Resume</a>
+                </li>
+                
+                <li class="item">
+                    <a href="/yshiuanc/about-me/">About</a>
+                </li>
+                
+                <li class="navbarToggle"><a href="#!"><i class="material-icons">menu</i></a></li>
+            </ul>
+        </div>
+        
+        <div class="media">
+            <div class="topic"><h2> </h2></div>
+            <div class="media_icon">
+                <!--   
+                <a href="https://instagram.com/yshiuan_c?igshid=ejehd1tl8ce" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/chenyingshiuan/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                -->
+                <a href="https://yshiuan-c.medium.com" target="_blank"><i class="fab fa-medium-m"></i></a>
+                <a href="https://vimeo.com/yshiuanc" target="_blank"><i class="fab fa-vimeo-v"></i></a>
+                <a href="https://www.youtube.com/channel/UCFpat39kIqYmYTbbfdoBNfA" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/yingshiuan" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+        </div>
+        
+        <div class="resouce">
+            <ul class="sitemap">
+                <li><a href="/yshiuanc/sitemap">Sitemap</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer_copyright">
+            <li>
+                <p>&copy <span id="year"></span>  <i>Design + Code</i> by <a href="/">Ying-Shiuan Chen</a>. All rights reserved.</p>
+            </li>
+        </div>
+    </div>          
+</footer>
+
+
 </body>

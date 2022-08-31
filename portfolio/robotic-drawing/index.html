@@ -7,37 +7,41 @@
   <meta name="author" content="Ying-Shiuan Chen" />
   <meta name="copyright" content="Ying-Shiuan Chen" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Robotic Drawing is the process of translating human drawing techniques to a robotic arm. We mount a custom tool to hold the pen as the end-effector of the robotic arm (UR5) and calibrate it to draw on the paper.">
-  <meta name="keywords" content="">
+  <meta name="description" content="Robotic drawing is the process of converting human drawing techniques into robotic arms. We mounted a custom tool to hold the pen as the end effector for the robotic arm (UR5) and calibrated it to draw on paper.">
+  <meta name="keywords" content=" Ying-Shiuan Chen">
   <meta name="color-scheme" content="light dark"/>
   <link rel="stylesheet" href="/yshiuanc/static/style.css">
   <link rel="canonical" href="https://yingshiuan.github.io/yshiuanc/portfolio/robotic-drawing/" />
+  <!--preload-->
+  <link rel="preload" href="/yshiuanc/static/style.css" as="style">
+  <link rel="preload" href="/yshiuanc/static/js/mode-theme.js" as="script">
   <!--This is title of website /tab/ -->
-  <title>Robotic Drawing | YShiuan_C</title>
+  <title>Robotic Drawing | Ying-Shiuan Chen</title>
   <!-- Logo on the Tab  -->
-  <link rel="icon" sizes="16x16" type="image/png" href="/yshiuanc/static/logo/YShiuan_C_16x16.png">
-  <!-- icon -->
+  <link rel="icon" sizes="16x16" type="image/png" href="/yshiuanc/static/logo/yinz.png">
+  <!--icon-->
   <script src="https://kit.fontawesome.com/03192cca0c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script type="text/javascript" src="/yshiuanc/static/js/mode-theme.js"></script>
-  <!-- Font -->
+  <!--javascript-->
+  <script async type="text/javascript" src="/yshiuanc/static/js/mode-theme.js"></script>
+  <script async type="text/javascript" src="/yshiuanc/static/js/function.js"></script>
+  <!--model-viewer-->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <!--font-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <!--SEO-->
   <meta property='og:title' content="Robotic Drawing | Ying-Shiuan Chen"/>
   <meta property='og:image' content="https://yingshiuan.github.io/yshiuanc/portfolio/robotic-drawing/robotic_drawing.jpg"/>
-  <meta property='og:description' content="Robotic Drawing is the process of translating human drawing techniques to a robotic arm. We mount a custom tool to hold the pen as the end-effector of the robotic arm (UR5) and calibrate it to draw on the paper."/>
+  <meta property='og:description' content="Robotic drawing is the process of converting human drawing techniques into robotic arms. We mounted a custom tool to hold the pen as the end effector for the robotic arm (UR5) and calibrated it to draw on paper."/>
   <meta property='og:url' content="https://yingshiuan.github.io/yshiuanc/portfolio/robotic-drawing/" />
+  <meta name="google-site-verification" content="7x_392_0i3J2ueR1hniQdwveOFtObZQZRLa89TBTdXc" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-18RYESZYQ5"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-18RYESZYQ5');
-  </script>  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-203319087-1"></script>
+  <script src="/yshiuanc/static/js/ga.js"></script>
+ 
 
 </head>
 
@@ -49,14 +53,17 @@
         <div class="headerContainer">
             <div class = "logo"> </div>
             <div class="top">
-                <div class ="homepage"><a href = "/yshiuanc/">YShiuan_C</a>
-                    <span class="tooltip">Homepage</span>
+                <div class ="homepage"><a class="tags" href = "/yshiuanc/">Yinz</a>
+                    <span class="tooltip">Nice to meet you :)</span>
                 </div>
 
                 <div class="mode">
                     <button id="mode-button" class="mode-button">
-                        <span class="material-icons">tonality</span>
-                        <span id="mode">system</span>
+                        <span class="material-icons" id="mode">tonality</span>
+                        <!--
+                        <span id="display">system</span>
+                        -->
+                        <span class="tooltip">mode</span>
                     </button>
                 </div>
             </div>
@@ -64,12 +71,11 @@
     </header>
 
     <!-- currently -->
-    <div class="currently" id="scroll">
-        <div class="info">
-            <p> </p>
+        <div class="currently" id="scroll">
+            <div class="info">
+                <p></p>
+            </div>
         </div>
-    </div>
-
         
     <!--nav-->
     <nav>
@@ -77,7 +83,7 @@
             <li class="logo"><a href="/yshiuanc/"> </a></li>
             
             <li class="item">
-                <a href="/yshiuanc/about-me/">About me</a>
+                <a href="/yshiuanc/portfolio/">Projects</a>
             </li>
             
             <li class="item">
@@ -85,11 +91,7 @@
             </li>
             
             <li class="item">
-                <a href="/yshiuanc/portfolio/">Portfolio</a>
-            </li>
-            
-            <li class="item">
-                <a href="/yshiuanc/contact/">Contact</a>
+                <a href="/yshiuanc/about-me/">About</a>
             </li>
 
             <li class="navbarToggle"><a href="#!"><i class="material-icons">menu</i></a></li> 
@@ -115,8 +117,7 @@ Drawing</p>
 
                 </h1>
                 <h3>
-                    <p>Robotic Fabrication and Graphics Design</p>
-
+                    
                 </h3>
                 <br>
             </li>
@@ -147,7 +148,51 @@ Drawing</p>
                 
             </li>
         </ul>
+
+
+        <div class="work_sum">
+            <ul class="row ">
+                <li class ="work_detail col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="work_detial_item_container">
+                        
+                        <ol class="col-lg-3 col-md-3 col-sm-3 col-xs-6" >
+                            <h4>Role</h4>
+                            <i><p>Develop and Design</p>
+</i>
+                        </ol>
+                        <ol class="col-lg-3 col-md-3 col-sm-3 col-xs-6" >
+                            <h4>Timeline</h4>
+                            <i><p>1 Week</p>
+</i>
+                        </ol>
+                        <ol class="col-lg-3 col-md-3 col-sm-3 col-xs-6" >
+                            <h4>Completed</h4>
+                            <i><p>10/2018</p>
+</i>
+                        </ol>
+                        <ol class="col-lg-3 col-md-3 col-sm-3 col-xs-6" >
+                            <h4>Credits</h4>
+                            <i><p>MAS ETH DFAB</p>
+</i>
+                        </ol>
+                        <ol class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+                            <h4>Tools</h4>
+                            <i><p>Rhinoceros 3D/Grasshopper, python, Universal Robot 5</p>
+</i>
+                        </ol>
+                        <ol class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+                            <h4>Role & Activities</h4>
+                            <i><p>I designed the graphics using the accuracy of the robotic arm and set up the configuration of the robotic arm to draw in the correct location.</p>
+</i>
+                        </ol>
+                    </div>
+                </li>
+    
+            </ul>
+        </div>
     </div>
+
+    
     
 
 
@@ -250,14 +295,13 @@ Drawing</p>
     <ul class="row">
         <li class = "pagination_item pagination_back col-xs-9 col-sm-9 col-md-9 col-lg-9"></li>  
         
-        <li class = "pagination_item pagination_back col-xs-1 col-sm-1 col-md-1 col-lg-1"></li>
 
-        <li class = "pagination_item pagination_forward col-xs-2 col-sm-2 col-md-2 col-lg-2">
-            <a href="/yshiuanc/portfolio/" target="_self">
+        <li class = "pagination_item pagination_forward col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <a href="/portfolio/" target="_self" class="tags">
                 <div class="pagination_container">
-                    <div class="pagination_description">Check more works</div>
+                    <div class="pagination_description">Check more works<i class="material-icons">arrow_forward_ios</i></div>
                         <div class="pagination_content">
-                            <i class="material-icons">arrow_forward_ios</i>
+                            
                     </div>
                 </div>
             </a>
@@ -267,108 +311,95 @@ Drawing</p>
   
   </main>
   
-      <main class="main_container">
-        <div class="sendme">
-            <p>Interested in what you see?
+  <main class="main_container">
+    <div class="sendme row">
+        <ul class="row">
+            <li class ="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <p>Interested in what you see?<p>
+            </li>
+
+            <li class ="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <br>
-                    <br>Shoot me an email <a href="mailto:ohis.yingshiuan@gmail.com">ohis.yingshiuan@gmail.com</a>
-                    <br>
-                    <br>
-                <div class="media_icon">
-                    <a href="mailto:ohis.yingshiuan@gmail.com"><i class="fas fa-paper-plane"></i></a>
-                </div>
-            </p>
+            </li>
+
+            <li class ="col-lg-3 col-md-3 col-sm-12 col-xs-12"></li>
+
+            <li class ="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <p class="sendmebox">
+                    <a href="mailto:ohis.yingshiuan@gmail.com">Email me</a>
+                </p>
+                <p class="sendmebox">
+                    <a href="/yshiuanc/resume/Ying-Shiuan Chen-UX-Product-Designer_2021.pdf">PDF Resume</a>
+                </p>
+                <p class="sendmebox">
+                    <a href="https://www.linkedin.com/in/chenyingshiuan/">Linkedin</a>
+                </p>
+            </li>
+            <li class ="col-lg-3 col-md-3 col-sm-12 col-xs-12"></li>
+            
+        </ul>
+
+    </div>
+</main>  
+
+
+<footer>
+    <div class="footer_container">
+        <div class="footer_main">
+            <div class="topic">
+            <h2>Ying-Shiuan Chen</h2>
+            </div>
         </div>
-    </main>  
-  
-  
-    <footer>
-        <div class="footer_container">
-            <div class="footer_main">
-                <div class="topic">
-                <h2>Ying-Shiuan Chen
-                    <a href="mailto:ohis.yingshiuan@gmail.com"><i class="material-icons">email</i></a>
-                </h2>
-                </div>
-            </div>
-            
-            <div class="navbar_footer">
-                <ul>
-                    <li class="logo"><a href="/yshiuanc/">YShiuan_C</a></li>
-                    
-                    <li class="item">
-                        <a href="/yshiuanc/about-me/">About me</a>
-                    </li>
-                    
-                    <li class="item">
-                        <a href="/yshiuanc/resume/">Resume</a>
-                    </li>
-                    
-                    <li class="item">
-                        <a href="/yshiuanc/portfolio/">Portfolio</a>
-                    </li>
-                    
-                    <li class="item">
-                        <a href="/yshiuanc/contact/">Contact</a>
-                    </li>
-                    
-                    <li class="navbarToggle"><a href="#!"><i class="material-icons">menu</i></a></li>
-                </ul>
-            </div>
-            
-            <div class="media">
-                <div class="topic"><h2> </h2></div>
-                <div class="media_icon">
-                    <!--   
-                    <a href="https://github.com/yingshiuan" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://instagram.com/yshiuan_c?igshid=ejehd1tl8ce" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/channel/UCFpat39kIqYmYTbbfdoBNfA" target="_blank"><i class="fab fa-youtube"></i></a>
-                    -->
-                    <a href="https://vimeo.com/yshiuanc" target="_blank"><i class="fab fa-vimeo-v"></i></a>
-                    <a href="https://yshiuan-c.medium.com" target="_blank"><i class="fab fa-medium-m"></i></a>
-                    <a href="https://www.linkedin.com/in/chenyingshiuan/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            
-            <div class="resouce">
-                <ul class="sitemap">
-                    <li><a href="/yshiuanc/sitemap/">Sitemap</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer_copyright">
-                <li>
-                    <p>&copy <span id="year"></span> <a href="{{ '/'|url }}">Ying-Shiuan Chen</a> All rights reserved</p>
-                </li>
-            </div>
-        </div>          
-    </footer>
-  
-  
-    <!--script java-->
-    <script>        
-        /* Click Hide menu */
-        $(document).ready(function(){
-            $('.navbarToggle').click(function(){
-            $('.item').toggleClass("show");
-            $('.navbarToggle').toggleClass("hide");          
-            });
-        });
-    
-        /*scroll*/
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            document.getElementById("scroll").style.top = "20px";
-          } else {
-            document.getElementById("scroll").style.top = "-100px";
-          }
-          prevScrollpos = currentScrollPos;
-        }
         
-        /*year*/
-        const d = new Date();
-        document.getElementById("year").innerHTML = d.getFullYear();
-    </script>
+        <div class="navbar_footer">
+            <ul>
+                <li class="logo"><a href="/">Yinz</a></li>
+                
+                <li class="item">
+                    <a href="/yshiuanc/portfolio/">Projects</a>
+                </li>
+                
+                <li class="item">
+                    <a href="/yshiuanc/resume/">Resume</a>
+                </li>
+                
+                <li class="item">
+                    <a href="/yshiuanc/about-me/">About</a>
+                </li>
+                
+                <li class="navbarToggle"><a href="#!"><i class="material-icons">menu</i></a></li>
+            </ul>
+        </div>
+        
+        <div class="media">
+            <div class="topic"><h2> </h2></div>
+            <div class="media_icon">
+                <!--   
+                <a href="https://instagram.com/yshiuan_c?igshid=ejehd1tl8ce" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/chenyingshiuan/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                -->
+                <a href="https://yshiuan-c.medium.com" target="_blank"><i class="fab fa-medium-m"></i></a>
+                <a href="https://vimeo.com/yshiuanc" target="_blank"><i class="fab fa-vimeo-v"></i></a>
+                <a href="https://www.youtube.com/channel/UCFpat39kIqYmYTbbfdoBNfA" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://github.com/yingshiuan" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+        </div>
+        
+        <div class="resouce">
+            <ul class="sitemap">
+                <li><a href="/yshiuanc/sitemap">Sitemap</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer_copyright">
+            <li>
+                <p>&copy <span id="year"></span>  <i>Design + Code</i> by <a href="/">Ying-Shiuan Chen</a>. All rights reserved.</p>
+            </li>
+        </div>
+    </div>          
+</footer>
+
+
 </body>
+
