@@ -1,6 +1,6 @@
 
 function getUserPreference() {
-  return localStorage.getItem('mode') || 'system';
+  return localStorage.getItem('mode') || 'tonality';
 }
 
 function saveUserPreference(userPreference) {
@@ -32,19 +32,6 @@ function setAppliedMode(mode) {
 }
 
 
-function rotatePreferences(userPreference) {
-  if (userPreference === 'system') {
-    return 'light_mode'
-  }
-  if (userPreference === 'light_mode') {
-    return 'dark_mode';
-  }
-  if (userPreference === 'dark_mode') {
-    return 'system';
-  }
-  // for invalid values, just in case
-  return 'system';
-}
 
 /*change the content */
 function rotatePreferences(userPreference) {
