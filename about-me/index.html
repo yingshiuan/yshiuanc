@@ -8,31 +8,41 @@
   <meta name="copyright" content="Ying-Shiuan Chen" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ying-Shiuan Chen about me">
-  <meta name="keywords" content="">
+  <meta name="keywords" content="Interaction Designer">
   <meta name="color-scheme" content="light dark"/>
   <link rel="stylesheet" href="/yshiuanc/static/style.css">
   <link rel="canonical" href="https://yingshiuan.github.io/yshiuanc/about-me/" />
+  <!--preload-->
+  <link rel="preload" href="/yshiuanc/static/style.css" as="style">
+  <link rel="preload" href="/yshiuanc/static/js/mode-theme.js" as="script">
   <!--This is title of website /tab/ -->
-  <title>About me | YShiuan_C</title>
+  <title>About me | Ying-Shiuan Chen</title>
   <!-- Logo on the Tab  -->
-  <link rel="icon" sizes="16x16" type="image/png" href="/yshiuanc/static/logo/YShiuan_C_16x16.png">
-  <!-- icon -->
+  <link rel="icon" sizes="16x16" type="image/png" href="/yshiuanc/static/logo/yinz.png">
+  <!--icon-->
   <script src="https://kit.fontawesome.com/03192cca0c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script type="text/javascript" src="/yshiuanc/static/js/mode-theme.js"></script>
-  <!-- Font -->
+  <!--javascript-->
+  <script async type="text/javascript" src="/yshiuanc/static/js/mode-theme.js"></script>
+  <script async type="text/javascript" src="/yshiuanc/static/js/function.js"></script>
+  <!--model-viewer-->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <!--font-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <!--SEO-->
-  <meta property='og:title' content="About Me | Ying-Shiuan Chen"/>
+  <meta property='og:title' content="About me | Ying-Shiuan Chen"/>
   <meta property='og:image' content="https://yingshiuan.github.io/yshiuanc/about-me/"/>
-  <meta property='og:description' content="Ying-Shiuan Chen About Me"/>
+  <meta property='og:description' content="Ying-Shiuan Chen about me"/>
   <meta property='og:url' content="https://yingshiuan.github.io/yshiuanc/about-me/" />
+  <meta name="google-site-verification" content="7x_392_0i3J2ueR1hniQdwveOFtObZQZRLa89TBTdXc" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-203319087-1"></script>
   <script src="/yshiuanc/static/js/ga.js"></script>
+   
+
 </head>
 
 
@@ -40,93 +50,108 @@
 <body>
       <!--Header-->  
     <header>
-        <div class="headerContainer">
-            <div class = "logo"> </div>
-            <div class="top">
-                <div class ="homepage"><a href = "/yshiuanc/">YShiuan_C</a>
-                    <span class="tooltip">Homepage</span>
-                </div>
+      <div class="headerContainer">
+          <div class = "logo"> </div>
+          <div class="top">
+              <div class ="homepage"><a class="tags" href = "/yshiuanc/">Yinz</a>
+                  <span class="tooltip">Nice to meet you :)</span>
+              </div>
 
-                <div class="mode">
-                    <button id="mode-button" class="mode-button">
-                        <span class="material-icons">tonality</span>
-                        <span id="mode">system</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </header>
+              <div class="mode">
+                  <button id="mode-button" class="mode-button">
+                      <span class="material-icons" id="mode">tonality</span>
+                      <!--
+                      <span id="display">system</span>
+                      -->
+                      <span class="tooltip">mode</span>
+                  </button>
+              </div>
+          </div>
+      </div>
+  </header>
 
-    <!-- currently -->
-        <div class="currently" id="scroll">
-            <div class="info">
-                <p> </p>
-            </div>
-        </div>
-        
-    <!--nav-->
-    <nav>
-        <ul id="navbar">
-            <li class="logo"><a href="/yshiuanc/"> </a></li>
-            
-            <li class="item">
-                <a href="/yshiuanc/about-me/">About me</a>
-            </li>
-            
-            <li class="item">
-                <a href="/yshiuanc/resume/">Resume</a>
-            </li>
-            
-            <li class="item">
-                <a href="/yshiuanc/portfolio/">Portfolio</a>
-            </li>
-            
-            <li class="item">
-                <a href="/yshiuanc/contact/">Contact</a>
-            </li>
+  <!-- currently -->
+      <div class="currently" id="scroll">
+          <div class="info">
+              <p>Currently, I am looking for a position in Interaction Design or UX Researcher.</p>
+          </div>
+      </div>
+      
+  <!--nav-->
+  <nav>
+      <ul id="navbar">
+          <li class="logo"><a href="/yshiuanc/"> </a></li>
+          
+          <li class="item">
+              <a href="/yshiuanc/portfolio/">Projects</a>
+          </li>
+          
+          <li class="item">
+              <a href="/yshiuanc/resume/">Resume</a>
+          </li>
+          
+          <li class="item">
+              <a href="/yshiuanc/about-me/">About</a>
+          </li>
+          
+          <!-- , ['/blog', 'Blog']
+          <li class="item"><a href="aboutme.html">About me</a></li>
+          <li class="item"><a href="template/resume.html">Resume</a></li>
+          <li class="item"><a href="template/portfolio.html">Portfolio</a></li>
+          -->
+          <!-- 
+          <li class="item"><a style="display:none" href="template/blog.html">Blog</a></li>
+          -->
+          <!--
+          <li class="item"><a href="template/contact.html">Contact</a></li>
+          -->
+          <li class="navbarToggle"><a href="#!"><i class="material-icons">menu</i></a></li> 
+      </ul>
+  </nav>
+
   
-            <li class="navbarToggle"><a href="#!"><i class="material-icons">menu</i></a></li> 
-        </ul>
-    </nav>
 
 
+    
 
   <main class="main_container">
   
-
-    <div class="aboutme">
-        <ul class="row">
-          <li class ="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-            <h1>
-                Hi Hi <span class="material-icons">pets</span>
-                <br>
-                I'm<br>
-                Ying-Shiuan.
-                <br>
-                <br>
-            </h1>
+<div class="aboutme">
+  <ul class="row">
+    <li class ="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+      <h1>
+          Hi Hi<span class="material-icons">pets</span>
+          <br>
+          I'm<br>
+          Ying-Shiuan.
+          <br>
+          <br>
+      </h1>
+      <div class="aboutmeContainer">
+        <ol class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <p>
+            I am an <b>Interaction Designer</b>, coding for my side project.<span class="material-icons">code</span>
+            <br>
+            <br>
+          </p>
+        </ol>
+      </div>
+      
+    </li>
+    <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+      <div class="aboutme_item_container">
+        <div class="profilePic"><img src="/yshiuanc/resume/ying.jpg" alt="YShiuan_C" width="300px" height="300px"></div>
+        <div class="img_show profilePic"><img src="hihi.gif" alt="YShiuan_C" width="300px" height="300px"></div>
+      </div>
+    </li>
+    
+    
+    <li class ="aboutme_item col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="aboutmeContainer">
               <ol class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <p>
-                  I am an <b>Interaction Designer</b>, coding for my side project.<span class="material-icons">code</span>
-                  <br>
-                  <br>
+                <h3 class="tags">
                   Tell you more about me!
-                </p>
-              </ol>
-            </div>
-            
-          </li>
-          <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-            <div class="aboutme_item_container">
-              <div class="profilePic"><img src="/yshiuanc/resume/ying.jpg" alt="Ying-Shiuan Chen" width="300px" height="300px"></div>
-              <div class="img_show profilePic"><img src="hihi.gif" alt="YShiuan_C" width="300px" height="300px"></div>
-            </div>
-          </li>
-          
-          <li class ="aboutme_item col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <div class="aboutmeContainer">
-              <ol class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                </h3>
                 <p>
                   All my actions come from my curiosity.<span class="material-icons">auto_awesome</span> I like to explore new things and be creative.
                   <span class="material-icons">near_me</span>
@@ -149,8 +174,8 @@
           <li class ="aboutme_item col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="aboutmeContainer">
               <ol class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h3>
-                    My daily essential products:
+                <h3 class="tags">
+                    My daily essential products
                 </h3>
                 <p>
                   Computer<span class="material-icons">computer</span>, Coffee<span class="material-icons">coffee_maker</span> or Tea<span class="material-icons">emoji_food_beverage</span> both with Milk<span class="material-icons">local_drink</span>,
@@ -165,11 +190,12 @@
             </div>
           </li>
       
+      
           <li class ="aboutme_item col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="aboutmeContainer">
               <ol class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <h3>
-                  Hobbies:
+                <h3 class="tags">
+                  Hobbies
                 </h3>
                 <p>
                   Travel<span class="material-icons">flight_takeoff</span>, Foodies<span class="material-icons">local_dining</span>, Go outdoors<span class="material-icons">landscape</span><span class="material-icons">wb_sunny</span>,
@@ -178,22 +204,82 @@
               </ol>
               <ol class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <p>
-                  Be a Creator<span class="material-icons">camera_roll</span>
+                  Be Creator<span class="material-icons">camera_roll</span>
                 </p>
               </ol>
             </div>
           </li>
+
+          
+          <li class ="aboutme_item col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="aboutmeContainer">
+              <ol class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3 class="tags">
+                  Special skills
+                </h3>
+                <p>
+                  Attract Cats <span class="material-icons">pets</span> automatically.
+                </p>
+              </ol>
+           
+            </div>
+          </li>
+
+
+          <li class ="aboutme_item col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="aboutmeContainer">
+              <ol class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3 class="tags">
+                  Nice to meet you, contact me to tell me more about you!
+                </h3>
+              </ol>
+           
+            </div>
+          </li>
+
+          
         </ul>
-      
-        <hr>
        
       </div>
-      
+    </li>
+    <!--
+      <span class="material-icons">local_cafe</span>
+      <span class="material-icons">coffee</span>   
+      <span class="material-icons">ramen_dining</span>
+      <span class="material-icons">breakfast_dining</span>
+    -->
+
+    <!--
+    <li class ="aboutme_item col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="aboutmeContainer">
+        <ol class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <p>
+            I can understand and communicate with animals.<span class="material-icons">forum</span><span class="material-icons">pets</span> When I told my cat to drink water, he drank it.
+          </p>
+        </ol>
+      </div>
+    </li>
+    -->
+  </ul>
 
 
 
+  <!--
+  <ul class="row">
+    <li class ="aboutme_item col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="aboutmeContainer">
+        <ol class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <p>
+            Even if I have thoughtful plans, my life always surprises me.
+          </p>
+        </ol>
+      </div>
+    </li>
+  </ul>
+  -->
+  
 
-
+</div>
 
   
 
@@ -201,108 +287,93 @@
   </main>
   
       <main class="main_container">
-        <div class="sendme">
-            <p>Interested in what you see?
-                <br>
-                    <br>Shoot me an email <a href="mailto:ohis.yingshiuan@gmail.com">ohis.yingshiuan@gmail.com</a>
+        <div class="sendme row">
+            <ul class="row">
+                <li class ="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p>Interested in what you see?<p>
+                </li>
+
+                <li class ="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <br>
-                    <br>
-                <div class="media_icon">
-                    <a href="mailto:ohis.yingshiuan@gmail.com"><i class="fas fa-paper-plane"></i></a>
-                </div>
-            </p>
+                </li>
+
+                <li class ="col-lg-3 col-md-3 col-sm-12 col-xs-12"></li>
+
+                <li class ="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <p class="sendmebox">
+                        <a href="mailto:ohis.yingshiuan@gmail.com">Email me</a>
+                    </p>
+                    <p class="sendmebox">
+                        <a href="/yshiuanc/resume/Ying-Shiuan Chen-UX-Product-Designer_2021.pdf">PDF Resume</a>
+                    </p>
+                    <p class="sendmebox">
+                        <a href="https://www.linkedin.com/in/chenyingshiuan/">Linkedin</a>
+                    </p>
+                </li>
+                <li class ="col-lg-3 col-md-3 col-sm-12 col-xs-12"></li>
+                
+            </ul>
+
         </div>
     </main>  
   
   
     <footer>
-        <div class="footer_container">
-            <div class="footer_main">
-                <div class="topic">
-                <h2>Ying-Shiuan Chen
-                    <a href="mailto:ohis.yingshiuan@gmail.com"><i class="material-icons">email</i></a>
-                </h2>
-                </div>
-            </div>
-            
-            <div class="navbar_footer">
-                <ul>
-                    <li class="logo"><a href="/yshiuanc/">YShiuan_C</a></li>
-                    
-                    <li class="item">
-                        <a href="/yshiuanc/about-me/">About me</a>
-                    </li>
-                    
-                    <li class="item">
-                        <a href="/yshiuanc/resume/">Resume</a>
-                    </li>
-                    
-                    <li class="item">
-                        <a href="/yshiuanc/portfolio/">Portfolio</a>
-                    </li>
-                    
-                    <li class="item">
-                        <a href="/yshiuanc/contact/">Contact</a>
-                    </li>
-                    
-                    <li class="navbarToggle"><a href="#!"><i class="material-icons">menu</i></a></li>
-                </ul>
-            </div>
-            
-            <div class="media">
-                <div class="topic"><h2> </h2></div>
-                <div class="media_icon">
-                    <!--   
-                    <a href="https://github.com/yingshiuan" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://instagram.com/yshiuan_c?igshid=ejehd1tl8ce" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/channel/UCFpat39kIqYmYTbbfdoBNfA" target="_blank"><i class="fab fa-youtube"></i></a>
-                    -->
-                    <a href="https://vimeo.com/yshiuanc" target="_blank"><i class="fab fa-vimeo-v"></i></a>
-                    <a href="https://yshiuan-c.medium.com" target="_blank"><i class="fab fa-medium-m"></i></a>
-                    <a href="https://www.linkedin.com/in/chenyingshiuan/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            
-            <div class="resouce">
-                <ul class="sitemap">
-                    <li><a href="/yshiuanc/sitemap">Sitemap</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer_copyright">
-                <li>
-                  <p>&copy <span id="year"></span> <a href="{{ '/'|url }}">Ying-Shiuan Chen</a> All rights reserved</p>
-                </li>
-            </div>
-        </div>          
-    </footer>
+      <div class="footer_container">
+          <div class="footer_main">
+              <div class="topic">
+              <h2>Ying-Shiuan Chen</h2>
+              </div>
+          </div>
+          
+          <div class="navbar_footer">
+              <ul>
+                  <li class="logo"><a href="/">Yinz</a></li>
+                  
+                  <li class="item">
+                      <a href="/yshiuanc/portfolio/">Projects</a>
+                  </li>
+                  
+                  <li class="item">
+                      <a href="/yshiuanc/resume/">Resume</a>
+                  </li>
+                  
+                  <li class="item">
+                      <a href="/yshiuanc/about-me/">About</a>
+                  </li>
+                  
+                  <li class="navbarToggle"><a href="#!"><i class="material-icons">menu</i></a></li>
+              </ul>
+          </div>
+          
+          <div class="media">
+              <div class="topic"><h2> </h2></div>
+              <div class="media_icon">
+                  <!--   
+                  <a href="https://instagram.com/yshiuan_c?igshid=ejehd1tl8ce" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/chenyingshiuan/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                  -->
+                  <a href="https://yshiuan-c.medium.com" target="_blank"><i class="fab fa-medium-m"></i></a>
+                  <a href="https://vimeo.com/yshiuanc" target="_blank"><i class="fab fa-vimeo-v"></i></a>
+                  <a href="https://www.youtube.com/channel/UCFpat39kIqYmYTbbfdoBNfA" target="_blank"><i class="fab fa-youtube"></i></a>
+                  <a href="https://github.com/yingshiuan" target="_blank"><i class="fab fa-github"></i></a>
+                  
+              </div>
+          </div>
+          
+          <div class="resouce">
+              <ul class="sitemap">
+                  <li><a href="/yshiuanc/sitemap">Sitemap</a></li>
+              </ul>
+          </div>
+          
+          <div class="footer_copyright">
+              <li>
+                  <p>&copy <span id="year"></span>  <i>Design + Code</i> by <a href="/">Ying-Shiuan Chen</a>. All rights reserved.</p>
+              </li>
+          </div>
+      </div>          
+  </footer>
   
   
-    <!--script java-->
-    <script>        
-        /* Click Hide menu */
-        $(document).ready(function(){
-            $('.navbarToggle').click(function(){
-            $('.item').toggleClass("show");
-            $('.navbarToggle').toggleClass("hide");          
-            });
-        });
-    
-        /*scroll*/
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            document.getElementById("scroll").style.top = "20px";
-          } else {
-            document.getElementById("scroll").style.top = "-100px";
-          }
-          prevScrollpos = currentScrollPos;
-        }
-        
-        /*year*/
-        const d = new Date();
-        document.getElementById("year").innerHTML = d.getFullYear();
-    </script>
 </body>
-
