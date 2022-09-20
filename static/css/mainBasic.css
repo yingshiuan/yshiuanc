@@ -1456,10 +1456,7 @@ main div.work{
     display: inline-block;
 }
 
-.work_sum{
-    
-  
-}
+
 
 .work_detail{
     position: relative;
@@ -1724,6 +1721,15 @@ work_describe
     height: 52vw;
 }
 
+.diagram_square{
+    height: calc((8 * 0.1604166667) * 97vw * 0.8376623377);
+    margin-bottom: 0;
+}
+
+.ux_persona{
+    height: 48vw;
+}
+
 
 
 /*
@@ -1756,6 +1762,8 @@ UX CASE STUDY
     color: var(--text-color);
     /*height: calc((0.1604166667) * 97vw * 0.8376623377);*/
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -1766,6 +1774,10 @@ UX CASE STUDY
     width: 100%;
 }
 
+.ux_word a{
+    color: var(--text-color);
+    text-decoration: underline;
+}
 
 
 
@@ -1860,12 +1872,21 @@ Table-work
         height: 52vw;
     }
 
-
-
+    
     .diagram{
         height: 52vw;
     }
+
+    .diagram_square{
+        height: calc((8 * 0.1604166667) * 97vw * 0.8376623377);
+        margin-bottom: 0;
+    }
     
+    .ux_persona{
+        height: 48vw;
+    }
+
+
     .storyboard{
         margin: 1rem auto 1rem auto;
         height: 300px;
@@ -1899,6 +1920,16 @@ Table-work
 
     .diagram{
         height: calc((3.2 * 0.1604166667) * 97vw * 0.8376623377);
+        margin-bottom: 0;
+    }
+    
+    .diagram_square{
+        height: calc((4 * 0.1604166667) * 97vw * 0.8376623377);
+        margin-bottom: 0;
+    }
+
+    .ux_persona{
+        height: calc((2.5 * 0.1604166667) * 97vw * 0.8376623377);
         margin-bottom: 0;
     }
 
@@ -1969,6 +2000,16 @@ Table-work
     
     .diagram{
         height: calc(3.2 * 0.1604166667 * 97vw * 0.8376623377);
+    }
+
+    .diagram_square{
+        height: calc((3 * 0.1604166667) * 97vw * 0.8376623377);
+        margin-bottom: 0;
+    }
+
+    .ux_persona{
+        height: calc(2.2 * 0.1604166667 * 97vw * 0.8376623377);
+
     }
 
 
