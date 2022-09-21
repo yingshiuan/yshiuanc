@@ -5,7 +5,7 @@
     --text-message:#e6e6e6;
     --boder-color:white;
     --caption-color:#2C2C2E;
-    --work-backgorund: rgba(242, 242, 242, .2);
+    --work-backgorund: rgba(242, 242, 242, .1);
     --text-color-blue: #0C77DD;
 }
 
@@ -64,7 +64,7 @@ body.dark_mode {
         --text-message:#e6e6e6;
         --boder-color:white;
         --caption-color:#2C2C2E;
-        --work-backgorund: rgba(242, 242, 242, .2);
+        --work-backgorund: rgba(242, 242, 242, .3);
     }
 }
 
@@ -1311,7 +1311,7 @@ square
 
 .square_item ol{
     color: #e6e6e6;
-    text-shadow: 1px 1px #3a3a3c;
+    text-shadow: 2px 2px 1px #3a3a3c;
     margin-bottom: 0.5rem;
 }
 
@@ -1359,7 +1359,22 @@ square
 
 
 
+.work_cover .square_item_container_content .img_show{
+    opacity: 0;
+    display: none;
+}
 
+/*hover img */
+.work_cover:hover .square_item_container_content img{
+    display: none;
+}
+
+
+.work_cover:hover .square_item_container_content .img_show{
+    opacity: 1;
+    display: block;
+    position: absolute;
+}
 
 
 
