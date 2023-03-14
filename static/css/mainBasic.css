@@ -428,8 +428,7 @@ nav ul li.navbarToggle.hide i::before{
 
 @media all and (max-width: 900px){
     .headerContainer{
-        padding-right: 2.5rem;
-        padding-left: 2.5rem;
+        padding: 0rem 2.5rem 1rem 2.5rem;
     }
 
     header{
@@ -482,7 +481,7 @@ nav ul li.navbarToggle.hide i::before{
     }
 
     nav ul li{
-        padding: 0.5rem 0rem 0.5rem 0rem;
+        padding: 1rem 0rem 1rem 0rem;
     }   
     
     
@@ -498,6 +497,7 @@ nav ul li.navbarToggle.hide i::before{
 
     nav ul li.navbarToggle{
         display: block;
+        z-index: 10000;
       
     }
       
