@@ -8,25 +8,25 @@
   <meta name="copyright" content="Ying-Shiuan Chen" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ying-Shiuan Chen Portfolio">
-  <meta name="keywords" content="Interaction Designer">
+  <meta name="keywords" content=" Ying-Shiuan Chen">
   <meta name="color-scheme" content="light dark"/>
-  <link rel="stylesheet" href="/yshiuanc/static/style.css">
-  <link rel="canonical" href="https://yingshiuan.github.io/yshiuanc/portfolio/" />
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="canonical" href="https://yingshiuan.github.io/projects/" />
   <!--preload-->
-  <link rel="preload" href="/yshiuanc/static/style.css" as="style">
-  <link rel="preload" href="/yshiuanc/static/js/mode-theme.js" as="script">
+  <link rel="preload" href="/static/style.css" as="style">
+  <link rel="preload" href="../../static/js/mode-theme.js" as="script">
   <!--This is title of website /tab/ -->
   <title>Projects | Ying-Shiuan Chen</title>
   <!-- Logo on the Tab  -->
-  <link rel="icon" sizes="16x16" type="image/png" href="/yshiuanc/static/logo/yinz.png">
+  <link rel="icon" sizes="16x16" type="image/png" href="/static/logo/yinz.png">
   <!--icon-->
   <script src="https://kit.fontawesome.com/03192cca0c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <!--javascript-->
-  <script async type="text/javascript" src="/yshiuanc/static/js/mode-theme.js"></script>
-  <script async type="text/javascript" src="/yshiuanc/static/js/function.js"></script>
+  <script async type="text/javascript" src="../../static/js/mode-theme.js"></script>
+  <script async type="text/javascript" src="../../static/js/function.js"></script>
   <!--model-viewer-->
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <!--font-->
@@ -34,13 +34,21 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <!--SEO-->
   <meta property='og:title' content="Projects | Ying-Shiuan Chen"/>
-  <meta property='og:image' content="https://yingshiuan.github.io/yshiuanc/portfolio/"/>
+  <meta property='og:image' content="https://yingshiuan.github.io/projects/"/>
   <meta property='og:description' content="Ying-Shiuan Chen Portfolio"/>
-  <meta property='og:url' content="https://yingshiuan.github.io/yshiuanc/portfolio/" />
+  <meta property='og:url' content="https://yingshiuan.github.io/projects/" />
   <meta name="google-site-verification" content="7x_392_0i3J2ueR1hniQdwveOFtObZQZRLa89TBTdXc" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4JY7EDJ3QJ"></script>
-  <script src="/yshiuanc/static/js/gtag.js"></script> 
+  <script src="/yshiuanc/static/js/ga.js"></script>
+  
+  <!--404-->
+  <link rel="stylesheet" href="">
+  <link rel="icon" sizes="16x16" type="image/png" href="">
+
+  
+  
+
 </head>
 
 
@@ -51,7 +59,7 @@
         <div class="headerContainer">
             <div class = "logo"> </div>
             <div class="top">
-                <div class ="homepage"><a class="tags" href = "/yshiuanc/">Yinz</a>
+                <div class ="homepage"><a class="tags" href = "/">Yinz</a>
                     <span class="tooltip">Nice to meet you :)</span>
                 </div>
 
@@ -71,27 +79,38 @@
     <!-- currently -->
         <div class="currently" id="scroll">
             <div class="info">
-                <p></p>
+                <p>Currently, I am looking for a position in Interaction Design or UX Researcher.</p>
             </div>
         </div>
         
     <!--nav-->
-    <nav>
+    <nav id="mynav">
         <ul id="navbar">
-            <li class="logo"><a href="/yshiuanc/"> </a></li>
+            <li class="logo"><a href="/"> </a></li>
             
             <li class="item">
-                <a href="/yshiuanc/portfolio/">Projects</a>
+                <a href="/projects/">Projects</a>
             </li>
             
             <li class="item">
-                <a href="/yshiuanc/resume/">Resume</a>
+                <a href="/resume/">Resume</a>
             </li>
             
             <li class="item">
-                <a href="/yshiuanc/about-me/">About</a>
+                <a href="/about/">About</a>
             </li>
-
+            
+            <!-- , ['/blog', 'Blog']
+            <li class="item"><a href="aboutme.html">About me</a></li>
+            <li class="item"><a href="template/resume.html">Resume</a></li>
+            <li class="item"><a href="template/portfolio.html">Portfolio</a></li>
+            -->
+            <!-- 
+            <li class="item"><a style="display:none" href="template/blog.html">Blog</a></li>
+            -->
+            <!--
+            <li class="item"><a href="template/contact.html">Contact</a></li>
+            -->
             <li class="navbarToggle"><a href="#!"><i class="material-icons">menu</i></a></li> 
         </ul>
     </nav>
@@ -209,10 +228,15 @@
                             <p class="tags">Digital Prototyping</p>
                             <p class="tags">XR Development</p>
                             <p class="tags">Motion Graphics</p>
+                            <p class="tags">3D Animation</p>
                             <p class="tags">HCI</p>
                         </ol>
                     </div>
 
+                    <div class="work_item_container_content">
+                        <img src="cover/topics-03.png" alt="">
+                        <img class="img_show" src="" alt="cover/skills-03.png">
+                    </div>
                 </div>
             </a>
         </li>
@@ -411,24 +435,25 @@
         </li>
 
         <li class="work_item square_item work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2">
-            <a href="#!">
+            <a href="https://medium.com/@yshiuan-c/prototype-ar-experiences-3452901e3347">
                 <div class="work_item_container">
                     <div class="square_item_container_description">
                         <ol class="square_word s_title">
-                            <p>Foo:D</p>
+                            <p>WebXR</p>
                         </ol>
                         <ol class="square_word s_tag" >
-                            <p class="tags"></p>
-                            <p class="tags"></p>
+                            <p class="tags">Prototyping</p>
+                            <p class="tags">Research</p>
                         </ol>
                     </div>
                     <div class="work_item_container_content">
-                        <img src="foodies/foodies.png" alt="">
-                        <img class="img_show" src="foodies/foodies.png" alt="">
+                        <img src="cover/coordinate.png" alt="AR-VR-XR">
+                        <img class="img_show" src="cover/coordinate.png" alt="AR-VR-XR">
                     </div>
                 </div>
             </a>
         </li>
+
 
         <!-- large hide  4+1-->
         <li class="work_item square_item work__item--tall work__item--bottom work_cover col-xs-6 col-sm-6 col-md-3 col-lg-2 col-lg-hide">
@@ -460,7 +485,7 @@
                             <p>Outfits You</p>
                         </ol>
                         <ol class="square_word s_tag" >
-                            <p class="tags">Augmented Reality</p>
+                            <p class="tags">UX</p>
                             <p class="tags">Application</p>
                         </ol>
                     </div>
@@ -491,6 +516,10 @@
                         </ol>
                     </div>
 
+                    <div class="work_item_container_content">
+                        <img src="cover/topics-04.png" alt="">
+                        <img class="img_show" src="cover/skills-04.png" alt="">
+                    </div>
                 </div>
             </a>
         </li>
@@ -612,6 +641,10 @@
                         </ol>
                     </div>
 
+                    <div class="work_item_container_content">
+                        <img src="cover/topics-01.png" alt="">
+                        <img class="img_show" src="cover/skills-01.png" alt="">
+                    </div>
                 </div>
                     
                
@@ -750,10 +783,9 @@
                         </ol>
                     </div>
                     <div class="work_item_container_content">
-                        <img src="up-sticks/sticks_1.jpg" alt="up-sticks">
+                        <img src="up-sticks/sticks.jpg" alt="up-sticks">
                         <img class="img_show" src="up-sticks/sticks.gif" alt="up-sticks">
                     </div>
-
                 </div>
             </a>
         </li>
@@ -904,8 +936,8 @@
                         </ol>
                     </div>
                     <div class="work_item_container_content">
-                        <img src="" alt="">
-                        <img class="img_show" src="" alt="">
+                        <img src="cover/topics-02.png" alt="">
+                        <img class="img_show" src="cover/skills-02.png" alt="">
                     </div>
                 </div>
             </a>
@@ -992,6 +1024,28 @@
     </ul>        
 </div>
 
+
+<!--
+<div class="work_describe">
+  <ul class="row">
+      <li class ="aboutme_item col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="aboutmeContainer">
+            <ol class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h3 class="tags">
+                Contact me, Let's explore creative world!
+              </h3>
+            </ol>   
+        </div>
+      </li>
+  </ul>
+</div>
+-->
+
+
+
+
+  
+
   
   </main>
   
@@ -1013,7 +1067,7 @@
                         <a href="mailto:ohis.yingshiuan@gmail.com">Email me</a>
                     </p>
                     <p class="sendmebox">
-                        <a href="/yshiuanc/resume/Ying-Shiuan Chen-UX-Product-Designer_2021.pdf">PDF Resume</a>
+                        <a href="../resume/Ying-Shiuan Chen-UX-Product-Designer_2021.pdf">PDF Resume</a>
                     </p>
                     <p class="sendmebox">
                         <a href="https://www.linkedin.com/in/chenyingshiuan/">Linkedin</a>
@@ -1040,15 +1094,15 @@
                     <li class="logo"><a href="/">Yinz</a></li>
                     
                     <li class="item">
-                        <a href="/yshiuanc/portfolio/">Projects</a>
+                        <a href="/projects/">Projects</a>
                     </li>
                     
                     <li class="item">
-                        <a href="/yshiuanc/resume/">Resume</a>
+                        <a href="/resume/">Resume</a>
                     </li>
                     
                     <li class="item">
-                        <a href="/yshiuanc/about-me/">About</a>
+                        <a href="/about/">About</a>
                     </li>
                     
                     <li class="navbarToggle"><a href="#!"><i class="material-icons">menu</i></a></li>
@@ -1072,7 +1126,7 @@
             
             <div class="resouce">
                 <ul class="sitemap">
-                    <li><a href="/yshiuanc/sitemap">Sitemap</a></li>
+                    <li><a href="/sitemap">Sitemap</a></li>
                 </ul>
             </div>
             
