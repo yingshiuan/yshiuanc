@@ -1,6 +1,6 @@
 
 function getUserPreference() {
-  return localStorage.getItem('mode') || 'tonality';
+  return localStorage.getItem('mode') || 'dark-theme';
 }
 
 function saveUserPreference(userPreference) {
@@ -15,7 +15,7 @@ function getAppliedMode(userPreference) {
   if (userPreference === 'dark_mode') {
     return 'dark_mode';
   }
-  
+
   // system
   if (matchMedia('(prefers-color-scheme: dark)').matches) {
     return 'dark_mode';
@@ -60,7 +60,7 @@ function init() {
     saveUserPreference(newUserPref);
     themeDisplay.innerText = newUserPref;
     setAppliedMode(getAppliedMode(newUserPref));
-    
+
   }
   let userPreference = getUserPreference();
   setAppliedMode(getAppliedMode(userPreference));
@@ -68,7 +68,7 @@ function init() {
 
 }
 
-document.addEventListener('readystatechange', function() {
+document.addEventListener('readystatechange', function () {
   if (document.readyState === "complete") {
     init();
   }

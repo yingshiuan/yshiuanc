@@ -1,16 +1,16 @@
-/*Basic Function*/ 
+/*Basic Function*/
 /* Click Hide menubar */
-$(document).ready(function(){
-    $('.navbarToggle').click(function(){
+$(document).ready(function () {
+  $('.navbarToggle').click(function () {
     $('.item').toggleClass("show");
-    $('.navbarToggle').toggleClass("hide");          
-    });
+    $('.navbarToggle').toggleClass("hide");
+  });
 });
 
 /*scroll*/
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
+window.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("scroll").style.top = "20px";
   } else {
