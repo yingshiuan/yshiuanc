@@ -37,7 +37,7 @@ body.dark_mode {
     --text-color: #C2C2C2;
     --text-descript: #707070;
     --text-hover: #707070;
-    --text-message: #3a3a3c;
+    --text-message: #3c3c3c;
     --boder-color: black;
     --caption-color: #e6e6e6;
     --work-backgorund: rgba(242, 242, 242, .1);
@@ -51,7 +51,7 @@ body.dark_mode {
         --text-descript: #707070;
         --text-hover: #707070;
         --boder-color: black;
-        --text-message: #3a3a3c;
+        --text-message: #3c3c3c;
         --caption-color: #e6e6e6;
         --work-backgorund: rgba(242, 242, 242, .1);
     }
@@ -61,15 +61,12 @@ body.dark_mode {
         --text-color: #707070;
         --text-descript: #C2C2C2;
         --text-hover: black;
-        --text-message: #e6e6e6;
         --boder-color: white;
-        --caption-color: #2C2C2E;
-        --work-backgorund: rgba(242, 242, 242, .3);
+        --text-message: #e6e6e6;
+        --caption-color: #2C2C2C;
+        --work-backgorund: rgba(242, 242, 242, .2);
     }
 }
-
-
-
 
 
 
@@ -92,16 +89,12 @@ body.dark_mode {
 }
 
 
-
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-
 
 
 /* selection  */
@@ -115,7 +108,6 @@ body.dark_mode {
 }
 
 
-
 /* paddimg margin backgroudnd */
 main {
     margin-left: auto;
@@ -125,12 +117,9 @@ main {
 }
 
 
-
-
 ul li {
     list-style-type: none;
 }
-
 
 
 /* 
@@ -1320,8 +1309,8 @@ square
 
 
 .square_item ol {
-    color: #e6e6e6;
-    text-shadow: 2px 2px 1px #3a3a3c;
+    color: #C2C2C2;
+    text-shadow: 1px 1px 1px #3c3c3c;
     margin-bottom: 0.5rem;
 }
 
@@ -2493,6 +2482,11 @@ footer .footer_copyright p {
     padding: 0.5rem 0rem 0rem 0rem;
     color: white;
 }
+
+
+
+
+
 
 
 @media all and (max-width: 900px) {
