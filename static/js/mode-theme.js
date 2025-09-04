@@ -1,6 +1,6 @@
 
 function getUserPreference() {
-  return localStorage.getItem('mode') || 'dark-theme';
+  return localStorage.getItem('mode') || 'tonality';
 }
 
 function saveUserPreference(userPreference) {
@@ -15,7 +15,7 @@ function getAppliedMode(userPreference) {
   if (userPreference === 'dark_mode') {
     return 'dark_mode';
   }
-
+  
   // system
   if (matchMedia('(prefers-color-scheme: dark)').matches) {
     return 'dark_mode';
@@ -28,7 +28,9 @@ function getAppliedMode(userPreference) {
 const colorScheme = document.querySelector('meta[name="color-scheme"]');
 function setAppliedMode(mode) {
   document.body.className = mode;
-  colorScheme.content = mode;
+  if (colorScheme) {
+    colorScheme.content = mode.includes('light') ? 'light' : 'dark';
+  }
 }
 
 
@@ -44,7 +46,6 @@ function rotatePreferences(userPreference) {
   if (userPreference === 'dark_mode') {
     return 'tonality';
   }
-  // for invalid values, just in case
   return 'tonality';
 }
 
@@ -52,24 +53,38 @@ function rotatePreferences(userPreference) {
 
 /* init and eventListener for null on safari */
 function init() {
-  var themeDisplay = document.getElementById('mode');
-  var themeToggler = document.getElementById('mode-button');
-  themeToggler.onclick = () => {
-    const newUserPref = rotatePreferences(userPreference);
-    userPreference = newUserPref;
-    saveUserPreference(newUserPref);
-    themeDisplay.innerText = newUserPref;
-    setAppliedMode(getAppliedMode(newUserPref));
-
-  }
   let userPreference = getUserPreference();
-  setAppliedMode(getAppliedMode(userPreference));
-  themeDisplay.innerText = userPreference;
 
+  const themeDisplay = document.getElementById('mode');
+  const themeTooltip = document.getElementById('mode-tooltip');
+  const themeToggler = document.getElementById('mode-button');
+
+  function applyTheme(pref) {
+    const applied = getAppliedMode(pref);
+    setAppliedMode(applied);
+
+    if (themeDisplay) {
+      themeDisplay.innerText = pref;
+    }
+
+    if (themeTooltip) {
+      themeTooltip.innerText = applied.replace('_', ' ');
+    }
+  }
+
+  if (themeToggler && themeDisplay) {
+    themeToggler.onclick = () => {
+      userPreference = rotatePreferences(userPreference);
+      saveUserPreference(userPreference);
+      applyTheme(userPreference);
+    };
+  }
+
+  applyTheme(userPreference);
 }
 
 document.addEventListener('readystatechange', function () {
-  if (document.readyState === "complete") {
+  if (document.readyState === 'complete') {
     init();
   }
 });
